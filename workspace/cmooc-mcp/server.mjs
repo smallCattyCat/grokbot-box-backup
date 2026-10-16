@@ -118,17 +118,23 @@ function runTsx(scriptRel, args, { allowNonZero = true } = {}) {
         );
         return;
       }
-      // Prefer last JSON line (scripts may emit progress on stdout rarely)
-      const lines = trimmed.split(/\r?\n/).filter(Boolean);
+      // Pretty-printed JSON (cmoocctl) is multi-line; try whole buffer first.
+      // Fall back to last JSON line for scripts that emit progress then one object.
       let parsed = null;
       let parseErr = null;
-      for (let i = lines.length - 1; i >= 0; i -= 1) {
-        try {
-          parsed = JSON.parse(lines[i]);
-          parseErr = null;
-          break;
-        } catch (err) {
-          parseErr = err;
+      try {
+        parsed = JSON.parse(trimmed);
+      } catch (err) {
+        parseErr = err;
+        const lines = trimmed.split(/\r?\n/).filter(Boolean);
+        for (let i = lines.length - 1; i >= 0; i -= 1) {
+          try {
+            parsed = JSON.parse(lines[i]);
+            parseErr = null;
+            break;
+          } catch (lineErr) {
+            parseErr = lineErr;
+          }
         }
       }
       if (parsed === null) {
