@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Pelican Riding a Bicycle</title>
+<style>
+  body { margin: 0; display: flex; align-items: center; justify-content: center; height: 100vh; background: #e0f7fa; }
+</style>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <!-- Bicycle wheels -->
+  <circle cx="80" cy="340" r="35" fill="#7f7f7f" stroke="#333" stroke-width="2"/>
+  <circle cx="520" cy="340" r="35" fill="#7f7f7f" stroke="#333" stroke-width="2"/>
+  <!-- Bicycle frame -->
+  <line x1="80" y1="305" x2="520" y2="305" stroke="#333" stroke-width="4"/>
+  <line x1="80" y1="340" x2="80" y2="260" stroke="#333" stroke-width="4"/>
+  <line x1="520" y1="340" x2="520" y2="260" stroke="#333" stroke-width="4"/>
+  <line x1="250" y1="260" x2="350" y2="260" stroke="#333" stroke-width="4"/>
+  <!-- Seat -->
+  <rect x="150" y="260" width="30" height="20" fill="#8B4513"/>
+  <!-- Pedals & chainring -->
+  <circle cx="300" cy="340" r="20" fill="#555"/>
+  <line x1="280" y1="320" x2="280" y2="300" stroke="#555" stroke-width="3"/>
+  <line x1="320" y1="320" x2="320" y2="300" stroke="#555" stroke-width="3"/>
+  <!-- Pelican body -->
+  <ellipse cx="300" cy="200" rx="60" ry="40" fill="white" stroke="#333" stroke-width="2"/>
+  <!-- Pelican beak -->
+  <polygon points="300,200 340,180 340,220" fill="#F5A623"/>
+  <!-- Pelican pouch -->
+  <polygon points="300,200 360,250 360,290 300,270" fill="#F5A623"/>
+  <!-- Left wing -->
+  <polygon points="180,150 200,120 220,150 200,180" fill="#a0a0a0"/>
+  <!-- Right wing -->
+  <polygon points="420,150 400,120 380,150 400,180" fill="#a0a0a0"/>
+  <!-- Eye -->
+  <circle cx="290" cy="190" r="3" fill="#333"/>
+</svg>
+</body>
+</html>

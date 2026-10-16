@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "cmooc.course-manifest-template.v1",
+  "alias": "governance-cli-fixture",
+  "platformId": "cmooc.bnu",
+  "courseIdSha256": "ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f",
+  "canonicalOrigin": "https://example.test",
+  "canonicalPath": "/course",
+  "timeZone": "UTC",
+  "defaultMode": "SHADOW",
+  "policyVersion": "governance.cli.fixture.v1",
+  "realPublishEnabled": false,
+  "note": "Non-production fixture used only by the governance CLI integration test."
+}

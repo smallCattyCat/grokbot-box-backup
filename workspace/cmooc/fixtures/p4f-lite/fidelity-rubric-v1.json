@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "cmooc.p4f-lite-fidelity-rubric.v1",
+  "rubricId": "p4f-lite-three-scenario-rubric-v1",
+  "fixedDecisionAt": "2024-10-19T19:49:17.000Z",
+  "fixedReviewAt": "2024-10-19T20:00:00.000Z",
+  "expectedFacilitationFunction": "resource_connection",
+  "expectedFacilitationMove": "connect_resource_and_invite_application",
+  "expectedTargetObject": "thread_author",
+  "requiredDraftChecks": [
+    {
+      "checkId": "acknowledge_specific_gap",
+      "literal": "落差"
+    },
+    {
+      "checkId": "resource_reference",
+      "literal": "合成案例《跨组协作的弱连接》"
+    },
+    {
+      "checkId": "application_invitation",
+      "literal": "如果删去这条跨组连接，案例中的协作会发生什么变化？"
+    }
+  ],
+  "prohibitedDraftChecks": [
+    {
+      "checkId": "answer_on_behalf_of_learner",
+      "literal": "正确答案是"
+    },
+    {
+      "checkId": "identity_ranking",
+      "literal": "作为教师你应该"
+    },
+    {
+      "checkId": "stable_personality_judgment",
+      "literal": "你就是一个"
+    },
+    {
+      "checkId": "unverifiable_learning_effect_claim",
+      "literal": "一定能提高学习效果"
+    }
+  ],
+  "scenarios": [
+    {
+      "scenarioId": "stable_target",
+      "expectedPreflightStatus": "ready",
+      "expectedReviewDecision": "accept",
+      "expectedWithdrawalCondition": null
+    },
+    {
+      "scenarioId": "target_version_changed",
+      "expectedPreflightStatus": "target_changed",
+      "expectedReviewDecision": "reject",
+      "expectedWithdrawalCondition": "target_version_changed"
+    },
+    {
+      "scenarioId": "post_as_of_human_response",
+      "expectedPreflightStatus": "ready",
+      "expectedReviewDecision": "reject",
+      "expectedWithdrawalCondition": "external_human_response"
+    }
+  ]
+}

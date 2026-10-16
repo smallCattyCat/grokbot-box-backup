@@ -1,0 +1,20 @@
+{
+  "name": "cmooc-mcp",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "MCP wrapper for cMOOC workbench ledger/lock ops (cmoocctl + mcp-bridge)",
+  "bin": {
+    "cmooc-mcp": "./server.mjs"
+  },
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^4.5.4"
+  }
+}

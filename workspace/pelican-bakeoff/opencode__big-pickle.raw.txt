@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pelican Riding a Bicycle</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    svg {
+      background: white;
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Bicycle wheels -->
+    <g stroke="#333" stroke-width="4" fill="none">
+      <circle cx="200" cy="300" r="40" />
+      <circle cx="400" cy="300" r="40" />
+      <!-- Wheel spokes (simple) -->
+      <line x1="200" y1="260" x2="200" y2="340" />
+      <line x1="160" y1="300" x2="240" y2="300" />
+      <line x1="171.7" y1="271.7" x2="228.3" y2="328.3" />
+      <line x1="171.7" y1="328.3" x2="228.3" y2="271.7" />
+      <line x1="400" y1="260" x2="400" y2="340" />
+      <line x1="360" y1="300" x2="440" y2="300" />
+      <line x1="371.7" y1="271.7" x2="428.3" y2="328.3" />
+      <line x1="371.7" y1="328.3" x2="428.3" y2="271.7" />
+    </g>
+    
+    <!-- Bicycle frame -->
+    <g stroke="#2c7fb8" stroke-width="6" fill="none" stroke-linecap="round">
+      <!-- Main triangle/frame -->
+      <line x1="200" y1="300" x2="280" y2="230" />
+      <line x1="280" y1="230" x2="400" y2="300" />
+      <line x1="280" y1="230" x2="270" y2="180" />
+      <!-- Seat post and handlebars -->
+      <line x1="270" y1="180" x2="260" y2="160" />
+      <line x1="260" y1="160" x2="250" y2="150" />
+      <!-- Handlebars -->
+      <path d="M 250 150 Q 240 140 230 150" stroke="#333" stroke-width="4" />
+      <line x1="230" y1="150" x2="220" y2="160" />
+      <!-- Seat -->
+      <path d="M 245 155 Q 260 140 275 160" stroke="#8b4513" stroke-width="6" fill="#8b4513" fill-opacity="0.3" />
+      <!-- Bottom bracket/pedals -->
+      <circle cx="280" cy="265" r="8" fill="#666" />
+      <line x1="280" y1="265" x2="260" y2="285" />
+      <line x1="280" y1="265" x2="300" y2="245" />
+      <!-- Pedal cranks -->
+      <circle cx="260" cy="285" r="5" fill="#333" />
+      <circle cx="300" cy="245" r="5" fill="#333" />
+      <!-- Pedals -->
+      <ellipse cx="260" cy="285" rx="12" ry="4" fill="#ddd" stroke="#333" stroke-width="2" transform="rotate(-15 260 285)" />
+      <ellipse cx="300" cy="245" rx="12" ry="4" fill="#ddd" stroke="#333" stroke-width="2" transform="rotate(45 300 245)" />
+    </g>
+    
+    <!-- Pelican -->
+    <g>
+      <!-- Pelican body -->
+      <ellipse cx="270" cy="150" rx="35" ry="30" fill="#f0f0f0" stroke="#999" stroke-width="2" />
+      <!-- Pelican neck -->
+      <path d="M 240 140 Q 200 120 160 80" fill="#f0f0f0" stroke="#999" stroke-width="2" />
+      <!-- Pelican head -->
+      <ellipse cx="155" cy="75" rx="15" ry="15" fill="#f0f0f0" stroke="#999" stroke-width="2" />
+      <!-- Pelican beak (long and distinctive) -->
+      <path d="M 140 70 L 80 60 L 140 75 Z" fill="#ff8c00" stroke="#cc7a00" stroke-width="2" />
+      <!-- Pelican pouch (throat sac) -->
+      <path d="M 140 75 Q 110 90 80 85 Q 110 100 140 80 Z" fill="#ffb366" stroke="#cc7a00" stroke-width="1.5" />
+      <!-- Pelican eye -->
+      <circle cx="150" cy="70" r="3" fill="#333" />
+      <circle cx="151" cy="69" r="1.5" fill="white" />
+      <!-- Pelican wing (folded, visible as it's riding) -->
+      <path d="M 250 140 Q 300 120 330 160 Q 290 180 240 160 Z" fill="#e0e0e0" stroke="#999" stroke-width="2" opacity="0.9" />
+      <!-- Pelican tail -->
+      <path d="M 295 155 Q 320 170 340 160 L 320 175 Z" fill="#f0f0f0" stroke="#999" stroke-width="2" />
+      <!-- Pelican feet/legs (resting on pedals/frame) -->
+      <path d="M 265 180 L 260 200" stroke="#ff8c00" stroke-width="3" stroke-linecap="round" />
+      <path d="M 265 180 L 275 200" stroke="#ff8c00" stroke-width="3" stroke-linecap="round" />
+      <!-- Feet -->
+      <path d="M 260 200 L 250 210 M 260 200 L 265 210" stroke="#ff8c00" stroke-width="3" stroke-linecap="round" />
+      <path d="M 275 200 L 270 210 M 275 200 L 280 210" stroke="#ff8c00" stroke-width="3" stroke-linecap="round" />
+    </g>
+  </svg>
+</body>
+</html>

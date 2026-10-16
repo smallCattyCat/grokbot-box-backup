@@ -1,0 +1,23 @@
+name: cmooc-companion
+
+services:
+  cmooc-companion:
+    build: .
+    ports:
+      - "127.0.0.1:3000:3000"
+    env_file:
+      - ${ENV_FILE:-.env}
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      CMOOC_DATA_DIR: /data
+      DATABASE_URL: file:/data/dev.db
+      SCREENSHOT_DIR: /data/screenshots
+    volumes:
+      - cmooc_data:/data
+    init: true
+    shm_size: 1gb
+    restart: unless-stopped
+
+volumes:
+  cmooc_data:

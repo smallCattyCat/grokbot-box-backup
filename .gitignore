@@ -1,0 +1,44 @@
+# Dependencies & caches
+node_modules/
+.cache/
+__pycache__/
+.venv/
+*.pyc
+
+# Nested git
+.git/
+
+# Env & secrets (keep examples)
+.env
+.env.*
+!.env.example
+!.env.*.example
+**/*.env
+!**/*.env.example
+
+# Named secret artifacts
+host-secrets/
+box-secrets/
+teach-queue-key
+chrome-cookie-seed
+gateway.json
+service.json
+**/Cookies
+**/Cookies-journal
+
+# Large / regenerable / private
+chatgpt-desktop/
+cmooc-src.tar
+*.deb
+ledger-slim.db
+chrome-profile/
+agent-transcripts/
+.cmooc-service-data/
+.localappdata/
+
+# Operational payloads (not in Tier A+screenshots; keep out of future syncs unless scrubbed)
+workspace/cmooc/payloads/
+
+# OS junk
+.DS_Store
+Thumbs.db

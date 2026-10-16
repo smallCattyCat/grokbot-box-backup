@@ -1,0 +1,5660 @@
+[
+  {
+    "title": "模拟家长访谈先校准人物设定",
+    "source_observation": "教师向学校征求人物是否真实、是否刻板的反馈，再让职前教师低风险练习家校对话。",
+    "requires": [
+      "目标是练习家校沟通"
+    ],
+    "excludes": [
+      "把模拟当作真实家长意见"
+    ],
+    "unknowns": [
+      "人物是否覆盖当前学校情境"
+    ],
+    "method_steps": [
+      "请教师校核人物",
+      "练习沟通",
+      "反思后重练"
+    ],
+    "proposed_followup": "能否解释沟通策略的变化",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU001-K1",
+    "source_ids": [
+      "AU001"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "用既有资源检查课程目标缺口",
+    "source_observation": "教师用已有材料提取重点、映射学习目标并重排周计划；尚未取得正式学生反馈。",
+    "requires": [
+      "已有课程材料与目标"
+    ],
+    "excludes": [
+      "从零生成课程且无权威材料"
+    ],
+    "unknowns": [
+      "资料是否完整和适合上传"
+    ],
+    "method_steps": [
+      "整理材料",
+      "对齐目标",
+      "教师修订周计划"
+    ],
+    "proposed_followup": "目标与活动是否对齐",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU002-K1",
+    "source_ids": [
+      "AU002"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "为复杂课程准备有结构的阅读入口",
+    "source_observation": "教师预选课程文档并建立学生视图，以帮助理解文档用途与关系。",
+    "requires": [
+      "新生面对多个复杂文档"
+    ],
+    "excludes": [
+      "直接代替原文阅读"
+    ],
+    "unknowns": [
+      "学习者卡在内容还是导航"
+    ],
+    "method_steps": [
+      "说明材料用途",
+      "连接任务",
+      "再回读原文"
+    ],
+    "proposed_followup": "能否解释材料与任务关系",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU003-K1",
+    "source_ids": [
+      "AU003"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "先诊断再自测",
+    "source_observation": "演示以学习目标启动诊断提问，再进行自测与错题解释。",
+    "requires": [
+      "具有已选课程资料和学习目标"
+    ],
+    "excludes": [
+      "以练习结果代替正式考核"
+    ],
+    "unknowns": [
+      "回答是否来自材料且理解真实"
+    ],
+    "method_steps": [
+      "确认目标",
+      "诊断提问",
+      "自测后解释"
+    ],
+    "proposed_followup": "是否能够解释错误并再次作答",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU004-K1",
+    "source_ids": [
+      "AU004"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把个人阅读笔记带入跨文献比较",
+    "source_observation": "教师演示并排阅读和记笔记，再将笔记转为来源，与原文进行比较。",
+    "requires": [
+      "有原始文献和个人笔记"
+    ],
+    "excludes": [
+      "混淆作者观点与个人推断"
+    ],
+    "unknowns": [
+      "笔记是否准确保留来源"
+    ],
+    "method_steps": [
+      "记下个人判断",
+      "标明来源",
+      "比较异同"
+    ],
+    "proposed_followup": "能否追溯观点及修订",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU005-K1",
+    "source_ids": [
+      "AU005"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "用限定情境的模拟支持反复练习",
+    "source_observation": "ATLAS将专业情境和评价标准绑定，模拟交互后提供教师主导反馈，允许再次练习。",
+    "requires": [
+      "明确专业情境与评价标准"
+    ],
+    "excludes": [
+      "将模拟反馈当真实现场能力认证"
+    ],
+    "unknowns": [
+      "角色回应是否遵循设定"
+    ],
+    "method_steps": [
+      "设计情境",
+      "校准回应",
+      "练习反馈后重试"
+    ],
+    "proposed_followup": "是否修订沟通行为",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU006-K1",
+    "source_ids": [
+      "AU006"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "用追问暴露方案的逻辑缺口",
+    "source_observation": "教师让AI反问项目团队解释变革逻辑，并由同事试用后调整语气和行为。",
+    "requires": [
+      "团队已有初步方案"
+    ],
+    "excludes": [
+      "需要立即获得操作答案"
+    ],
+    "unknowns": [
+      "方案假设是否有依据"
+    ],
+    "method_steps": [
+      "解释方案因果链",
+      "追问假设",
+      "团队修订"
+    ],
+    "proposed_followup": "是否产生可说明的方案变化",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU007-K1",
+    "source_ids": [
+      "AU007"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "反馈语库必须落回当前作品",
+    "source_observation": "教师先识别常见问题再用AI展开评论；原案例指出自动找的支持链接并非最合适。",
+    "requires": [
+      "已识别当前作品的问题"
+    ],
+    "excludes": [
+      "仅按通用标签自动下判断"
+    ],
+    "unknowns": [
+      "资源是否确实帮助当前问题"
+    ],
+    "method_steps": [
+      "生成评论备选",
+      "核查资源",
+      "绑定具体作品位置"
+    ],
+    "proposed_followup": "学习者是否能执行建议",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU008-K1",
+    "source_ids": [
+      "AU008"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "先小组核查再独立写作",
+    "source_observation": "写作组合任务先让小组逐句检查AI输出，再开展同伴反馈和个人写作。",
+    "requires": [
+      "有课程相关输出和可查资料"
+    ],
+    "excludes": [
+      "直接把AI文本当正确范例"
+    ],
+    "unknowns": [
+      "学习者能否识别事实与偏见"
+    ],
+    "method_steps": [
+      "共同查证",
+      "同伴评议",
+      "独立改写"
+    ],
+    "proposed_followup": "能否独立说明判断依据",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU009-K1",
+    "source_ids": [
+      "AU009"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把抽象伦理问题转为角色协商",
+    "source_observation": "教师用AI扩展伦理困境，由学生选情境、识别利益相关者、角色扮演并复盘。",
+    "requires": [
+      "目标要求情境伦理判断"
+    ],
+    "excludes": [
+      "纯概念记忆测验"
+    ],
+    "unknowns": [
+      "情境是否贴近学习者经验"
+    ],
+    "method_steps": [
+      "教师校核情境",
+      "小组选角色",
+      "讨论与复盘"
+    ],
+    "proposed_followup": "是否解释各方立场与取舍",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU010-K1",
+    "source_ids": [
+      "AU010"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "让沟通练习反馈进入下次练习",
+    "source_observation": "教师按课程主题配置不同沟通人物；报告未发现使用次数与口试成绩显著关联。",
+    "requires": [
+      "低风险练习且可提供反馈"
+    ],
+    "excludes": [
+      "用使用频次证明学习成效"
+    ],
+    "unknowns": [
+      "人物信息是否一致"
+    ],
+    "method_steps": [
+      "按主题练习",
+      "检查反馈",
+      "尝试不同表达"
+    ],
+    "proposed_followup": "是否能解释并修正沟通策略",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU011-K1",
+    "source_ids": [
+      "AU011"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "教师预先核查用于批判的AI错误",
+    "source_observation": "教师筛选有误化学回答供学生批判，并发现知识不足的学生仍需重定向。",
+    "requires": [
+      "学习者已有基本学科依据"
+    ],
+    "excludes": [
+      "让新手独自判断难以识别的错误"
+    ],
+    "unknowns": [
+      "是否具有足够背景知识"
+    ],
+    "method_steps": [
+      "预先核查例子",
+      "小组批判",
+      "教师澄清"
+    ],
+    "proposed_followup": "是否纠正具体误解",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU012-K1",
+    "source_ids": [
+      "AU012"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "小组评价分歧触发支持性沟通",
+    "source_observation": "教师在阶段间扫描小组评价差异，并邀请可能有问题的小组调解和制定合作计划。",
+    "requires": [
+      "有阶段性合作及多方反馈"
+    ],
+    "excludes": [
+      "仅一条负评就惩罚成员"
+    ],
+    "unknowns": [
+      "分歧原因及各方视角"
+    ],
+    "method_steps": [
+      "核对多方反馈",
+      "邀请沟通",
+      "形成下阶段计划"
+    ],
+    "proposed_followup": "是否出现更清楚的角色分工",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU013-K1",
+    "source_ids": [
+      "AU013"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把促进者反思与学生体验连接",
+    "source_observation": "团队重构异质小组，持续问学生体验，并写每周教学反思共同讨论。",
+    "requires": [
+      "课程依赖持续合作"
+    ],
+    "excludes": [
+      "以表面热闹替代学习证据"
+    ],
+    "unknowns": [
+      "小组成员是否获得支持"
+    ],
+    "method_steps": [
+      "说明期待",
+      "听取反馈",
+      "共同修订活动"
+    ],
+    "proposed_followup": "谁开始参与以及怎样参与",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU014-K1",
+    "source_ids": [
+      "AU014"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "在线课程给学习者共同塑造空间",
+    "source_observation": "教师以共同歌单、角色分工与个人经验分享营造线上关系，并接纳学生建议。",
+    "requires": [
+      "线上互动缺少关系连接"
+    ],
+    "excludes": [
+      "强迫公开私生活或参加无关活动"
+    ],
+    "unknowns": [
+      "学习者是否愿意参与"
+    ],
+    "method_steps": [
+      "提供可选共同活动",
+      "分配角色",
+      "采纳建议"
+    ],
+    "proposed_followup": "是否产生同伴连接和自主贡献",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU015-K1",
+    "source_ids": [
+      "AU015"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把互评嵌入项目修订时间线",
+    "source_observation": "教师先确定组别与时间线，再让小组汇报接受教师和同伴反馈并修订项目。",
+    "requires": [
+      "项目有可修改的中间成果"
+    ],
+    "excludes": [
+      "反馈发生在最终提交之后"
+    ],
+    "unknowns": [
+      "学生是否理解如何反馈"
+    ],
+    "method_steps": [
+      "提前明确标准",
+      "汇报互评",
+      "保留修订时间"
+    ],
+    "proposed_followup": "是否说明采纳反馈的理由",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU016-K1",
+    "source_ids": [
+      "AU016"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "先听学生自评再给小组反馈",
+    "source_observation": "阶段自评同时涵盖专业行为与知识应用，教师据学生视角和自身观察反馈。",
+    "requires": [
+      "小组已形成一段合作经历"
+    ],
+    "excludes": [
+      "只有外部评分无学生视角"
+    ],
+    "unknowns": [
+      "自评与观察哪里不同"
+    ],
+    "method_steps": [
+      "收集自评",
+      "对照观察",
+      "商定改进"
+    ],
+    "proposed_followup": "后半程是否改变合作方法",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU017-K1",
+    "source_ids": [
+      "AU017"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "让AI扩写教师已作出的反馈判断",
+    "source_observation": "评分者保留学科判断，以课程量规约束AI扩展短评与语气。",
+    "requires": [
+      "教师已有明确判断和量规"
+    ],
+    "excludes": [
+      "由AI单独判分"
+    ],
+    "unknowns": [
+      "扩展评论是否忠于原判断"
+    ],
+    "method_steps": [
+      "提供量规与短评",
+      "教师审改",
+      "关联当前作品"
+    ],
+    "proposed_followup": "评论是否具体且可执行",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU018-K1",
+    "source_ids": [
+      "AU018"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "根据学生反馈把答题助手改成追问教练",
+    "source_observation": "药学教师反复修改提示，让AI追问理解，并让学生反馈影响后续版本。",
+    "requires": [
+      "目标是练习解释与应用"
+    ],
+    "excludes": [
+      "把模拟建议用于真实医疗处置"
+    ],
+    "unknowns": [
+      "追问是否有助于目标技能"
+    ],
+    "method_steps": [
+      "试用情境",
+      "收集反馈",
+      "修改追问"
+    ],
+    "proposed_followup": "能否迁移到不同练习场景",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU019-K1",
+    "source_ids": [
+      "AU019"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "用课程材料约束概念辅导",
+    "source_observation": "生物化学助手连接授课资源，以对话帮助概念关联；教师回看交互识别困惑。",
+    "requires": [
+      "材料来源已核准"
+    ],
+    "excludes": [
+      "把工具回答当课程权威"
+    ],
+    "unknowns": [
+      "学习困难是记忆还是概念联系"
+    ],
+    "method_steps": [
+      "限定课程资料",
+      "追问关系",
+      "教师检查共性困惑"
+    ],
+    "proposed_followup": "是否形成概念关联解释",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU020-K1",
+    "source_ids": [
+      "AU020"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "小组方案先讨论再向模拟对象说明",
+    "source_observation": "职业治疗工作坊先分组形成方案，再向模拟教师陈述，真实教师巡组支持。",
+    "requires": [
+      "学习目标包含解释和协商"
+    ],
+    "excludes": [
+      "无人支持时让模拟角色裁定方案"
+    ],
+    "unknowns": [
+      "学习者是否有必要背景"
+    ],
+    "method_steps": [
+      "小组讨论",
+      "模拟陈述",
+      "真实教师协助复盘"
+    ],
+    "proposed_followup": "是否能用对象可理解的话解释方案",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU021-K1",
+    "source_ids": [
+      "AU021"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把书面立场转为角色辩护",
+    "source_observation": "国际关系教师把传统论文改为政策审议与模拟会议，要求辩护具体政策。",
+    "requires": [
+      "目标包含论证与沟通"
+    ],
+    "excludes": [
+      "只需书面知识记忆"
+    ],
+    "unknowns": [
+      "学生是否理解角色和证据"
+    ],
+    "method_steps": [
+      "准备立场材料",
+      "角色讨论",
+      "回应反驳"
+    ],
+    "proposed_followup": "是否能以证据捍卫或修订主张",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU022-K1",
+    "source_ids": [
+      "AU022"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "共同标注AI输出形成课堂讨论",
+    "source_observation": "教师预先生成材料，让小组标记逻辑问题、错误与浅层分析，再反思工具用途。",
+    "requires": [
+      "有可靠参考材料可核对"
+    ],
+    "excludes": [
+      "无法识别错处却让学生自学"
+    ],
+    "unknowns": [
+      "需要哪些知识支架"
+    ],
+    "method_steps": [
+      "示范核查",
+      "共同标注",
+      "讨论如何改进"
+    ],
+    "proposed_followup": "是否产生有依据的同伴回应",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU023-K1",
+    "source_ids": [
+      "AU023"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "文学分析比较AI与可靠解释",
+    "source_observation": "文学教师让学生对照AI与批评家对隐喻的解读，并引入可靠来源。",
+    "requires": [
+      "目标是独立文本阐释"
+    ],
+    "excludes": [
+      "只评价生成文本流畅性"
+    ],
+    "unknowns": [
+      "论证是否有文本证据"
+    ],
+    "method_steps": [
+      "选择隐喻",
+      "比较解释",
+      "形成独立论证"
+    ],
+    "proposed_followup": "是否指出AI遗漏与证据不足",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU024-K1",
+    "source_ids": [
+      "AU024"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "协作助手先明确应承担的促进角色",
+    "source_observation": "教师设计的协作助手承担角色分工、讨论与进度支持；页面是建成案例介绍而非效果试验。",
+    "requires": [
+      "小组任务与职责已明确"
+    ],
+    "excludes": [
+      "由AI替代所有团队协商"
+    ],
+    "unknowns": [
+      "建议是否反映成员意见"
+    ],
+    "method_steps": [
+      "定义促进范围",
+      "让成员协商角色",
+      "检查进度"
+    ],
+    "proposed_followup": "成员是否确认分工和下一步",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU025-K1",
+    "source_ids": [
+      "AU025"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "生成练习同时设计解释性反馈",
+    "source_observation": "示例提示要求按课程概念生成题目，并给正确及错误选项写反馈。",
+    "requires": [
+      "教师能核验题目与反馈"
+    ],
+    "excludes": [
+      "直接用于高风险考试而未试测"
+    ],
+    "unknowns": [
+      "题目是否诊断目标误解"
+    ],
+    "method_steps": [
+      "限定目标",
+      "生成选项及反馈",
+      "教师核对"
+    ],
+    "proposed_followup": "能否解释错误选项错在哪里",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU026-K1",
+    "source_ids": [
+      "AU026"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "学生先作答再获取自测反馈",
+    "source_observation": "学习提示示例要求AI等待学习者回答再给反馈，并回查权威来源。",
+    "requires": [
+      "任务用于低风险自测"
+    ],
+    "excludes": [
+      "以生成反馈取代正式诊断"
+    ],
+    "unknowns": [
+      "反馈准确性与难度"
+    ],
+    "method_steps": [
+      "先回答",
+      "查看解释",
+      "核对课程依据"
+    ],
+    "proposed_followup": "是否修正理解而非记住答案",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU027-K1",
+    "source_ids": [
+      "AU027"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "辩论机器人应促使学习者回应反论证",
+    "source_observation": "教师团队反复测试角色提示，让学生在辩论中回应反论证；整体反馈仍待收集。",
+    "requires": [
+      "活动要求有据辩论"
+    ],
+    "excludes": [
+      "把模拟立场当真实群体观点"
+    ],
+    "unknowns": [
+      "角色是否准确尊重情境"
+    ],
+    "method_steps": [
+      "说明角色与目的",
+      "展开辩论",
+      "核查论据"
+    ],
+    "proposed_followup": "是否修订立场而非接受权威",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU028-K1",
+    "source_ids": [
+      "AU028"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "比较AI与传统方法时保留过程证据",
+    "source_observation": "金融课比较传统与AI辅助分析，以匿名互评和反思讨论可靠性，也发现过度依赖。",
+    "requires": [
+      "有共同任务、评价标准与原始依据"
+    ],
+    "excludes": [
+      "仅按最终文本美观比较方法"
+    ],
+    "unknowns": [
+      "各组基础与支持是否相当"
+    ],
+    "method_steps": [
+      "保留提示和分析过程",
+      "互评",
+      "核查依据"
+    ],
+    "proposed_followup": "是否识别方法差异和局限",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU029-K1",
+    "source_ids": [
+      "AU029"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "第二意见任务保留自主判断与替代路径",
+    "source_observation": "教学设计要求比较个人判断与AI第二意见，并为不使用AI者提供替代任务；反馈尚待收集。",
+    "requires": [
+      "具备专业指导与脱敏案例"
+    ],
+    "excludes": [
+      "将AI第二意见用于真实诊疗"
+    ],
+    "unknowns": [
+      "AI观点是否可核查"
+    ],
+    "method_steps": [
+      "先形成判断",
+      "比较第二意见",
+      "反思依据"
+    ],
+    "proposed_followup": "是否说明采纳或拒绝建议的理由",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU030-K1",
+    "source_ids": [
+      "AU030"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "关系连接活动应有明确用途",
+    "source_observation": "教师发现课程中段疏离后加入连接活动，分别关注同伴、教师、内容与情境的连接。",
+    "requires": [
+      "需要协作且观察到疏离"
+    ],
+    "excludes": [
+      "无依据把固定时间比例套给所有课程"
+    ],
+    "unknowns": [
+      "需要恢复哪类连接"
+    ],
+    "method_steps": [
+      "识别连接缺口",
+      "安排短活动",
+      "回到共同任务"
+    ],
+    "proposed_followup": "是否更容易进行下一步合作",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU031-K1",
+    "source_ids": [
+      "AU031"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "先问困难来源再拆解支持",
+    "source_observation": "教师从迟交现象询问学生，发现大学过渡困难，再组合分段任务、反馈与可及资源。",
+    "requires": [
+      "存在重复迟交或求助现象"
+    ],
+    "excludes": [
+      "直接把迟交解释为低动机"
+    ],
+    "unknowns": [
+      "困难来自时间、内容还是环境"
+    ],
+    "method_steps": [
+      "询问困难",
+      "提供分段任务",
+      "检查反馈应用"
+    ],
+    "proposed_followup": "学习者能否重新进入任务",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU032-K1",
+    "source_ids": [
+      "AU032"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "评价同伴反馈的质量",
+    "source_observation": "求职材料任务从只给分转向按量规给书面反馈，并评价反馈质量。",
+    "requires": [
+      "目标是判断与建设性反馈"
+    ],
+    "excludes": [
+      "只想得到平均分"
+    ],
+    "unknowns": [
+      "学习者是否会用量规"
+    ],
+    "method_steps": [
+      "示范反馈",
+      "匿名互评",
+      "应用到自己作品"
+    ],
+    "proposed_followup": "反馈是否具体且能促成修改",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU033-K1",
+    "source_ids": [
+      "AU033"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "实习反思也成为后来者的资源",
+    "source_observation": "实习生制作反思展示，说明收获、给后来者的建议，再练习向同伴提供反馈。",
+    "requires": [
+      "已有可分享的实习经历"
+    ],
+    "excludes": [
+      "公开敏感机构或个人材料"
+    ],
+    "unknowns": [
+      "建议适用哪些工作情境"
+    ],
+    "method_steps": [
+      "去敏反思",
+      "向同伴解释",
+      "形成情境化建议"
+    ],
+    "proposed_followup": "后来者能否指出适用条件",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU034-K1",
+    "source_ids": [
+      "AU034"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把提问改进、对话与反思连成任务链",
+    "source_observation": "GuIDES课程报告先提升问题层次，再进行引导对话，最后以结构反馈支持反思；研究跨年队列非随机。",
+    "requires": [
+      "有可延续的探究问题"
+    ],
+    "excludes": [
+      "把模型互评当独立事实核查"
+    ],
+    "unknowns": [
+      "问题层次与反馈准确性"
+    ],
+    "method_steps": [
+      "改进问题",
+      "对话查证",
+      "反思并提出后续问题"
+    ],
+    "proposed_followup": "是否形成更具体的探究方向",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU035-K1",
+    "source_ids": [
+      "AU035"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "教师纠正过的问答可成为后续课程资源",
+    "source_observation": "教师先核对共享文档中的AI问答，再将课程材料、问答和教师反馈用于定制助手。",
+    "requires": [
+      "有教师核验和材料使用权"
+    ],
+    "excludes": [
+      "未经核验就累积模型回答"
+    ],
+    "unknowns": [
+      "旧回答是否仍适合当前课程"
+    ],
+    "method_steps": [
+      "核查问题与答案",
+      "记录纠正",
+      "回连授课资源"
+    ],
+    "proposed_followup": "相似疑问是否得到有依据的解释",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU036-K1",
+    "source_ids": [
+      "AU036"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "教师共同体保留调适AI的专业能动性",
+    "source_observation": "公开摘要描述带头教师协调人机与人人互动，并处理学习共同体中的矛盾。",
+    "requires": [
+      "教师团队共同学习一项教学方法"
+    ],
+    "excludes": [
+      "把聊天工具直接视为专家裁决"
+    ],
+    "unknowns": [
+      "完整实施细节及适用学校情境"
+    ],
+    "method_steps": [
+      "讨论工具建议与课堂实际的冲突",
+      "形成教师调适意见"
+    ],
+    "proposed_followup": "能否说清为何修改方法",
+    "transfer_note": "条件、步骤与观察问题是本项目迁移设计，尚未经过cMOOC情境验证。",
+    "id": "AU037-K1",
+    "source_ids": [
+      "AU037"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把学习者作为AI课程设计伙伴",
+    "source_observation": "语言课程师生合作重设学习活动和评价，学生参与试用与焦点讨论。",
+    "requires": [
+      "教师愿意共同设计且角色明确"
+    ],
+    "excludes": [
+      "只把学生当末端满意度来源"
+    ],
+    "unknowns": [
+      "权力差异是否影响反馈"
+    ],
+    "method_steps": [
+      "说明伙伴角色",
+      "共同试用",
+      "据体验修订"
+    ],
+    "proposed_followup": "学生意见是否真正改变设计",
+    "transfer_note": "候选步骤、适用条件和观察指标是项目方迁移设计，未验证为cMOOC效果。",
+    "id": "AU038-K1",
+    "source_ids": [
+      "AU038"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "一次入门培训不足时持续提供任务示例",
+    "source_observation": "试用发现学生遇到不理想结果会退出，团队因此补充任务级示例和持续练习。",
+    "requires": [
+      "学习者在实际任务中尝试AI"
+    ],
+    "excludes": [
+      "把不继续使用解释为不愿学习"
+    ],
+    "unknowns": [
+      "退出来自负担、边界还是工具表现"
+    ],
+    "method_steps": [
+      "询问障碍",
+      "提供逐步示例",
+      "安排低风险练习"
+    ],
+    "proposed_followup": "是否恢复有目标的尝试",
+    "transfer_note": "候选步骤、适用条件和观察指标是项目方迁移设计，未验证为cMOOC效果。",
+    "id": "AU039-K1",
+    "source_ids": [
+      "AU039"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "早期写作反馈用于调整教学",
+    "source_observation": "教师用低风险写作了解起点并审改AI反馈；原例写明学生事前未被告知AI处理。",
+    "requires": [
+      "当前材料使用与告知已获授权"
+    ],
+    "excludes": [
+      "沿用原例的未告知材料处理"
+    ],
+    "unknowns": [
+      "AI纠错是否误判"
+    ],
+    "method_steps": [
+      "采集获准的初稿",
+      "教师核查反馈",
+      "讨论共性错误"
+    ],
+    "proposed_followup": "教学是否回应真实困难",
+    "transfer_note": "候选步骤、适用条件和观察指标是项目方迁移设计，未验证为cMOOC效果。",
+    "id": "AU040-K1",
+    "source_ids": [
+      "AU040"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "反思从事件叙述走向情境与后续行动",
+    "source_observation": "反思助手按事件、原因、情境和未来行动追问，并区分描述、分析和批判层次。",
+    "requires": [
+      "学习者愿意反思可分享经历"
+    ],
+    "excludes": [
+      "推断未表达的心理或身份属性"
+    ],
+    "unknowns": [
+      "反思是否有真实情境依据"
+    ],
+    "method_steps": [
+      "描述事件",
+      "比较解释",
+      "关联情境",
+      "提出行动"
+    ],
+    "proposed_followup": "能否说明新的理解与行动",
+    "transfer_note": "候选步骤、适用条件和观察指标是项目方迁移设计，未验证为cMOOC效果。",
+    "id": "AU041-K1",
+    "source_ids": [
+      "AU041"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "团队反思应关联过程材料",
+    "source_observation": "商务课要求个人反思引用会议记录等过程产物，同时承认反思本身需要训练。",
+    "requires": [
+      "存在真实合作过程材料"
+    ],
+    "excludes": [
+      "用AI编造个人经历"
+    ],
+    "unknowns": [
+      "成员能否区分事实与事后解释"
+    ],
+    "method_steps": [
+      "回查过程",
+      "解释个人作用",
+      "提出改进"
+    ],
+    "proposed_followup": "能否指出具体转折与后续选择",
+    "transfer_note": "候选步骤、适用条件和观察指标是项目方迁移设计，未验证为cMOOC效果。",
+    "id": "AU042-K1",
+    "source_ids": [
+      "AU042"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "追问强度随当前理解调整",
+    "source_observation": "模拟教学对正确、部分正确和不确定回答采用不同指导强度，比较研究仍在后续计划中。",
+    "requires": [
+      "限定的低风险教学模拟"
+    ],
+    "excludes": [
+      "将模型分类直接用于真实急救"
+    ],
+    "unknowns": [
+      "回答分类是否准确"
+    ],
+    "method_steps": [
+      "核对理解",
+      "按需提示",
+      "复盘具体错误"
+    ],
+    "proposed_followup": "学习者能否独立解释下一步",
+    "transfer_note": "候选步骤、适用条件和观察指标是项目方迁移设计，未验证为cMOOC效果。",
+    "id": "AU043-K1",
+    "source_ids": [
+      "AU043"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "保留初稿、AI修改和个人反思",
+    "source_observation": "写作课依次保留初稿、AI版本与反思，教师发现部分学生反思浅，计划增加整体自评。",
+    "requires": [
+      "需要追踪写作修订过程"
+    ],
+    "excludes": [
+      "只保留润色后的最终稿"
+    ],
+    "unknowns": [
+      "学生是否理解AI修订"
+    ],
+    "method_steps": [
+      "保存初稿",
+      "比较修改",
+      "讨论依据",
+      "阶段自评"
+    ],
+    "proposed_followup": "是否能解释接受或拒绝修改",
+    "transfer_note": "候选步骤、适用条件和观察指标是项目方迁移设计，未验证为cMOOC效果。",
+    "id": "AU044-K1",
+    "source_ids": [
+      "AU044"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把对话推理连接到可查看的证据",
+    "source_observation": "病理学教学助手以连续追问支持推理，并在形成暂定判断后引导回看显微切片；教师指出提示与图像连接需反复调整。",
+    "requires": [
+      "已有校核教学案例和对应资源"
+    ],
+    "excludes": [
+      "把模拟判断用于真实诊疗"
+    ],
+    "unknowns": [
+      "证据链接与讨论是否相符"
+    ],
+    "method_steps": [
+      "观察并解释",
+      "形成暂定判断",
+      "回看资源比较"
+    ],
+    "proposed_followup": "是否能用证据修订解释",
+    "transfer_note": "来自公开教师实践的迁移候选；本地条件与后续表现仍需核验。",
+    "id": "AU045-K1",
+    "source_ids": [
+      "AU045"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "教师同伴观察形成可修订经验",
+    "source_observation": "教师伙伴先谈策略、互相观课，再根据学生反应和理解检查共同反思，并多次回访。",
+    "requires": [
+      "存在自愿互惠的观课安排"
+    ],
+    "excludes": [
+      "只有单次评分无后续交流"
+    ],
+    "unknowns": [
+      "不同课堂条件是否可比"
+    ],
+    "method_steps": [
+      "明确观察焦点",
+      "观课",
+      "反思",
+      "后续回访"
+    ],
+    "proposed_followup": "是否形成有条件的可复用方法",
+    "transfer_note": "来自公开教师实践的迁移候选；本地条件与后续表现仍需核验。",
+    "id": "AU046-K1",
+    "source_ids": [
+      "AU046"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "共同资源池支持检验AI建议",
+    "source_observation": "学生小组逐周积累共享来源并构建关系图，明确区分独立产出、AI生成与取舍理由。",
+    "requires": [
+      "有持续共同任务与可查来源"
+    ],
+    "excludes": [
+      "直接把生成关系当观察事实"
+    ],
+    "unknowns": [
+      "图中关系有无资料支持"
+    ],
+    "method_steps": [
+      "积累来源",
+      "构图",
+      "比较AI与小组判断"
+    ],
+    "proposed_followup": "能否追溯关系并解释取舍",
+    "transfer_note": "来自公开教师实践的迁移候选；本地条件与后续表现仍需核验。",
+    "id": "AU047-K1",
+    "source_ids": [
+      "AU047"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "从学生拒用理由修订支持方式",
+    "source_observation": "生物学课程区分不同助手用途，并从学生对准确性与隐私的担忧调整介绍和设计。",
+    "requires": [
+      "允许收集获准的体验反馈"
+    ],
+    "excludes": [
+      "把拒用解释为能力不足"
+    ],
+    "unknowns": [
+      "顾虑来自何种具体经历"
+    ],
+    "method_steps": [
+      "询问理由",
+      "解释边界",
+      "提供替代支持"
+    ],
+    "proposed_followup": "是否获得知情且自主的选择",
+    "transfer_note": "来自公开教师实践的迁移候选；本地条件与后续表现仍需核验。",
+    "id": "AU048-K1",
+    "source_ids": [
+      "AU048"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把每周个人发言转为共同讨论材料",
+    "source_observation": "教师安排同伴回看每周帖子，在小组反馈后讨论共性问题，强调反馈是持续对话。",
+    "requires": [
+      "已有可讨论的每周作品"
+    ],
+    "excludes": [
+      "只增加评论数量不促进理解"
+    ],
+    "unknowns": [
+      "同伴意见是否有依据"
+    ],
+    "method_steps": [
+      "回看同伴帖子",
+      "提供反馈",
+      "讨论共性问题"
+    ],
+    "proposed_followup": "原作者是否回应、修改或提出新问题",
+    "transfer_note": "来自公开教师实践的迁移候选；本地条件与后续表现仍需核验。",
+    "id": "AU049-K1",
+    "source_ids": [
+      "AU049"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Bound a teacher-built practice tool to a visible ruleset",
+    "source_observation": "The lecturer moved AI upstream: it helped build a deterministic student applet rather than directly generating student-facing questions. He first requested a plan and clarification, then corrected visual and data-structure errors with concrete examples and tested early versions.",
+    "requires": [
+      "A task with explicit rules and answer conditions",
+      "A teacher able to inspect examples and test revisions",
+      "A reversible practice surface"
+    ],
+    "excludes": [
+      "Open-ended content where correctness cannot be checked",
+      "Treating the generated applet as validated learning evidence"
+    ],
+    "unknowns": [
+      "Student uptake and learning gains were not reported",
+      "Accessibility and maintenance beyond the reported Canvas integration"
+    ],
+    "method_steps": [
+      "Specify the task and what the tool must not do",
+      "Ask the model to restate the plan and surface questions",
+      "Prototype, test a few cases, and report concrete errors",
+      "Revise the bounded data representation and interface",
+      "Keep teacher review before exposing the tool to students"
+    ],
+    "proposed_followup": "Observe which generated practice items students attempt, abandon, or ask about, and sample answer validity before revising the generator.",
+    "transfer_note": "For cMOOC use, this supports a teacher-approved resource-building candidate when an activity has explicit state and answer rules. It does not establish automated facilitation or a learning effect.",
+    "id": "EN001-K1",
+    "source_ids": [
+      "EN001"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Use reference texts to compare multiple situated renderings",
+    "source_observation": "The practitioner uploaded reference texts and used carefully structured prompts to generate translations in different dialects, idioms, and historically appropriate styles, treating translation as creative negotiation rather than a single equivalent answer.",
+    "requires": [
+      "Teacher-selected source texts and language context",
+      "A learning task that values comparison and interpretation",
+      "Human discussion of cultural and representational choices"
+    ],
+    "excludes": [
+      "Assuming the model preserves cultural meaning automatically",
+      "Using output as an authoritative translation without review"
+    ],
+    "unknowns": [
+      "Detailed classroom sequence and learner outcomes were not reported",
+      "How different language communities judged the outputs"
+    ],
+    "method_steps": [
+      "Choose a text and make the intended linguistic or cultural variation explicit",
+      "Provide a small reference corpus",
+      "Ask for several deliberately different renderings",
+      "Compare choices against the source and discuss whose voice is represented",
+      "Record unresolved translation decisions"
+    ],
+    "proposed_followup": "Ask participants to annotate where versions diverge and whether the divergence opens a question for peers rather than closes interpretation.",
+    "transfer_note": "A cMOOC analogue could use variant AI renderings as discussion prompts for perspective-taking, while keeping cultural interpretation and any public response with learners and teachers.",
+    "id": "EN002-K1",
+    "source_ids": [
+      "EN002"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Ask AI to stress-test a teacher-owned session plan",
+    "source_observation": "The teacher supplied his own objectives, audience, and conceptual drafts, then asked AI to identify gaps, ambiguities, assumptions, counter-positions, and scenario prompts. He used NotebookLM for alternative audio access to selected readings and retained academic review of the outputs.",
+    "requires": [
+      "Teacher-owned source material and learning outcomes",
+      "A clear audience and desired critical stance",
+      "Time for teacher verification and revision"
+    ],
+    "excludes": [
+      "Asking AI to originate disciplinary content without source control",
+      "Treating audio summaries as substitutes for core readings"
+    ],
+    "unknowns": [
+      "The reported drafting-time reduction was a practitioner estimate",
+      "No controlled comparison of session quality was provided"
+    ],
+    "method_steps": [
+      "State audience, goals, and disciplinary boundary",
+      "Ask for coherence checks and counter-positions",
+      "Select only useful questions or scenarios",
+      "Convert curated material into an optional alternate format",
+      "Re-read and edit against the learning outcomes"
+    ],
+    "proposed_followup": "After the session, record which AI-raised questions changed the activity and which were rejected by the teacher.",
+    "transfer_note": "This can inform a cMOOC teacher-facing reflection prompt, but it should remain a draft-support and critique aid rather than an autonomous course judgement.",
+    "id": "EN003-K1",
+    "source_ids": [
+      "EN003"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Turn correction into guided self-editing",
+    "source_observation": "The translation coach points learners to grammar references, highlights issues, asks questions, and suggests follow-up exercises. The teacher explicitly reports the trust problem that learners may not know whether an AI explanation is correct before they have mastered the answer.",
+    "requires": [
+      "A bounded reference set such as grammar rules and model answers",
+      "A task where questioning supports self-editing",
+      "Teacher and learner routes for verification"
+    ],
+    "excludes": [
+      "Directly accepting an AI correction as authoritative",
+      "Assuming additional AI practice is cost-free in tutorial time"
+    ],
+    "unknowns": [
+      "No independent comparison with teacher feedback was reported",
+      "The extent of student use was not quantified"
+    ],
+    "method_steps": [
+      "Define the target skill and reference material",
+      "Configure the tool to ask before suggesting",
+      "Require the learner to explain or revise a choice",
+      "Point to the source rule or example",
+      "Escalate uncertainty to a tutor or peer"
+    ],
+    "proposed_followup": "Track repeated questions and disagreement cases to identify where the reference set or teacher explanation needs repair.",
+    "transfer_note": "For cMOOC facilitation, the pattern supports question-first peer revision and explicit teacher handoff; it does not support silently correcting community contributions.",
+    "id": "EN004-K1",
+    "source_ids": [
+      "EN004"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Pair AI practice with explicit critical checking",
+    "source_observation": "The course combined guided Socratic questioning, self-quizzing, and deliberate error detection instead of answer delivery. Tutors first developed subject-specific ability to judge the tool's accuracy and then discussed responsible use with students.",
+    "requires": [
+      "Clear concepts and course-level learning goals",
+      "Tutors who can judge typical errors",
+      "A safe space to compare scepticism and over-reliance"
+    ],
+    "excludes": [
+      "AI-generated answers as a replacement for demonstrated student ability",
+      "General claims that balanced attitudes prove learning"
+    ],
+    "unknowns": [
+      "No control group or long-term retention measure was reported",
+      "Exact prompts and tutor workload were not supplied"
+    ],
+    "method_steps": [
+      "Identify a concept students must reason through",
+      "Use a question-first tutor mode",
+      "Generate low-stakes self-checks",
+      "Present plausible but flawed text for diagnosis",
+      "Discuss the limits and require independent assessment evidence"
+    ],
+    "proposed_followup": "Observe whether learners explain the error or merely accept the tutor's correction, then adjust the prompt and teacher debrief.",
+    "transfer_note": "This provides a candidate pattern for cMOOC claim checking and peer questioning; it cannot be treated as evidence that an AI tutor improves community learning.",
+    "id": "EN005-K1",
+    "source_ids": [
+      "EN005"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Offer an alternate preparation route with a discussion return",
+    "source_observation": "The podcast was treated as a second source rather than a replacement for the paper. Students used it to recover details before discussion, while the team noticed that positive tone and missing nuance needed correction.",
+    "requires": [
+      "Curated readings and a clear reason for the alternate format",
+      "A teacher or tutor who can check tone and nuance",
+      "A follow-up discussion connected to the original text"
+    ],
+    "excludes": [
+      "Presenting an AI summary as the whole reading",
+      "Assuming confidence or engagement equals comprehension"
+    ],
+    "unknowns": [
+      "No controlled learning outcome was reported",
+      "Accessibility benefits may differ by learner and language"
+    ],
+    "method_steps": [
+      "Select a bounded reading set",
+      "Generate a dialogue-style summary",
+      "Check scientific claims and tone",
+      "Label it as an additional preparation aid",
+      "Ask learners to bring one supported question to discussion"
+    ],
+    "proposed_followup": "Compare questions raised from the original reading and audio aid, and record where the audio omitted or distorted nuance.",
+    "transfer_note": "A cMOOC version could offer optional audio orientation to a dense thread, but replies should remain grounded in the source and learner interpretation.",
+    "id": "EN006-K1",
+    "source_ids": [
+      "EN006"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Treat a failed automation pilot as a boundary on use",
+    "source_observation": "The team tested an apparently routine feedback-analysis task and found that quality assurance and contextual interpretation outweighed the hoped-for administrative savings. It retained narrower summary and presentation possibilities while rejecting primary analysis of complex feedback.",
+    "requires": [
+      "A defined feedback workflow and a way to compare workload",
+      "Human reviewers who understand course context",
+      "Permission to stop or narrow a pilot"
+    ],
+    "excludes": [
+      "Calling an attempted pilot an effective feedback loop",
+      "Using AI to infer student meaning from raw comments without review"
+    ],
+    "unknowns": [
+      "Exact prompt versions and workload counts were not published",
+      "The result may differ with other models or pre-processing"
+    ],
+    "method_steps": [
+      "Define the intended task and quality standard",
+      "Run a small bounded pilot",
+      "Record prompting, interpretation, and checking effort",
+      "Compare with the existing process",
+      "Narrow or discontinue the use if context costs dominate"
+    ],
+    "proposed_followup": "For any cMOOC feedback candidate, log time, disagreement, and unresolved context rather than only counting generated summaries.",
+    "transfer_note": "This is a cautionary method card: a failed efficiency hypothesis is useful boundary evidence and does not justify automatic sentiment or activity interpretation.",
+    "id": "EN007-K1",
+    "source_ids": [
+      "EN007"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Keep a course helper inside a known information boundary",
+    "source_observation": "The team iterated across platforms, tested with staff and students, and found that a small data pool caused unsupported answers. The design lesson was to scope the bot and make uncertainty explicit instead of inventing a course fact.",
+    "requires": [
+      "A maintained, authoritative course information set",
+      "A clear user-facing scope and fallback",
+      "Testing by people who know the course"
+    ],
+    "excludes": [
+      "Using a helper to answer beyond its indexed materials",
+      "Interpreting positive tone as factual reliability"
+    ],
+    "unknowns": [
+      "No public accuracy rate or maintenance schedule was given",
+      "The reported rollout status may change"
+    ],
+    "method_steps": [
+      "Map the information currently scattered across locations",
+      "Choose the smallest useful source set",
+      "Test known and unknown questions",
+      "Add an explicit uncertainty response",
+      "Embed the helper in the existing learning surface and re-test after updates"
+    ],
+    "proposed_followup": "Collect unanswered and corrected questions as maintenance candidates, preserving the course/version context for each correction.",
+    "transfer_note": "For cMOOC use, the pattern supports a bounded orientation helper over course manifests; it does not authorize the helper to infer participant state or make facilitation decisions.",
+    "id": "EN008-K1",
+    "source_ids": [
+      "EN008"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Design role-play around scenario-specific responses and replay",
+    "source_observation": "The project combined a realistic role with replay, repetition, reflection, and automated feedback. The teaching value depended on clear instructions and scenario design; realistic resistance was a known weakness.",
+    "requires": [
+      "A bounded fictional scenario and explicit learning goal",
+      "A psychologically safe practice setting",
+      "Human review of scenario and feedback quality"
+    ],
+    "excludes": [
+      "Using model behaviour as a clinically authoritative patient representation",
+      "Assuming a cooperative dialogue covers the full skill range"
+    ],
+    "unknowns": [
+      "No comparative performance evidence was reported",
+      "The reliability of automated feedback across cases is unknown"
+    ],
+    "method_steps": [
+      "Define what the learner must practise",
+      "Specify what information the role should reveal and when",
+      "Include a replay or transcript for reflection",
+      "Test cooperative and resistant variants",
+      "Have an instructor debrief errors and limitations"
+    ],
+    "proposed_followup": "Record which scenario turns prompt learners to seek help, revise their approach, or abandon the interaction.",
+    "transfer_note": "A cMOOC analogue could use fictional stakeholder roles to rehearse dialogue, with human moderation retaining responsibility for interpretation and safety.",
+    "id": "EN009-K1",
+    "source_ids": [
+      "EN009"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Let teachers validate multiple access formats before sharing",
+    "source_observation": "The workflow starts from educator-owned materials, generates several modes, and keeps subject experts as the faithfulness check. It aims to add access without making every lecturer author each format manually.",
+    "requires": [
+      "Stable teacher-owned content",
+      "Known accessibility purposes and learner choices",
+      "A teacher review step for each format"
+    ],
+    "excludes": [
+      "Offering all formats as equally accurate without review",
+      "Assuming multimodality alone solves access barriers"
+    ],
+    "unknowns": [
+      "No detailed fidelity error log was reported",
+      "Long-term workload and adoption after scaling are unknown"
+    ],
+    "method_steps": [
+      "Identify a material and access barrier",
+      "Generate a small set of alternate formats",
+      "Check terminology, emphasis, and omissions",
+      "Offer choices without forcing one route",
+      "Collect learner requests and revise the workflow"
+    ],
+    "proposed_followup": "Log which format choices lead to questions or corrections, and return those issues to the teacher rather than silently regenerating.",
+    "transfer_note": "For cMOOC, this supports optional summaries or audio entry points over teacher-approved material; it does not convert learner contributions into public content automatically.",
+    "id": "EN010-K1",
+    "source_ids": [
+      "EN010"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Make optional voice practice reviewable and scenario-bound",
+    "source_observation": "The tool combined extended conversation with transcripts so learners could review what they said. Teachers explored transfer across languages, while the project kept opt-out choice and meaningful scenarios as design requirements.",
+    "requires": [
+      "A target language and scenario with a communicative purpose",
+      "Transcript or other reflection support",
+      "An opt-out path and teacher involvement"
+    ],
+    "excludes": [
+      "Forcing all learners into one AI speaking route",
+      "Using generic verbose dialogue as evidence of language progress"
+    ],
+    "unknowns": [
+      "No controlled oral proficiency result was reported",
+      "The accuracy of speech feedback across accents is unknown"
+    ],
+    "method_steps": [
+      "Define a realistic scenario",
+      "Set a concise response style",
+      "Offer a short conversation and transcript",
+      "Ask the learner to mark one successful and one uncertain turn",
+      "Discuss or revise the scenario with a teacher"
+    ],
+    "proposed_followup": "Observe whether transcript review leads to learner-initiated revision or peer exchange, and capture reasons for opting out.",
+    "transfer_note": "A cMOOC version could support optional rehearsal of a contribution or facilitation phrase, while preserving human-to-human exchange as the primary interaction.",
+    "id": "EN011-K1",
+    "source_ids": [
+      "EN011"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Use AI feedback to generate discussion and reflection",
+    "source_observation": "The tool was deliberately designed to point out issues and contextualise them without supplying a finished correction. The reported value lay in immediate revision and classroom conversation, not replacement of human teaching.",
+    "requires": [
+      "A reference-aware language task",
+      "A teacher-defined feedback purpose",
+      "A revision or discussion step after the AI response"
+    ],
+    "excludes": [
+      "Treating immediate feedback as final correctness",
+      "Using the prototype as an unsupervised self-study authority"
+    ],
+    "unknowns": [
+      "The page does not provide error rates or a comparison with tutor feedback",
+      "Usability issues were not itemised"
+    ],
+    "method_steps": [
+      "Set the target passage and language context",
+      "Ask the tool to identify and explain an issue",
+      "Have the learner propose a revision",
+      "Compare with a reference or peer explanation",
+      "Use unresolved cases for teacher-led discussion"
+    ],
+    "proposed_followup": "Collect correction disagreements and the learner's reasoning as revision evidence rather than measuring only the corrected sentence.",
+    "transfer_note": "For cMOOC writing support, the pattern favours prompts that elicit reasoning and peer response instead of auto-editing a post.",
+    "id": "EN012-K1",
+    "source_ids": [
+      "EN012"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Place AI between a contribution and a peer conversation",
+    "source_observation": "The project used AI to produce questions from written work, then directed those questions toward face-to-face interdisciplinary discussion. The in-class demonstration and whole-group feedback were part of the pilot design.",
+    "requires": [
+      "A contribution that participants have permission to discuss",
+      "A real peer conversation after prompt generation",
+      "Human control over question relevance and sensitivity"
+    ],
+    "excludes": [
+      "Letting AI replace the dialogue it is meant to support",
+      "Inferring a participant's intention from text alone"
+    ],
+    "unknowns": [
+      "No evidence of sustained community outcomes was reported",
+      "The platform's question quality was not quantified"
+    ],
+    "method_steps": [
+      "Select a bounded contribution",
+      "Generate a small set of comparison or clarification prompts",
+      "Let peers choose which question to pursue",
+      "Record responses and unresolved differences",
+      "Use feedback to refine prompt types"
+    ],
+    "proposed_followup": "Observe whether the generated prompts lead to reciprocal replies, substantive revision, or only short agreement.",
+    "transfer_note": "This is a strong cMOOC candidate for preserving peer opportunity: a possible prompt may open a conversation, but the system should not answer on behalf of participants.",
+    "id": "EN013-K1",
+    "source_ids": [
+      "EN013"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Expose the checklist and invite learners to repair it",
+    "source_observation": "AI output was shown alongside a structured checklist and its reasoning. Student codesign feedback changed the granularity of checklist items so evaluation could be more precise.",
+    "requires": [
+      "An explicit evaluative checklist",
+      "Source material that learners may inspect",
+      "A route for student feedback to change the tool"
+    ],
+    "excludes": [
+      "Opaque AI scores treated as evidence of reproducibility",
+      "A checklist that hides disciplinary disagreement"
+    ],
+    "unknowns": [
+      "No agreement rate against expert reviewers was reported",
+      "The educational effect of showing reasoning remains open"
+    ],
+    "method_steps": [
+      "Define the human evaluation standard",
+      "Ask AI to map evidence to each item",
+      "Show source location and uncertainty",
+      "Invite learners to challenge the mapping",
+      "Revise checklist granularity from observed difficulties"
+    ],
+    "proposed_followup": "Record which checklist items generate the most peer disagreement and whether the disagreement leads to better evidence requests.",
+    "transfer_note": "For cMOOC, this supports transparent evidence prompts and teacher review, but AI explanations remain candidate reasoning rather than authoritative verification.",
+    "id": "EN014-K1",
+    "source_ids": [
+      "EN014"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Orient inquiry with sources while blocking answer substitution",
+    "source_observation": "The tool narrowed an overwhelming topic into contextual reading pathways and explicitly aimed not to produce complete essay solutions. Evaluator feedback identified dataset coverage and outline-generation risks, leading to a call for clearer guardrails and departmental discussion.",
+    "requires": [
+      "A curated source collection with provenance",
+      "A topic where orientation is a real bottleneck",
+      "A teacher-defined boundary between guidance and completion"
+    ],
+    "excludes": [
+      "Using summaries without opening or checking the underlying texts",
+      "Allowing a reading helper to generate a finished argument"
+    ],
+    "unknowns": [
+      "No measures of subsequent reading or writing quality were reported",
+      "The current dataset and recommendations may have changed"
+    ],
+    "method_steps": [
+      "Anchor the question in an approved source collection",
+      "Generate a small set of contextual pathways",
+      "Link each suggestion to its source",
+      "Ask the learner to choose and justify a path",
+      "Block or flag essay-outline requests"
+    ],
+    "proposed_followup": "Observe whether learners move from an orientation prompt to source-grounded peer questions and which recommendations require correction.",
+    "transfer_note": "A cMOOC adaptation could suggest relevant public resources for a live inquiry, but it should preserve source checking and teacher responsibility for relevance.",
+    "id": "EN015-K1",
+    "source_ids": [
+      "EN015"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Keep model variability visible when generating visual study aids",
+    "source_observation": "The team limited the project to an annotation pipeline and reported that performance varied across tissues and slides. Future quizzes and interactive features were framed as further development, not as completed teaching effectiveness.",
+    "requires": [
+      "Image data with a teacher-checked reference set",
+      "A narrow annotation task and known failure cases",
+      "Human review before resources are used for learning"
+    ],
+    "excludes": [
+      "Using one model as uniformly reliable across contexts",
+      "Representing promising initial results as validated learning outcomes"
+    ],
+    "unknowns": [
+      "No student study or annotation accuracy table was supplied",
+      "The best granularity for learner-facing feedback remains unknown"
+    ],
+    "method_steps": [
+      "Define the image region and label set",
+      "Test across representative cases",
+      "Compare outputs with ground truth",
+      "Expose uncertainty or send failures for review",
+      "Only then design optional quizzes or annotations"
+    ],
+    "proposed_followup": "Sample disagreements between AI labels and teacher labels and use them as teachable comparison cases.",
+    "transfer_note": "For cMOOC, this supports visible uncertainty in generated resource tags and should not be used to infer participant meaning from images or posts.",
+    "id": "EN016-K1",
+    "source_ids": [
+      "EN016"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Use student voice to distinguish acceptable uses from abstract policy",
+    "source_observation": "Students reported patchy knowledge, concern about deskilling and unequal access, and difficulty distinguishing good from bad use. They recommended modelling constructive use and discussing rules at the stage of the writing process where they apply.",
+    "requires": [
+      "A course or activity where students can describe their own practices",
+      "A facilitator willing to revise examples and rules",
+      "Attention to access, language, and disciplinary differences"
+    ],
+    "excludes": [
+      "Treating a survey as direct evidence of learning outcomes",
+      "Assuming one institutional rule fits every task"
+    ],
+    "unknowns": [
+      "The page does not report a post-intervention outcome",
+      "Students' reported use may not represent the whole cohort"
+    ],
+    "method_steps": [
+      "Ask learners what they already do and find difficult",
+      "Separate tool use by activity stage",
+      "Share concrete examples and discuss risks",
+      "Co-design a small task-level expectation",
+      "Revisit the expectation after use"
+    ],
+    "proposed_followup": "Record whether student questions shift after a specific task and whether peer examples make expectations clearer.",
+    "transfer_note": "This supports cMOOC co-creation of activity-level AI boundaries, while keeping actual course decisions tied to the current task and teacher responsibility.",
+    "id": "EN017-K1",
+    "source_ids": [
+      "EN017"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Ask where AI enters a process before judging the whole task",
+    "source_observation": "The project gave participants a shared vocabulary for writing stages and compared AI-assisted and non-AI processes through diaries and interviews. Students found that any early time saving could be offset by prompt learning, output distrust, and later editing.",
+    "requires": [
+      "A process that can be divided into observable stages",
+      "Participant reflection before and after tool use",
+      "A teacher able to specify stage-specific expectations"
+    ],
+    "excludes": [
+      "Treating an AI-written final product as the only evidence",
+      "Assuming tool use has the same meaning at brainstorming and editing stages"
+    ],
+    "unknowns": [
+      "Only three students participated",
+      "The selected assignments had already passed their deadlines"
+    ],
+    "method_steps": [
+      "Map the current process without AI",
+      "Name where a tool may or may not be used",
+      "Require a brief record of prompts and decisions",
+      "Discuss gains, losses, and verification effort",
+      "Revise the task guidance by stage"
+    ],
+    "proposed_followup": "Compare later peer contributions for evidence of independent reasoning, revision, and citation after stage-level guidance.",
+    "transfer_note": "For cMOOC, this supports asking whether AI entered orientation, idea exchange, drafting, or reflection before choosing a facilitation response.",
+    "id": "EN018-K1",
+    "source_ids": [
+      "EN018"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Refine an assessment brief by observing student reasoning and trust",
+    "source_observation": "The project watches students compose an essay through cognitive interviews, then compares human and AI feedback while hiding the source. It treats student comprehension, trust, inclusivity, and the brief itself as objects for iterative design rather than assuming an AI marker is ready for use.",
+    "requires": [
+      "A task brief that can be revised",
+      "Students able to explain their decisions during writing",
+      "A transparent comparison protocol and human oversight"
+    ],
+    "excludes": [
+      "Treating blind AI feedback as automatically fair",
+      "Calling an ongoing project a validated marking system"
+    ],
+    "unknowns": [
+      "The page marks the project ongoing",
+      "Final trust and inclusivity results were not yet reported"
+    ],
+    "method_steps": [
+      "Run a short co-creation or cognitive-interview workshop",
+      "Observe where students misunderstand the brief",
+      "Revise the task before the course deployment",
+      "Compare human and AI feedback with source concealed",
+      "Ask students how trustworthy and inclusive each felt"
+    ],
+    "proposed_followup": "Preserve the student's explanation of a feedback choice and record which brief changes were made from that evidence.",
+    "transfer_note": "For cMOOC, this supports teacher review of how participants understand an intervention prompt, but no AI feedback should be promoted into an autonomous course judgement without a current human gate.",
+    "id": "EN019-K1",
+    "source_ids": [
+      "EN019"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Make students co-designers of the AI learning exchange",
+    "source_observation": "Student partners designed and delivered activities, documented them for absent peers, and produced material that fed faculty planning. The project adjusted the number and format of events when communication and workload constraints appeared.",
+    "requires": [
+      "Student partners with a defined role",
+      "A staff partner who can connect outputs to course planning",
+      "A documentation route for hybrid participation"
+    ],
+    "excludes": [
+      "Calling a one-off survey student partnership",
+      "Reading attendance as proof of AI literacy"
+    ],
+    "unknowns": [
+      "The project did not provide a controlled learning outcome",
+      "How outputs changed later course decisions is not fully specified"
+    ],
+    "method_steps": [
+      "Recruit student partners for activity design",
+      "Use personas or scenarios to surface varied experiences",
+      "Run peer-led discussion and media production",
+      "Document sessions for those absent",
+      "Feed questions and proposals into a staff review"
+    ],
+    "proposed_followup": "Record which student-generated questions lead to changes in task guidance or resource design.",
+    "transfer_note": "This directly supports a cMOOC memory layer for student and teacher co-interpretation, while keeping final course policy with responsible educators.",
+    "id": "EN020-K1",
+    "source_ids": [
+      "EN020"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Assess the AI-supported process alongside the product",
+    "source_observation": "Students had to show prompts, changes, validation, and learning, making responsible use inspectable. The instructors found that the report supported transparency, but unclear distinctions between brainstorming, drafting, and text generation led to variable interpretations.",
+    "requires": [
+      "A task where AI use is explicitly part of the design",
+      "A rubric for evidence, validation, and reflection",
+      "Teaching on verification before assessment"
+    ],
+    "excludes": [
+      "Assuming a disclosure report proves independent writing",
+      "Leaving permitted uses undefined across task stages"
+    ],
+    "unknowns": [
+      "The page reports broad performance patterns but no causal effect",
+      "The next iteration's results are not yet available"
+    ],
+    "method_steps": [
+      "Define the learning goal and allowed AI roles",
+      "Teach prompting, validation, and source checking",
+      "Require concrete prompt and edit evidence",
+      "Assess both the substantive work and the verification process",
+      "Revise unclear prompts and balance the components"
+    ],
+    "proposed_followup": "Sample reports for specific validation decisions and compare them with the final claims and sources.",
+    "transfer_note": "For cMOOC, this supports transparent process traces around an intervention draft, but a report of AI use remains an audit aid rather than proof of learning or consent.",
+    "id": "EN021-K1",
+    "source_ids": [
+      "EN021"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Use playful failure to make AI limits discussable",
+    "source_observation": "Students interacted with AI through writing games and randomised prompts, then noticed both creative affordances and shortcomings. The teachers treated those observations as material for discussions about bias, creativity, and what human writing contributes.",
+    "requires": [
+      "A low-stakes creative activity",
+      "A group able to compare outputs",
+      "A debrief that connects tool behaviour to course concepts"
+    ],
+    "excludes": [
+      "Evaluating the exercise by novelty of generated text alone",
+      "Treating repeated patterns as evidence of universal AI behaviour"
+    ],
+    "unknowns": [
+      "The page does not report a measured writing outcome",
+      "The activity sequence is described at a high level"
+    ],
+    "method_steps": [
+      "Give a constrained writing game",
+      "Generate multiple outputs or transformations",
+      "Ask learners to identify patterns, omissions, and surprises",
+      "Compare with human revisions",
+      "Debrief what the exercise reveals about creativity and agency"
+    ],
+    "proposed_followup": "Save examples of failed or stereotyped outputs only when participants can discuss why they matter and what a better prompt would change.",
+    "transfer_note": "A cMOOC can use a playful prompt as a shared object for critical discussion, provided the tool does not replace participants' own accounts or interpretations.",
+    "id": "EN022-K1",
+    "source_ids": [
+      "EN022"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Anchor reflection in a shared, situated experience",
+    "source_observation": "The design links course concepts to a specific group exercise and asks for a critical personal reflection and original insight. The author presents experiential learning as a way to make the student's own framing and editing part of the learning evidence.",
+    "requires": [
+      "A shared activity with traceable details",
+      "Theory or concepts that can be applied to the activity",
+      "A prompt that asks for reflection and new insight"
+    ],
+    "excludes": [
+      "Generic prompts that can be answered without course experience",
+      "Claiming that contextual assessment is automatically AI-proof"
+    ],
+    "unknowns": [
+      "The page is a design reflection rather than a controlled evaluation",
+      "Specific course rubrics and student outcomes are not supplied"
+    ],
+    "method_steps": [
+      "Run or document a course activity",
+      "Ask learners to connect it to named concepts",
+      "Require a concrete episode and a new insight",
+      "Use concise writing to foreground reasoning",
+      "Discuss how tool use affected the reflection if permitted"
+    ],
+    "proposed_followup": "Check whether submissions cite concrete shared events and whether peers can recognise the reasoning without exposing private identities.",
+    "transfer_note": "This is relevant to cMOOC because contribution histories and shared inquiry episodes can support reflective prompts; it does not authorize exposing private posts to AI.",
+    "id": "EN023-K1",
+    "source_ids": [
+      "EN023"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Build AI practice knowledge through lead-teacher exchange",
+    "source_observation": "The project treats teachers as co-creators of classroom practice and plans workshops that move through a lead-teacher network. It explicitly asks how professional learning changes classroom practice and what barriers affect scale.",
+    "requires": [
+      "A teacher community with time to share practice",
+      "Lead teachers who can support local colleagues",
+      "Attention to access and implementation barriers"
+    ],
+    "excludes": [
+      "Treating a workshop attendance record as classroom impact",
+      "Assuming one lead-teacher model transfers unchanged across schools"
+    ],
+    "unknowns": [
+      "The page describes aims and planned evaluation rather than completed outcomes",
+      "The actual workshop curriculum is not published"
+    ],
+    "method_steps": [
+      "Map current teacher uses and questions",
+      "Run collaborative workshops around classroom cases",
+      "Have lead teachers adapt and share a local trial",
+      "Collect practice evidence and barriers",
+      "Revise the shared knowledge base before scaling"
+    ],
+    "proposed_followup": "Record which teacher examples are reused, modified, or rejected and why, keeping school context alongside each method.",
+    "transfer_note": "This supports the cMOOC idea of a teacher practical-knowledge layer: methods should circulate with conditions and local revisions rather than as universal rules.",
+    "id": "EN024-K1",
+    "source_ids": [
+      "EN024"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Translate AI possibilities into discipline-specific demonstrations",
+    "source_observation": "The workshop model used short, interactive examples tied to the local discipline rather than one generic AI lecture. Faculty could see both a possible use and a way to make students critique imperfect output.",
+    "requires": [
+      "A disciplinary teaching problem",
+      "A facilitator able to demonstrate and question tool output",
+      "A follow-up conversation about course goals"
+    ],
+    "excludes": [
+      "General tool promotion without a learning purpose",
+      "Treating a workshop response as evidence of later classroom success"
+    ],
+    "unknowns": [
+      "The page does not track which departments implemented a demo",
+      "Workshop materials are linked separately and may change"
+    ],
+    "method_steps": [
+      "Collect a real teaching task from the discipline",
+      "Run a live model example",
+      "Inspect accuracy, bias, and pedagogical fit",
+      "Ask participants to design a bounded student activity",
+      "Return later to share what happened"
+    ],
+    "proposed_followup": "Keep a practice exchange that records adaptations, failures, and student responses after the initial workshop.",
+    "transfer_note": "For cMOOC teacher support, this suggests discipline- and activity-specific examples rather than a generic AI policy card.",
+    "id": "EN025-K1",
+    "source_ids": [
+      "EN025"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Pair fast AI making with slow human-purpose conversations",
+    "source_observation": "Students made prototypes around personal problems, then connected the work to a broader framework for human flourishing and discussed it with practitioners. The teaching team deliberately preserved reflection and conversation around what AI should help humans do.",
+    "requires": [
+      "A real or meaningful problem to prototype",
+      "Staff who can keep scope and purpose visible",
+      "A reflective or dialogic stage after making"
+    ],
+    "excludes": [
+      "Treating a polished prototype as proof of social value",
+      "Removing every productive difficulty from the learning process"
+    ],
+    "unknowns": [
+      "The article reports course practice and reflections, not a controlled learning evaluation",
+      "The buildathon tools and prompts may change"
+    ],
+    "method_steps": [
+      "Name a human need before choosing a tool",
+      "Build a small prototype with clear constraints",
+      "Test it with peers or stakeholders",
+      "Discuss what friction taught the learner",
+      "Close with a conversation about consequences and purpose"
+    ],
+    "proposed_followup": "Observe whether participants can explain a design trade-off and its human consequence without relying on the generated prototype to speak for them.",
+    "transfer_note": "A cMOOC adaptation could use AI to prototype a facilitation artefact, followed by community discussion of whose needs it serves and where it should yield to people.",
+    "id": "EN026-K1",
+    "source_ids": [
+      "EN026"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Turn AI policy into a consequential student deliberation",
+    "source_observation": "The assignment had students practise drafting, negotiation, consensus building, and collective decision-making on an issue they were experiencing. The proposed understanding checks linked policy to evidence of comprehension rather than detection alone.",
+    "requires": [
+      "A shared problem that students can reason about",
+      "A staged group-to-community deliberation",
+      "A teacher who can distinguish a proposal from adopted policy"
+    ],
+    "excludes": [
+      "Treating a vote as proof that a policy works",
+      "Using understanding checks to replace meaningful learning activities"
+    ],
+    "unknowns": [
+      "The proposal was presented to leaders but not necessarily implemented",
+      "No learning-effect measure was reported"
+    ],
+    "method_steps": [
+      "Frame a real course-level AI question",
+      "Draft short proposals in small groups",
+      "Discuss trade-offs in sections",
+      "Consolidate and vote with reasons",
+      "Compare the winning proposal with constraints and evidence"
+    ],
+    "proposed_followup": "Record which trade-offs recur and whether later task design responds to the student's stated learning concerns.",
+    "transfer_note": "For cMOOC, this supports community-level negotiation of facilitation norms, but the teacher still owns course governance and any formal policy.",
+    "id": "EN027-K1",
+    "source_ids": [
+      "EN027"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Tie AI permissions to the learning goal of the course",
+    "source_observation": "The examples differ because their learning goals differ: source locating and grammar are permitted in one writing course, ideation but not replacement in art, no LLM writing in philosophy, and limited disclosed research support in policy work. Each approach communicates a rationale and boundary.",
+    "requires": [
+      "A stated course learning goal",
+      "A teacher who can distinguish assistance from substitution",
+      "A disclosure or discussion route where AI is allowed"
+    ],
+    "excludes": [
+      "One universal permitted-use category for every discipline",
+      "Treating the existence of a policy as evidence of compliance"
+    ],
+    "unknowns": [
+      "The digest does not compare outcomes across courses",
+      "Course policies may change with new cohorts"
+    ],
+    "method_steps": [
+      "Name what students must practise themselves",
+      "List narrow permitted uses and prohibited substitutions",
+      "Explain the reason in the course context",
+      "Ask students to disclose or discuss use",
+      "Review the boundary after observing actual work"
+    ],
+    "proposed_followup": "Compare questions and edge cases raised by students across activities to identify where the policy needs a more concrete example.",
+    "transfer_note": "This supports cMOOC task-specific policy cards: a facilitation action should be tied to the function and responsibility of the current activity.",
+    "id": "EN028-K1",
+    "source_ids": [
+      "EN028"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Have learners lead peer activities around iterative AI making",
+    "source_observation": "The instructors provide a structure while student groups choose an artist, connect it to course ideas, and design an activity for peers. The software exercise requires multiple iterations and a record of prompts and tools, making process visible.",
+    "requires": [
+      "A conceptual frame for critique",
+      "Student groups able to teach a short activity",
+      "A requirement to preserve iterations and prompt context"
+    ],
+    "excludes": [
+      "Evaluating only the aesthetic quality of the final output",
+      "Treating the model as the author of the learning claim"
+    ],
+    "unknowns": [
+      "No learning outcome comparison was reported",
+      "The activity may need substantial teacher moderation in other disciplines"
+    ],
+    "method_steps": [
+      "Assign a course concept and a peer-facing activity",
+      "Ask learners to create several iterations",
+      "Document tool, prompt, and revision reasons",
+      "Run the activity with peers",
+      "Critique technical and social implications"
+    ],
+    "proposed_followup": "Look for peer questions that connect the generated artefact to the underlying concept rather than only discussing tool novelty.",
+    "transfer_note": "For cMOOC, student-led prompt demonstrations could make AI practice inspectable and reciprocal, provided public posting and identity boundaries are explicit.",
+    "id": "EN029-K1",
+    "source_ids": [
+      "EN029"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Make AI output one element in a human-curated interpretive ensemble",
+    "source_observation": "The assignment combines selected human works, generated works, a curatorial theme, and an oral presentation. Students must explain the relations among works and their significance to lived and social contexts.",
+    "requires": [
+      "A disciplinary frame for interpretation",
+      "A group able to curate and explain relationships",
+      "A presentation or reflection that foregrounds human choices"
+    ],
+    "excludes": [
+      "Counting generated images as the whole task",
+      "Assuming a visual output carries its own interpretation"
+    ],
+    "unknowns": [
+      "No comparative learning result was reported",
+      "The page does not detail how bias or provenance was assessed"
+    ],
+    "method_steps": [
+      "Set an interpretive theme",
+      "Select human and AI materials",
+      "Ask learners to arrange a dialogue among them",
+      "Require a narrated presentation",
+      "Discuss cultural assumptions and audience response"
+    ],
+    "proposed_followup": "Capture the curatorial reasons peers found convincing or unclear and use them to revise the next exhibition brief.",
+    "transfer_note": "A cMOOC analogue could ask participants to curate multiple perspectives on a discussion theme, keeping attribution and participant consent visible.",
+    "id": "EN030-K1",
+    "source_ids": [
+      "EN030"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Allow bounded AI support inside an accountable professional role",
+    "source_observation": "The authentic staffer scenario makes accuracy, discretion, stakeholder awareness, and rapid revision part of the task. Students can use AI for limited support but must disclose it and still learn to read law, write for a nontechnical audience, and formulate arguments and counterarguments.",
+    "requires": [
+      "A realistic role with clear responsibility",
+      "A source set and template",
+      "A human-authored recommendation and disclosure expectation"
+    ],
+    "excludes": [
+      "Delegating the interpretation or recommendation to the model",
+      "Using the professional scenario to imply real policy authority"
+    ],
+    "unknowns": [
+      "No outcome study was reported",
+      "The assignment depends on current legislative materials"
+    ],
+    "method_steps": [
+      "Define the role, audience, deadline, and evidence standard",
+      "Provide a structured template and example",
+      "Permit narrow uses such as summarising or editing",
+      "Require disclosure and source checking",
+      "Use feedback and a final recommendation to evidence judgement"
+    ],
+    "proposed_followup": "Inspect whether students can explain a key source and a rejected counterargument without reopening the tool.",
+    "transfer_note": "For cMOOC, this suggests role-bound drafting with explicit responsibility and handoff, while avoiding any claim that an AI-generated recommendation is a real intervention.",
+    "id": "EN031-K1",
+    "source_ids": [
+      "EN031"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Use AI preparation to feed a subsequent human seminar",
+    "source_observation": "AI tasks are deliberately connected to assigned media and readings, then reused as material for in-class synthesis and research discussion. The activity treats the generated abstract as a starting object, not the final learning product.",
+    "requires": [
+      "Assigned texts or media",
+      "A following class discussion or activity",
+      "A prompt that asks learners to synthesise and propose"
+    ],
+    "excludes": [
+      "Counting a generated abstract as independent scholarship",
+      "Using AI preparation when no later discussion or checking exists"
+    ],
+    "unknowns": [
+      "The page does not report student outcomes or exact prompts",
+      "The boundary of permitted AI use is not fully detailed"
+    ],
+    "method_steps": [
+      "Assign a common source set",
+      "Ask for a short AI-supported synthesis or idea",
+      "Require a question or proposed research direction",
+      "Use the submissions to shape discussion",
+      "Return to source evidence in class"
+    ],
+    "proposed_followup": "Record which AI-supported ideas become useful peer questions and which collapse when checked against the sources.",
+    "transfer_note": "A cMOOC can use a generated orientation as a prompt for peer inquiry, with the discussion and source checking carrying the actual facilitation value.",
+    "id": "EN032-K1",
+    "source_ids": [
+      "EN032"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Require AI synthesis to stay inside an iterative evidence loop",
+    "source_observation": "AI use is paired with repeated stakeholder interviews, documented hypotheses, weekly team blogs, instructor office hours, and public updates. Students must demonstrate how AI informed analysis rather than merely submit a polished answer.",
+    "requires": [
+      "A live inquiry with repeated evidence collection",
+      "A record of hypotheses and revisions",
+      "Regular teacher feedback and peer/team accountability"
+    ],
+    "excludes": [
+      "One-off AI summaries detached from stakeholder evidence",
+      "Treating extra credit for tool use as proof of insight"
+    ],
+    "unknowns": [
+      "The page does not report a comparison with non-AI teams",
+      "Interview quality and AI synthesis accuracy remain context-dependent"
+    ],
+    "method_steps": [
+      "Define a problem statement",
+      "Collect multiple human or source inputs",
+      "Use AI to surface themes and hypotheses",
+      "Document the reasoning and uncertainty",
+      "Bring updates to teacher office hours and revise"
+    ],
+    "proposed_followup": "Compare weekly hypotheses with the underlying interview notes and record which AI-surfaced themes were rejected.",
+    "transfer_note": "For cMOOC, this maps to an evidence-bound inquiry loop: AI may help organise public contributions, but the course record and teacher review remain the authority.",
+    "id": "EN033-K1",
+    "source_ids": [
+      "EN033"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Test a course task against the learning outcome before adding AI",
+    "source_observation": "The guide asks instructors to identify what students must learn, test the output a chatbot produces for their actual prompts, and choose among oral, visual, collaborative, or AI-supported activities. It treats AI integration as a course-design decision, not a tool default.",
+    "requires": [
+      "A concrete learning outcome",
+      "An instructor who can inspect outputs",
+      "A willingness to alter the activity format"
+    ],
+    "excludes": [
+      "Adding AI because a tool is available",
+      "Assuming a higher-order label makes an assignment safe by itself"
+    ],
+    "unknowns": [
+      "The strategies are guidance rather than a single evaluated intervention",
+      "Local accessibility and tool conditions need separate review"
+    ],
+    "method_steps": [
+      "State what students should be able to do",
+      "Run the exact task through a current tool",
+      "Inspect errors, bias, and shortcuts",
+      "Choose a human, AI-limited, or AI-assigned version",
+      "Add discussion and reflection where the tool changes the work"
+    ],
+    "proposed_followup": "After the task, compare the evidence produced with the original learning outcome and revise the activity if the evidence is weak.",
+    "transfer_note": "This provides a practical design checklist for cMOOC interventions, but it remains a design guide until tested on a specific course episode.",
+    "id": "EN034-K1",
+    "source_ids": [
+      "EN034"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Use a student partner to shape agency and feedback into course design",
+    "source_observation": "The partnership treated student experience as design knowledge: the student partner developed activities, offered project-choice structures, and proposed a mid-semester survey whose feedback shaped later scaffolding. The course also invited multidisciplinary and real-world perspectives.",
+    "requires": [
+      "A named student partner with meaningful design responsibility",
+      "Time for iterative course design",
+      "A teacher who can act on mid-course feedback"
+    ],
+    "excludes": [
+      "Inviting student opinion only after the design is fixed",
+      "Treating project choice as evidence of learning by itself"
+    ],
+    "unknowns": [
+      "The report is a case narrative and does not provide comparative learning outcomes",
+      "The course is new and later iterations may differ"
+    ],
+    "method_steps": [
+      "Review current course and student needs together",
+      "Co-design readings and activities",
+      "Offer project routes linked to shared goals",
+      "Gather mid-course feedback",
+      "Revise scaffolding and document the decision"
+    ],
+    "proposed_followup": "Record which feedback items changed the next activity and whether students can explain the reason for the design choice.",
+    "transfer_note": "This supports cMOOC teacher-student co-design of intervention norms and handoff boundaries, while preserving teacher responsibility for the course.",
+    "id": "EN035-K1",
+    "source_ids": [
+      "EN035"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Use AI as a practice object that students must check",
+    "source_observation": "The MIT examples pair AI tutoring or generation with synthesis, accuracy checking, practice, reflection, or deployment testing. The stated principle is that AI should help students learn rather than avoid learning.",
+    "requires": [
+      "Course content and practice goals",
+      "A way to inspect AI accuracy",
+      "A reflection or discussion route"
+    ],
+    "excludes": [
+      "A tutor that simply returns solutions",
+      "Counting a prototype or practice interaction as evidence of transfer"
+    ],
+    "unknowns": [
+      "The digest aggregates multiple MIT cases with uneven evidence",
+      "Individual course outcomes are not reported in one place"
+    ],
+    "method_steps": [
+      "Choose one concept or practice task",
+      "Have AI generate or tutor a bounded step",
+      "Ask students to check against course material",
+      "Require reflection on the tool's contribution",
+      "Use errors to drive discussion or redesign"
+    ],
+    "proposed_followup": "Collect the student's check or correction, not just the AI interaction, as the key evidence of engagement.",
+    "transfer_note": "For cMOOC, AI may be a candidate resource or question generator, but the community's checking and explanation must remain visible.",
+    "id": "EN036-K1",
+    "source_ids": [
+      "EN036"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Start with one teachable AI experiment and gather feedback",
+    "source_observation": "The MIT workflow starts with a concept or question, asks the instructor to review output, and embeds a limited experience such as repairing an imperfect explanation or discussing varied examples. Only after feedback does it recommend repeating or scaling the activity.",
+    "requires": [
+      "A small, bounded teaching objective",
+      "An instructor who can vet output",
+      "A feedback point after the activity"
+    ],
+    "excludes": [
+      "Scaling a tool before observing its errors",
+      "Using generated examples without checking accuracy or bias"
+    ],
+    "unknowns": [
+      "The guide is not an evaluation of one course",
+      "Student responses depend on the topic and facilitation"
+    ],
+    "method_steps": [
+      "Choose one difficult concept",
+      "Generate a few candidate examples or explanations",
+      "Review and edit them",
+      "Ask students to compare, repair, or question them",
+      "Gather feedback and decide whether to repeat"
+    ],
+    "proposed_followup": "Track which generated examples provoke useful explanations or reveal misconceptions.",
+    "transfer_note": "This is a practical cMOOC pilot pattern: one small intervention, a visible check, and a decision record before broader use.",
+    "id": "EN037-K1",
+    "source_ids": [
+      "EN037"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Make evaluation part of every AI-supported teaching activity",
+    "source_observation": "Each strategy has an implementation sequence and a review step: select examples, refine quizzes, discuss visual summaries, or inspect the explanation students give AI. The guide says to grade conceptual understanding rather than image quality when visual AI is used.",
+    "requires": [
+      "A clear topic and learning outcome",
+      "A teacher who can verify generated material",
+      "A discussion or assessment criterion focused on understanding"
+    ],
+    "excludes": [
+      "Distributing generated examples without checking",
+      "Scoring tool polish instead of the target concept"
+    ],
+    "unknowns": [
+      "The guide synthesises learning-science rationale but does not report a local intervention result",
+      "Privacy and access conditions vary by institution"
+    ],
+    "method_steps": [
+      "Choose the concept and audience",
+      "Generate or assign the AI activity",
+      "Check accuracy, bias, and privacy",
+      "Have students explain, compare, or repair the output",
+      "Assess the targeted understanding"
+    ],
+    "proposed_followup": "Record whether students can explain why an output is useful or flawed, and use those explanations to tune the task.",
+    "transfer_note": "For cMOOC, this supports structured peer critique of AI suggestions while preserving the community's own explanations as the learning trace.",
+    "id": "EN038-K1",
+    "source_ids": [
+      "EN038"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Prototype with teachers and pupils, then inspect success and failure",
+    "source_observation": "The course combines technical foundations with projects that are tested with K–12 teachers and students. The course description treats analytical framing of both success and failure as part of the learning activity.",
+    "requires": [
+      "A real teaching or learning problem",
+      "A prototype that can be tested safely",
+      "Teacher and learner feedback"
+    ],
+    "excludes": [
+      "Treating a demo as classroom validation",
+      "Separating technical construction from pedagogical judgement"
+    ],
+    "unknowns": [
+      "The landing page does not provide individual project outcomes",
+      "Testing contexts vary by course participant"
+    ],
+    "method_steps": [
+      "Define a classroom problem",
+      "Study relevant AI capabilities and failures",
+      "Build a small tool or activity",
+      "Test with teachers and learners",
+      "Revise from observed use and limitations"
+    ],
+    "proposed_followup": "Preserve a short test record that links each revision to a teacher or learner observation.",
+    "transfer_note": "This supports cMOOC architecture work at the prototype and testing layer, but synthetic or pilot results remain distinct from live intervention effects.",
+    "id": "EN039-K1",
+    "source_ids": [
+      "EN039"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Revisit an AI assignment when repeated protocol narrows student work",
+    "source_observation": "The instructor used an AI-reflection journal as a course task and noticed a shift from exploratory, diverse work to copyable, homogeneous responses as students learned the expected protocol. He treats that observation as a reason to redesign the assignment.",
+    "requires": [
+      "A task whose outputs can be reviewed across iterations",
+      "An instructor willing to change a familiar activity",
+      "A learning goal beyond producing an AI response"
+    ],
+    "excludes": [
+      "Treating novelty in early experiments as a stable effect",
+      "Assuming an AI prompt remains pedagogically rich once routinised"
+    ],
+    "unknowns": [
+      "The page does not present a formal comparison of learning outcomes",
+      "The replacement task is not specified"
+    ],
+    "method_steps": [
+      "Ask learners to use AI for a clearly framed reflection",
+      "Review the range and reasoning in submissions",
+      "Look for protocol-following without inquiry",
+      "Discuss what the task was meant to teach",
+      "Redesign when the activity no longer elicits that learning"
+    ],
+    "proposed_followup": "Monitor whether a cMOOC prompt produces questions and divergent reasoning or merely a standardised answer format.",
+    "transfer_note": "This is useful for maintaining a living cMOOC intervention library: methods can become stale and should be revised from observed practice.",
+    "id": "EN040-K1",
+    "source_ids": [
+      "EN040"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Use synthetic perspectives to rehearse questions, not to stand in for people",
+    "source_observation": "The course gave students a structured but open research process. AI personas surfaced possible patterns and contradictions, and the student's learning came from deciding what to challenge and what to test with real people.",
+    "requires": [
+      "A clear exploratory research question",
+      "A reflection on assumptions and contradictions",
+      "A route to real or source-grounded validation"
+    ],
+    "excludes": [
+      "Treating synthetic responses as predictive evidence",
+      "Using a persona to represent a real participant without consent"
+    ],
+    "unknowns": [
+      "The page is a student perspective and does not quantify learning outcomes",
+      "Transfer across domains depends on task design"
+    ],
+    "method_steps": [
+      "Define a hypothetical stakeholder and research question",
+      "Generate several simulated responses",
+      "Identify contradictions and missing voices",
+      "Revise interview questions",
+      "State what must be checked with real people or sources"
+    ],
+    "proposed_followup": "Capture which simulated prompts changed the next human inquiry and which were discarded as implausible.",
+    "transfer_note": "For cMOOC, synthetic role prompts may help teachers rehearse possible perspectives, but they must not be mistaken for participant evidence or consent.",
+    "id": "EN041-K1",
+    "source_ids": [
+      "EN041"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Make repeated low-stakes tool exploration serve a reflective assignment",
+    "source_observation": "The proposal used varied weekly tasks to build familiarity and curiosity, then required a policy brief that asked students to examine where ChatGPT helped or failed. Students were treated as both participants and evaluators through surveys and a focus group.",
+    "requires": [
+      "A course where different tool functions connect to the subject",
+      "Small tasks with clear boundaries",
+      "A final reflection on usefulness and limitations"
+    ],
+    "excludes": [
+      "Assuming frequent tool use alone builds judgement",
+      "Calling a proposed pilot a completed outcome"
+    ],
+    "unknowns": [
+      "The page marks the project ongoing",
+      "Results of the surveys and focus group are not reported"
+    ],
+    "method_steps": [
+      "Choose one narrow tool task per seminar",
+      "Explain why it matters to the course",
+      "Require students to record a prompt or decision",
+      "Use a larger task to compare benefits and weaknesses",
+      "Review student feedback before the next iteration"
+    ],
+    "proposed_followup": "Look for evidence that later tasks show more selective and justified tool use rather than simple confidence growth.",
+    "transfer_note": "For cMOOC, this suggests low-risk practice followed by reflection on facilitation choices, while keeping project status marked as proposed or observed.",
+    "id": "EN042-K1",
+    "source_ids": [
+      "EN042"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Co-create assessment rules and tasks with the people who will use them",
+    "source_observation": "The project gives students roles in workshop facilitation, analysis, and assessment design. It separates broad student perspectives from a later discipline-specific assessment and explicitly includes neurodiverse students in the process.",
+    "requires": [
+      "Students with a real role in design",
+      "A staged co-creation process",
+      "Attention to inclusive participation and disciplinary outcomes"
+    ],
+    "excludes": [
+      "Treating a planned workshop as an implemented result",
+      "Assuming generic guidelines transfer unchanged to one course"
+    ],
+    "unknowns": [
+      "The project is marked ongoing",
+      "Final assessment materials and outcomes are not yet available"
+    ],
+    "method_steps": [
+      "Gather student practices and concerns",
+      "Translate them into assessment-specific recommendations",
+      "Prototype a task with a discipline group",
+      "Check inclusion and learning-goal alignment",
+      "Revise guidance before delivery"
+    ],
+    "proposed_followup": "Document which student proposals enter the final assessment and what trade-offs the teaching team records.",
+    "transfer_note": "This supports a cMOOC teacher-student governance layer, but a proposal should remain marked as planned until a live course iteration is observed.",
+    "id": "EN043-K1",
+    "source_ids": [
+      "EN043"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Turn isolated experiments into a searchable practice exchange",
+    "source_observation": "The project combines empirical study of programming-course use with regular staff presentations and a repository of case studies. It treats mutual development and exchange of failures and adaptations as part of capacity building.",
+    "requires": [
+      "Teachers and students willing to share bounded cases",
+      "A repository that preserves context and source links",
+      "Regular sessions for discussion rather than one-way publication"
+    ],
+    "excludes": [
+      "Counting a repository as validated practice",
+      "Removing local course conditions from a reusable example"
+    ],
+    "unknowns": [
+      "The page states project outputs but not their completed contents",
+      "Which cases will be accepted and how they will be evaluated is open"
+    ],
+    "method_steps": [
+      "Invite a teacher to present one concrete experiment",
+      "Record task, conditions, tool, and observed limitation",
+      "Discuss adaptations with peers and students",
+      "Store the case with its evidence type",
+      "Revisit it after another course iteration"
+    ],
+    "proposed_followup": "Maintain versioned case records that distinguish a plan, a trial, a reflection, and an observed outcome.",
+    "transfer_note": "This is directly relevant to the cMOOC external-practice layer: the repository should preserve conditions and revision history rather than flatten methods into prompts.",
+    "id": "EN044-K1",
+    "source_ids": [
+      "EN044"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Bind a course tutor to time, materials, and social context",
+    "source_observation": "The tutor uses course-specific material, a stated teaching philosophy, scenario protocols, and timing information. The proactive bot is framed as social glue connecting individual work to the wider course rather than as a standalone answer machine.",
+    "requires": [
+      "A maintained course knowledge base",
+      "A schedule or stage model",
+      "A clear boundary between practice, assessment support, and catch-up",
+      "Human review of outputs"
+    ],
+    "excludes": [
+      "Guessing a student's stage from unverified signals",
+      "Calling the pilot an intervention effect before the follow-up analysis"
+    ],
+    "unknowns": [
+      "The page says follow-up analysis is underway",
+      "How students respond to proactive contact is not fully reported"
+    ],
+    "method_steps": [
+      "Define course stages and allowed help by scenario",
+      "Structure prompts so the tutor can distinguish contexts",
+      "Offer questions, quizzes, or resources instead of finished solutions",
+      "Connect individual use to instructor and peer context",
+      "Analyse chatlogs and work versions before revising"
+    ],
+    "proposed_followup": "Check whether proactive prompts lead to course-relevant peer questions or only more private chatbot usage.",
+    "transfer_note": "For cMOOC, this suggests a time-aware resource connector, but stage inference and proactive contact require real course evidence and teacher governance.",
+    "id": "EN045-K1",
+    "source_ids": [
+      "EN045"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Observe actual use before designing an AI learning policy",
+    "source_observation": "The project combined in-class tasks with chatlogs, surveys, focus groups, and assignments to distinguish how students used AI for learning and assessment. Its central finding is conditional: students benefited when they understood the task purpose and underlying concepts; otherwise AI could substitute for learning.",
+    "requires": [
+      "Permission and a bounded protocol for collecting process evidence",
+      "Course-level understanding of the tasks",
+      "A way to compare tool use with the intended learning process"
+    ],
+    "excludes": [
+      "Inferring learning from tool-use frequency",
+      "Treating chatlogs as transparent evidence without privacy and context review"
+    ],
+    "unknowns": [
+      "The project reports broad patterns rather than a single intervention effect",
+      "Use patterns may differ across disciplines"
+    ],
+    "method_steps": [
+      "Define the learning process the task intends",
+      "Observe or ask about actual tool use with consent",
+      "Compare output focus with process evidence",
+      "Identify where students lack task or concept understanding",
+      "Redesign guidance and assessment around those conditions"
+    ],
+    "proposed_followup": "For cMOOC, compare a participant's visible contribution and any permitted process note rather than using activity counts as a proxy for learning.",
+    "transfer_note": "This supports evidence-bound design and cautions against treating AI activity as a learning outcome or as an automatic trigger for intervention.",
+    "id": "EN046-K1",
+    "source_ids": [
+      "EN046"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Let learners co-create standards before asking them to critique AI",
+    "source_observation": "The lesson begins with students' own ideas about good academic writing, compares those ideas with an AI response and a student exemplar, checks them against the real criteria, and then applies the co-created criteria to a generated essay. Later coversheets make self and peer feedback explicit.",
+    "requires": [
+      "An exemplar and clear assessment criteria",
+      "A staged writing and feedback process",
+      "A facilitator who can connect AI output to the target standard"
+    ],
+    "excludes": [
+      "Starting with a rubric students have never interpreted",
+      "Treating critique of an AI essay as proof of writing competence"
+    ],
+    "unknowns": [
+      "The PDF excerpt inspected did not include all outcome data",
+      "The scale and online delivery conditions may affect implementation"
+    ],
+    "method_steps": [
+      "Elicit learners' descriptions of good work",
+      "Compare with AI output and a human exemplar",
+      "Reconcile with the official criteria",
+      "Use the criteria for self and peer review",
+      "Prompt a concrete revision and reflection"
+    ],
+    "proposed_followup": "Look for whether learners' feedback names a criterion and evidence rather than merely saying that an AI sentence sounds wrong.",
+    "transfer_note": "For cMOOC, this supports co-creating norms for contribution quality and then using examples as discussion objects, while preserving teacher review of the final standard.",
+    "id": "EN047-K1",
+    "source_ids": [
+      "EN047"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Teach pre-service teachers to evaluate and adapt AI lesson plans",
+    "source_observation": "The teacher-education activity introduced tools at the start of practicum and gathered student voice through interviews, discussions, and focus groups. It emphasised prompt refinement, professional judgement, adaptive teaching, and accessibility rather than tool adoption alone.",
+    "requires": [
+      "A practicum or lesson-planning context",
+      "Teacher educators who can discuss subject and learner needs",
+      "A reflection route for evaluating generated plans"
+    ],
+    "excludes": [
+      "Copying an AI lesson plan into practice without adaptation",
+      "Treating pre-service teacher confidence as classroom effectiveness"
+    ],
+    "unknowns": [
+      "The abstract reports a pre-research study and does not provide detailed outcome measures",
+      "Specific lesson examples are not included in the inspected pages"
+    ],
+    "method_steps": [
+      "Generate or inspect a draft lesson plan",
+      "Check it against curriculum and learner needs",
+      "Revise prompts and activities",
+      "Discuss inclusion, ethics, and professional responsibility",
+      "Reflect after the lesson or practice"
+    ],
+    "proposed_followup": "Collect a before/after lesson rationale and note which AI suggestions were accepted, changed, or rejected.",
+    "transfer_note": "This informs the cMOOC teacher-practice layer by treating prompt skill as subordinate to situated professional judgement and learner access.",
+    "id": "EN048-K1",
+    "source_ids": [
+      "EN048"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Make a case evolve from learner decisions and teacher-set guardrails",
+    "source_observation": "The poster moves beyond a static case: students choose at decision points, the scenario changes, and the system returns consequences. It warns against unclear goals, vague prompts, lack of oversight, leading questions, and ignoring feedback loops.",
+    "requires": [
+      "A bounded decision scenario with meaningful branches",
+      "Clear learning objectives and constraints",
+      "Teacher review of generated case events and feedback"
+    ],
+    "excludes": [
+      "Unbounded role-play that invents course facts",
+      "Equating real-time adaptation with valid learning evidence"
+    ],
+    "unknowns": [
+      "The poster does not report a comparative outcome study",
+      "The full prompt and implementation context may need updating"
+    ],
+    "method_steps": [
+      "Frame the case and target concept",
+      "Define decision points and allowable information",
+      "Test branches for coherence and bias",
+      "Let learners choose and explain actions",
+      "Use the consequence and feedback to prompt reflection"
+    ],
+    "proposed_followup": "Save the decision path and learner explanation, then have a teacher inspect whether the branch actually tested the intended concept.",
+    "transfer_note": "A cMOOC adaptation could model a facilitation dilemma with explicit branches, but it should remain a sandbox or draft until course evidence and teacher authority are present.",
+    "id": "EN049-K1",
+    "source_ids": [
+      "EN049"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "Combine learner evidence with curriculum-level language redesign",
+    "source_observation": "The project used student perspectives and pedagogical research to revisit a language curriculum, implement sample AI-aware activities, evaluate them, and produce staff resources. It treats AI integration as a curriculum and language-learning question rather than a single tool task.",
+    "requires": [
+      "A subject curriculum with identifiable language practices",
+      "Student perspectives on actual use",
+      "A cycle of activity implementation and evaluation"
+    ],
+    "excludes": [
+      "Transferring a sample activity without the target language context",
+      "Equating students' reported use with language development"
+    ],
+    "unknowns": [
+      "The public page does not describe each activity or report numerical outcomes",
+      "The resulting framework is not fully reproduced"
+    ],
+    "method_steps": [
+      "Map current student uses and curriculum goals",
+      "Design a small activity around a language practice",
+      "Implement and gather learner feedback",
+      "Revise the activity and staff support",
+      "Document conditions for future teachers"
+    ],
+    "proposed_followup": "Track whether learners use AI to deepen language noticing, cultural comparison, or revision rather than only to produce fluent text.",
+    "transfer_note": "This supports the cMOOC need to preserve middle layers between tool use and community learning: activity purpose, teacher judgement, and iterative review stay explicit.",
+    "id": "EN050-K1",
+    "source_ids": [
+      "EN050"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "先辨认AI是在优化环节还是改变任务",
+    "source_observation": "文章把教师案例中的AI使用分成优化既有流程和推动创新转型两条路径，并按任务类型继续分组。",
+    "requires": [
+      "已有明确教学任务和AI介入位置",
+      "能区分教师行为、学生行为与工具功能"
+    ],
+    "excludes": [
+      "只有工具名称或宣传口号，没有任务过程"
+    ],
+    "unknowns": [
+      "不同课程中同一场景的适用条件",
+      "教师如何判断AI介入是否改变学习目标"
+    ],
+    "method_steps": [
+      "标记原教学环节",
+      "记录AI提供的具体支持",
+      "检查教师是否重设任务或评价",
+      "把观察到的场景与未验证效果分开"
+    ],
+    "proposed_followup": "为每个候选干预记录AI支持功能、教师专业判断和学习者后续活动。",
+    "transfer_note": "可迁移为课程事件中的场景分类线索；这是项目方的结构化迁移推断，不是文章报告的cMOOC结果。",
+    "id": "CN001-K1",
+    "source_ids": [
+      "CN001"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "先以可测目标校准AI生成教案",
+    "source_observation": "主讲者指出AI教案常出现目标笼统、难量化和缺乏高阶思维培养的问题，带领教师先用OBE、逆向设计、SMART和ABCD法校准。",
+    "requires": [
+      "已有课程目标和学习产出",
+      "教师能判断目标是否可测"
+    ],
+    "excludes": [
+      "把AI初稿直接当作教学方案"
+    ],
+    "unknowns": [
+      "校准后教案在真实课堂中的可行性",
+      "学生是否按目标完成高阶任务"
+    ],
+    "method_steps": [
+      "读取AI初稿",
+      "逐项核对目标、活动和评价",
+      "由教师修订提示与教案",
+      "再生成量规并人工复核"
+    ],
+    "proposed_followup": "记录AI草稿、教师修订点及最终任务之间的对应关系。",
+    "transfer_note": "可迁移为教师复核门：AI输出只能进入候选方案，不能越过目标和评价核对。",
+    "id": "CN002-K1",
+    "source_ids": [
+      "CN002"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把AI量规放回教学评一致性检查",
+    "source_observation": "工作坊让教师用指令生成客观题与高阶能力量规，并把题目转成可收集答题数据的页面。",
+    "requires": [
+      "题目对应具体知识或能力目标",
+      "教师可以检查量规维度"
+    ],
+    "excludes": [
+      "没有评分依据却直接使用自动评分"
+    ],
+    "unknowns": [
+      "量规是否覆盖课程的价值和情境要求"
+    ],
+    "method_steps": [
+      "指定目标和表现证据",
+      "让AI生成候选题目/量规",
+      "教师检查维度与边界",
+      "用小规模数据回看偏差"
+    ],
+    "proposed_followup": "在复盘中保留教师删改的量规条目和未解决的评价歧义。",
+    "transfer_note": "可迁移为评价支持候选；不能把培训中的生成体验写成学习增益。",
+    "id": "CN002-K2",
+    "source_ids": [
+      "CN002"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "按学科目标分配AI角色",
+    "source_observation": "分享会把AI放在内容、计算、批判、连接，或代码生成、分析和评价等不同课程功能中，而不是只作为统一工具。",
+    "requires": [
+      "课程目标和专业实践已经明确",
+      "教师能说明AI承担的功能"
+    ],
+    "excludes": [
+      "仅因工具流行而加入AI"
+    ],
+    "unknowns": [
+      "各学科的长期维护成本",
+      "AI支持是否改变学生的独立表现"
+    ],
+    "method_steps": [
+      "列出目标能力",
+      "指定AI可支持的子任务",
+      "保留必须由学生或教师完成的判断",
+      "复核产出是否仍对应目标"
+    ],
+    "proposed_followup": "在课程事件中记录AI角色、教师保留的判断和学生提交的证据。",
+    "transfer_note": "可迁移为按任务分配促进功能的候选规则；不迁移具体学科效果。",
+    "id": "CN003-K1",
+    "source_ids": [
+      "CN003"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "AI情境先过事实和价值审核",
+    "source_observation": "教师删除来源不清、观点偏颇或不符合课堂要求的AI生成材料，只保留与专业学习、就业场景和社会责任相关的材料。",
+    "requires": [
+      "教师掌握学科事实和课程价值要求",
+      "AI输出可回溯到待核材料"
+    ],
+    "excludes": [
+      "没有来源或无法核验的情境直接进入课堂"
+    ],
+    "unknowns": [
+      "审核耗时",
+      "学生能否识别情境中的事实与价值问题"
+    ],
+    "method_steps": [
+      "让AI提出候选情境",
+      "核验事实与出处",
+      "检查价值和课程目标",
+      "教师改写后再安排讨论"
+    ],
+    "proposed_followup": "记录被删除或改写的情境及其原因，并观察讨论是否产生新的问题。",
+    "transfer_note": "可迁移为AI材料进入课程前的教师审核候选；不能据此声称思政效果。",
+    "id": "CN005-K1",
+    "source_ids": [
+      "CN005"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "让学习者问题先于AI路径建议",
+    "source_observation": "AI学伴的流程从学生提出真实问题开始，再帮助梳理思路和形成驱动性问题，教师保留人文理解和陪伴角色。",
+    "requires": [
+      "学生已有具体困惑或真实任务",
+      "教师能判断问题是否值得探究"
+    ],
+    "excludes": [
+      "AI直接替学生决定探究主题和结论"
+    ],
+    "unknowns": [
+      "AI建议是否真正被学生采用",
+      "教师如何处理不适合项目化的提问"
+    ],
+    "method_steps": [
+      "捕获学生原始问题",
+      "让AI提出澄清问题而非直接答案",
+      "教师检查问题与课程目标的关系",
+      "再匹配资源和探究路径"
+    ],
+    "proposed_followup": "观察问题是否被同伴接续、修订或转成共同任务。",
+    "transfer_note": "可迁移为cMOOC中先保留学习者问题、后决定是否促进的候选原则。",
+    "id": "CN007-K1",
+    "source_ids": [
+      "CN007"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "从虚拟情境过渡到真实操作",
+    "source_observation": "智能制造案例先用数字孪生教学场景让学生理解结构和逻辑，再过渡到真机操作，并用AI提供编程指导、错误诊断和建议。",
+    "requires": [
+      "任务有可模拟的结构或过程",
+      "真实操作仍需要教师/学生承担"
+    ],
+    "excludes": [
+      "把仿真结果直接当作真实操作能力"
+    ],
+    "unknowns": [
+      "虚实转换中的具体错误",
+      "学生是否能解释AI建议"
+    ],
+    "method_steps": [
+      "拆解真实任务",
+      "在可控环境中提供AI提示",
+      "让学生解释并修正操作",
+      "再核对真实操作证据"
+    ],
+    "proposed_followup": "记录从AI建议到学生实际操作之间的转译和放弃点。",
+    "transfer_note": "可迁移为“提示—解释—操作—回读”链条，不能迁移报告中的效果表述。",
+    "id": "CN008-K1",
+    "source_ids": [
+      "CN008"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把AI工具嵌入探究阶段而非全程接管",
+    "source_observation": "月相案例按概念建构、原理探究、应用拓展和巩固辅导组织多种AI工具，呈现阶段化使用。",
+    "requires": [
+      "任务阶段和学习产出可区分",
+      "教师能限定每阶段工具角色"
+    ],
+    "excludes": [
+      "让同一工具无条件生成完整答案"
+    ],
+    "unknowns": [
+      "不同工具输出是否一致",
+      "学生在各阶段保留了哪些自主判断"
+    ],
+    "method_steps": [
+      "标注当前学习阶段",
+      "限定AI支持的动作",
+      "要求学习者留下解释或中间产物",
+      "按阶段结果决定是否继续支持"
+    ],
+    "proposed_followup": "在课程事件世界中记录阶段、工具角色和后续产出。",
+    "transfer_note": "可迁移为活动阶段条件化候选；是项目方推断，非该报告的cMOOC证据。",
+    "id": "CN008-K2",
+    "source_ids": [
+      "CN008"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "用课前和课中证据决定教学调整",
+    "source_observation": "报告把预习反馈、课中互动数据和课后行为数据连成教学支持链，教师据此调整重点并定位薄弱点。",
+    "requires": [
+      "数据有明确时间和课程范围",
+      "教师能解释数据与教学动作的关系"
+    ],
+    "excludes": [
+      "只看平台活跃度就推断学习困难"
+    ],
+    "unknowns": [
+      "数据缺失或延迟时的替代判断",
+      "画像是否代表学习者真实理解"
+    ],
+    "method_steps": [
+      "核对数据来源和时间",
+      "将信号与任务阶段对齐",
+      "由教师决定是否调整",
+      "回读调整后的近端活动"
+    ],
+    "proposed_followup": "把数据提示与教师实际调整分别记录，避免把平台画像当作学习事实。",
+    "transfer_note": "可迁移为课程事件回流线索；不能把智能画像直接写成教育效果。",
+    "id": "CN009-K1",
+    "source_ids": [
+      "CN009"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "复杂任务中保留可观察的独立思考",
+    "source_observation": "报告者把问题从学生是否使用AI转向课程能否考出真实能力，并建议让学生借助AI完成复杂任务，同时在过程中观察独立思考。",
+    "requires": [
+      "任务允许记录过程或中间产物",
+      "教师有明确的独立思考证据标准"
+    ],
+    "excludes": [
+      "只按最终文本判断学习过程"
+    ],
+    "unknowns": [
+      "哪些过程证据最能区分独立思考",
+      "教师的复核成本"
+    ],
+    "method_steps": [
+      "规定AI可参与的环节",
+      "要求学生说明提问、核验和修改",
+      "教师检查过程证据",
+      "把疑点留给复核而非自动判定"
+    ],
+    "proposed_followup": "在课程互动中优先促进解释、比较和回溯，而不是只催促提交成品。",
+    "transfer_note": "可迁移为过程性证据优先的促进候选；不是该沙龙的效果结论。",
+    "id": "CN013-K1",
+    "source_ids": [
+      "CN013"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "先用需求描述生成原型，再由教师改写",
+    "source_observation": "活动把程序开发分成自然语言需求、AI生成原型和教师结合学科实际修改三个环节。",
+    "requires": [
+      "教师能明确课堂动作和规则",
+      "生成后可以在教学场景中试用"
+    ],
+    "excludes": [
+      "把AI生成的交互程序直接当作稳定工具"
+    ],
+    "unknowns": [
+      "程序错误和异常状态",
+      "学生使用程序时的可及性"
+    ],
+    "method_steps": [
+      "写明课堂目标和操作约束",
+      "生成最小可用原型",
+      "教师检查内容、权限和异常",
+      "用低风险试用回读后再修订"
+    ],
+    "proposed_followup": "保存程序版本、教师改动和实际课堂反馈，作为后续候选经验。",
+    "transfer_note": "可迁移为“原型—教师校准—低风险试用—回读”链条。",
+    "id": "CN015-K1",
+    "source_ids": [
+      "CN015"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "让教师从学生视角回看AI课程路径",
+    "source_observation": "工作坊安排教师体验课程图谱中的个性化学习路径和资源检索，以学习者角度理解智慧教学。",
+    "requires": [
+      "课程知识点和资源已有结构",
+      "教师能记录路径与目标的偏差"
+    ],
+    "excludes": [
+      "只从教师备课界面判断学生体验"
+    ],
+    "unknowns": [
+      "不同学习者看到的路径差异",
+      "路径推荐是否造成过度引导"
+    ],
+    "method_steps": [
+      "设定学习者任务",
+      "以学习者身份走一遍AI路径",
+      "记录断点和不适配资源",
+      "教师修订图谱或提示"
+    ],
+    "proposed_followup": "观察学习者是否沿路径继续、转向同伴讨论或请求教师介入。",
+    "transfer_note": "可迁移为教师复核AI支持的必要步骤，尤其适合共同体中的路径推荐。",
+    "id": "CN016-K1",
+    "source_ids": [
+      "CN016"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "用问题链和协作任务承接AI生成材料",
+    "source_observation": "分享把课程大纲、教案、考核方案生成与定制化出题、小组协作和概念通俗化连接起来，并要求教师审慎评估。",
+    "requires": [
+      "任务有明确学习目的",
+      "教师能对AI材料进行专业核验"
+    ],
+    "excludes": [
+      "学生只接收AI生成的结论"
+    ],
+    "unknowns": [
+      "小组协作是否形成真实互相依赖",
+      "材料修订需要多少教师时间"
+    ],
+    "method_steps": [
+      "先生成候选材料",
+      "教师检查内容与目标",
+      "把材料改成需要比较/协作的任务",
+      "收集学生解释和修订证据"
+    ],
+    "proposed_followup": "观察小组是否从并列回答转向互相回应、综合或修订。",
+    "transfer_note": "可迁移为把AI材料转译成共同体任务的候选方法。",
+    "id": "CN018-K1",
+    "source_ids": [
+      "CN018"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "先培训教师处理AI生成问题再进入任务",
+    "source_observation": "课题组在教学实验前用约120分钟培训教师，内容包括研究流程、数据规范、伦理知情同意、提示词设计和常见生成问题应对。",
+    "requires": [
+      "教师明确任务和数据边界",
+      "参与者知情同意与数据最小化安排到位"
+    ],
+    "excludes": [
+      "教师未理解工具局限就直接让学生使用"
+    ],
+    "unknowns": [
+      "教师培训后是否能独立应对异常输出",
+      "学生对反馈的解释方式"
+    ],
+    "method_steps": [
+      "说明任务和伦理边界",
+      "演示工具与提示设计",
+      "模拟错误输出并练习修正",
+      "再安排小规模课堂使用"
+    ],
+    "proposed_followup": "记录教师在课堂中实际修改提示或暂停AI的节点。",
+    "transfer_note": "可迁移为教师AI实践的前置条件，不能把该研究的对照结果外推到cMOOC。",
+    "id": "CN019-K1",
+    "source_ids": [
+      "CN019"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "用分层提示匹配不同任务复杂度",
+    "source_observation": "案例按词汇查询、信息验证和决策分析设置三级提示词，并强调学生是认知主体、验证机制保障学习深度。",
+    "requires": [
+      "任务难度和学生基础可被教师判断",
+      "提示输出需要被学生验证"
+    ],
+    "excludes": [
+      "所有学习者使用同一提示且无需验证"
+    ],
+    "unknowns": [
+      "分层标准能否跨课程复用",
+      "AI日志如何被教师实际阅读"
+    ],
+    "method_steps": [
+      "判定任务层级",
+      "给出对应提示模板",
+      "要求学生核验AI输出",
+      "教师读取日志并决定是否介入"
+    ],
+    "proposed_followup": "检查学习者是否从查询推进到验证、比较和决策，而非停留在复制答案。",
+    "transfer_note": "可迁移为按认知任务分层的促进候选，需保留教师与学习者的验证责任。",
+    "id": "CN020-K1",
+    "source_ids": [
+      "CN020"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把教师修正点当作AI适用边界",
+    "source_observation": "研究把教师对AI方案的采纳、局部修正和拒斥作为可观察决策，并指出修正集中在学情、分层、内容和表达。",
+    "requires": [
+      "保留对话日志和方案版本",
+      "教师能说明采纳或拒斥理由"
+    ],
+    "excludes": [
+      "只记录最终方案而抹去被拒绝内容"
+    ],
+    "unknowns": [
+      "哪些拒斥理由最常见",
+      "修正后的活动是否更适配学习者"
+    ],
+    "method_steps": [
+      "保存AI候选",
+      "记录教师采纳/修改/拒绝",
+      "标注理由和情境证据",
+      "再判断是否需要人工支持"
+    ],
+    "proposed_followup": "将教师修正点作为实践性知识卡的条件与排除项来源。",
+    "transfer_note": "与本项目的条件化经验回流高度相容；迁移的是决策记录结构，不是该案例效果。",
+    "id": "CN021-K1",
+    "source_ids": [
+      "CN021"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把AI助教放在重复性课后支持位",
+    "source_observation": "案例把词汇、基础翻译、职场表达和发音纠错等高频问题交给AI助教，同时保留教师对高阶学习的指导。",
+    "requires": [
+      "问题类型相对明确",
+      "教师能够回看AI回答和升级问题"
+    ],
+    "excludes": [
+      "AI直接处理需要教师情境判断的复杂问题"
+    ],
+    "unknowns": [
+      "学生是否因AI回答继续参与课程",
+      "教师如何发现AI未解决的问题"
+    ],
+    "method_steps": [
+      "分类课后问题",
+      "让AI处理可标准化子任务",
+      "收集未解决和反复问题",
+      "教师介入高阶或异常问题"
+    ],
+    "proposed_followup": "观察AI答疑后的再参与、同伴互助和教师升级请求。",
+    "transfer_note": "可迁移为课后重复支持的候选边界，不能把页面报道的次数直接当作学习成效。",
+    "id": "CN022-K1",
+    "source_ids": [
+      "CN022"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "将AI支持与同伴互教责任分开",
+    "source_observation": "三师课堂把教师方向、同伴互教和AI认知脚手架分成不同职责，并要求教师能够解释和校准算法推荐。",
+    "requires": [
+      "课程有明确的教师责任和同伴任务",
+      "AI建议能够被教师审阅"
+    ],
+    "excludes": [
+      "AI替代教师的价值判断或同伴关系"
+    ],
+    "unknowns": [
+      "小先生如何获得足够证据理解同伴需求",
+      "不同学习者的隐私边界"
+    ],
+    "method_steps": [
+      "明确三类角色职责",
+      "让AI给出可解释提示",
+      "教师检查推荐与情境的匹配",
+      "让同伴据证据调整互助"
+    ],
+    "proposed_followup": "记录AI建议、教师校准和同伴互助之间的责任链。",
+    "transfer_note": "可迁移为cMOOC中教师、同伴和学伴的责任分离框架；文章本身不是cMOOC实验。",
+    "id": "CN023-K1",
+    "source_ids": [
+      "CN023"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "用多角色证据支持争议中的共同决策",
+    "source_observation": "案例让学生围绕生态、经济和社会角色开展证据攻防，AI提供角色视角、论证诊断和方案推演，教师负责监测论证走向和价值引领。",
+    "requires": [
+      "议题存在可解释的真实冲突",
+      "角色证据与课程目标相连",
+      "教师能够复核AI诊断"
+    ],
+    "excludes": [
+      "让AI替学生选择价值立场或最终方案"
+    ],
+    "unknowns": [
+      "角色代理的证据质量",
+      "学生是否真正回应异质观点"
+    ],
+    "method_steps": [
+      "提出冲突议题",
+      "分配角色与证据",
+      "让AI显化不同论证和反驳",
+      "教师引导整合与修正",
+      "保留方案理由"
+    ],
+    "proposed_followup": "观察多角色讨论是否带来跨观点回应、证据补充或方案修订。",
+    "transfer_note": "可迁移为cMOOC中把并列分享转成有证据的相互回应的候选设计。",
+    "id": "CN026-K1",
+    "source_ids": [
+      "CN026"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把高频提问汇总成教师待复核信号",
+    "source_observation": "编程课案例用学生提问频率形成知识点薄弱环节报告，作为教师进一步判断的参考。",
+    "requires": [
+      "问题与课程知识点能稳定对应",
+      "教师能读取原始问题而非只看汇总"
+    ],
+    "excludes": [
+      "把提问次数直接当作学习缺陷或学习效果"
+    ],
+    "unknowns": [
+      "少提问学生是否真的理解",
+      "报告中的频率阈值和误报情况"
+    ],
+    "method_steps": [
+      "收集AI答疑问题",
+      "聚合到知识点",
+      "教师回看代表性问题",
+      "决定是否增加解释、同伴互助或课堂讨论"
+    ],
+    "proposed_followup": "把聚合信号与后续学生再参与和教师调整记录对齐。",
+    "transfer_note": "可迁移为课程事件中的弱信号候选，不能直接升级成学习诊断。",
+    "id": "CN029-K1",
+    "source_ids": [
+      "CN029"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "按知识点弱信号生成补充练习",
+    "source_observation": "教师根据课程平台记录的知识点掌握情况生成相关试题，供学生进一步理解和练习。",
+    "requires": [
+      "知识点和练习难度有明确对应",
+      "教师能检查题目质量"
+    ],
+    "excludes": [
+      "仅凭一次错误就给出固定补救任务"
+    ],
+    "unknowns": [
+      "平台掌握情况与真实理解的差距",
+      "学生是否主动使用补充练习"
+    ],
+    "method_steps": [
+      "确认知识点和证据时间",
+      "生成候选练习",
+      "教师检查答案与难度",
+      "观察学生后续解释或再练习"
+    ],
+    "proposed_followup": "记录补充练习是否促成学生回到知识点或寻求同伴帮助。",
+    "transfer_note": "可迁移为基于课程事件的资源推荐候选，需保留不确定状态。",
+    "id": "CN032-K1",
+    "source_ids": [
+      "CN032"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "AI活动后必须有学生再加工",
+    "source_observation": "案例强调AI是教学助手，教师引导、评价和学生自身的知识再加工是深度学习的关键，并用任务和互动工具组织课堂。",
+    "requires": [
+      "AI产物可以被学生比较、改写或解释",
+      "教师能设计后续任务"
+    ],
+    "excludes": [
+      "AI生成材料直接作为最终提交"
+    ],
+    "unknowns": [
+      "哪些再加工证据最能显示理解",
+      "匿名工具如何影响后续公开讨论"
+    ],
+    "method_steps": [
+      "安排AI生成或检索任务",
+      "让学生比较和解释结果",
+      "教师评价过程与产出",
+      "将未解决问题转入共同讨论"
+    ],
+    "proposed_followup": "观察AI活动后是否产生学生之间的回应、修订和新的问题。",
+    "transfer_note": "可迁移为cMOOC中的“AI支持—学习者再加工—同伴接续”候选链。",
+    "id": "CN034-K1",
+    "source_ids": [
+      "CN034"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把医学课程支持拆成课前、课中、课后",
+    "source_observation": "药理学案例将AI助教/学伴分布在预习推送、课堂交互和课后答疑三个阶段，并以课程图谱连接知识结构。",
+    "requires": [
+      "专业知识库和课程图谱可维护",
+      "教师能监控高风险医学内容"
+    ],
+    "excludes": [
+      "让通用AI无审核地解释临床或药理结论"
+    ],
+    "unknowns": [
+      "专业模型的错误类型",
+      "教师如何处理高风险问题升级"
+    ],
+    "method_steps": [
+      "建立课程知识边界",
+      "按阶段配置有限支持",
+      "保留教师审核和升级路径",
+      "回读课后问题和知识缺口"
+    ],
+    "proposed_followup": "优先补充医学课程中的教师审核、引用和异常升级实践。",
+    "transfer_note": "可迁移为领域限定学伴的条件化结构，不迁移医学内容或效果主张。",
+    "id": "CN035-K1",
+    "source_ids": [
+      "CN035"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "从模板原型逐步定制课程助手",
+    "source_observation": "教师先体验模板式快速搭建，再尝试工作流式定制开发，并根据自身课程组合功能。",
+    "requires": [
+      "课程任务和输入输出可被教师描述",
+      "原型试用处于可回退环境"
+    ],
+    "excludes": [
+      "未测试就让智能体处理真实发布或高风险评价"
+    ],
+    "unknowns": [
+      "各功能之间的冲突和维护成本",
+      "教师如何处理智能体误判"
+    ],
+    "method_steps": [
+      "选择最小任务",
+      "搭建模板原型",
+      "用真实但低风险样例试用",
+      "按教师回读逐步增加工作流"
+    ],
+    "proposed_followup": "记录教师由模板转向定制时的触发条件、失败和撤回点。",
+    "transfer_note": "可迁移为智能体建设的渐进式方法，符合本项目的shadow/stage边界。",
+    "id": "CN038-K1",
+    "source_ids": [
+      "CN038"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "让教师根据学习进度决定是否推荐资源",
+    "source_observation": "案例把AI问答、知识推荐和学习进度结合，向学生推送针对性的讲解、习题或扩展阅读，教师在教研会上复盘。",
+    "requires": [
+      "学习进度信号有明确来源",
+      "教师能审阅推荐资源"
+    ],
+    "excludes": [
+      "推荐资源与当前工程任务无关"
+    ],
+    "unknowns": [
+      "学生是否阅读或完成推荐",
+      "推荐错误时教师如何撤回"
+    ],
+    "method_steps": [
+      "核对学生当前难点",
+      "生成候选解释/资源",
+      "教师检查适切性",
+      "观察后续问题和再学习"
+    ],
+    "proposed_followup": "记录推荐被接受、忽略或转交教师的条件。",
+    "transfer_note": "可迁移为资源推荐候选与让位条件，不能把个性化推送等同于学习改进。",
+    "id": "CN039-K1",
+    "source_ids": [
+      "CN039"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把AI代码协作拆成任务、调试和优化",
+    "source_observation": "培训用产业关联网络和区位熵等实例演示四步法，并强调AI降低编程门槛但不能替代问题定义。",
+    "requires": [
+      "教师理解所处理的数据和分析目标",
+      "生成代码可在安全环境中运行"
+    ],
+    "excludes": [
+      "没有数据理解就执行生成代码"
+    ],
+    "unknowns": [
+      "代码错误如何被教师发现",
+      "学生是否理解代码而不是只提交结果"
+    ],
+    "method_steps": [
+      "明确分析问题",
+      "与AI沟通需求",
+      "执行并检查代码",
+      "根据结果和目标优化"
+    ],
+    "proposed_followup": "将代码解释、错误修正和学生再加工纳入过程记录。",
+    "transfer_note": "可迁移为技术支持型实践卡，需保留教师对任务和结果的判断。",
+    "id": "CN040-K1",
+    "source_ids": [
+      "CN040"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "智能体工作流发布前保留调试回读",
+    "source_observation": "数字营销案例把智能体建设拆成创建、提示词、插件、工作流、调试和发布步骤。",
+    "requires": [
+      "每步都有可回退版本",
+      "发布动作具有明确授权"
+    ],
+    "excludes": [
+      "未经测试直接发布到真实课程或外部平台"
+    ],
+    "unknowns": [
+      "插件访问的数据范围",
+      "调试样例是否覆盖异常情况"
+    ],
+    "method_steps": [
+      "创建最小原型",
+      "逐步加入能力",
+      "用样例调试并核验输出",
+      "教师确认后再进入暂存/发布流程"
+    ],
+    "proposed_followup": "将工作流版本和调试结果与教师复核记录绑定。",
+    "transfer_note": "可迁移为本项目智能体建设与真实发布硬锁的实践支撑。",
+    "id": "CN040-K2",
+    "source_ids": [
+      "CN040"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "用真实项目情境承接AI生成的中间产物",
+    "source_observation": "软件工程案例让AI辅助需求提取和优先级排序，再由学生在真实项目情境中完成需求文档生成和迭代优化。",
+    "requires": [
+      "存在可描述的项目需求",
+      "学生需要解释和修订AI产物"
+    ],
+    "excludes": [
+      "直接提交AI生成需求文档而无迭代"
+    ],
+    "unknowns": [
+      "需求排序的判断依据",
+      "教师如何评价AI与学生贡献"
+    ],
+    "method_steps": [
+      "提供项目背景",
+      "AI生成需求候选",
+      "学生验证和排序",
+      "教师追问理由并检查文档迭代"
+    ],
+    "proposed_followup": "观察学生是否根据同伴或教师反馈修改需求，而非只接受AI排序。",
+    "transfer_note": "可迁移为把AI中间产物接入协作修订链的候选方法。",
+    "id": "CN041-K1",
+    "source_ids": [
+      "CN041"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "按教学环节选择AI和价值融入方式",
+    "source_observation": "案例按课前导入、课中讲解和课后讨论区分AI工具与课程思政元素的结合方式，而不是整节课统一处理。",
+    "requires": [
+      "教师明确每个环节的语言和价值目标",
+      "AI生成材料可被教师审核"
+    ],
+    "excludes": [
+      "把价值观点交给AI直接决定"
+    ],
+    "unknowns": [
+      "学生如何理解或质疑生成材料",
+      "不同工具的偏差和可及性"
+    ],
+    "method_steps": [
+      "标注环节目标",
+      "选择有限工具角色",
+      "教师审核内容和表达",
+      "让学生在课后讨论中说明依据"
+    ],
+    "proposed_followup": "关注课后讨论是否形成学习者之间的互相回应和观点修订。",
+    "transfer_note": "可迁移为按活动阶段组织AI促进和价值边界的候选知识。",
+    "id": "CN042-K1",
+    "source_ids": [
+      "CN042"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "生成内容必须经过学情和事实双重校准",
+    "source_observation": "指引要求教师对生成的教学设计、课件和习题进行事实核查、价值审查和适切评估，并按学生发展水平修改难度、容量和呈现方式。",
+    "requires": [
+      "教师掌握课程目标和学生学情",
+      "生成材料可被回读和修改"
+    ],
+    "excludes": [
+      "未经审查直接发布AI教案、作业或评语"
+    ],
+    "unknowns": [
+      "教师判断标准如何跨课程共享",
+      "修改过程需要多少时间"
+    ],
+    "method_steps": [
+      "让AI生成候选材料",
+      "核查事实、价值和来源",
+      "按学情修改任务与表达",
+      "由教师确认后再进入课堂"
+    ],
+    "proposed_followup": "记录教师删改、拒绝和补充的具体理由，并回看学生后续反应。",
+    "transfer_note": "可迁移为教师复核和让位条件；指引本身不是cMOOC运行结果。",
+    "id": "CN046-K1",
+    "source_ids": [
+      "CN046"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把多智能体对话分成进阶任务并持续回读",
+    "source_observation": "教师先按学情预设项目案例分析、总体规划和课堂设计等进阶任务，再监控学生与智能体的对话，要求主动、批判地使用AI，最后根据评价建议迭代方案。",
+    "requires": [
+      "任务链和课程目标明确",
+      "教师能读取过程对话",
+      "学生有可修改的中间方案"
+    ],
+    "excludes": [
+      "学生一次生成完整方案后直接提交"
+    ],
+    "unknowns": [
+      "教师监控的频率和成本",
+      "不同角色智能体之间的冲突处理"
+    ],
+    "method_steps": [
+      "按学情拆分进阶任务",
+      "让学生保留分步对话与中间产物",
+      "教师在关键节点追问和纠偏",
+      "按人机共评结果修订方案"
+    ],
+    "proposed_followup": "观察方案迭代是否来自教师、同伴或AI反馈，并分别记录。",
+    "transfer_note": "可迁移为cMOOC共同体任务的分阶段人机协作候选。",
+    "id": "CN047-K1",
+    "source_ids": [
+      "CN047"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "用真实问题驱动提示工程和产品迭代",
+    "source_observation": "教师把心理安抚真实情境转成项目问题，让学生用App Inventor和ChatBot组件开发产品，并以设计思维和提示工程贯穿活动。",
+    "requires": [
+      "问题情境适合项目化拆解",
+      "教师能审核心理相关内容和数据边界"
+    ],
+    "excludes": [
+      "将AI输出当作心理干预结论"
+    ],
+    "unknowns": [
+      "教师如何处理不安全生成内容",
+      "产品迭代的具体评价标准"
+    ],
+    "method_steps": [
+      "界定真实问题和安全边界",
+      "让学生提出产品需求",
+      "通过提示与原型反复试验",
+      "教师审查并要求解释设计选择"
+    ],
+    "proposed_followup": "记录学生从问题定义到原型修改的关键对话和教师介入点。",
+    "transfer_note": "可迁移为问题驱动的AI项目学习候选，敏感场景边界必须保留。",
+    "id": "CN048-K1",
+    "source_ids": [
+      "CN048"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把师—生—机互动拆成可复核的课堂环节",
+    "source_observation": "培训把生成教案、学情检测、分组讨论点评、即时答疑和课后数据分析分配到不同教学阶段。",
+    "requires": [
+      "每个阶段有清晰任务和教师责任",
+      "生成内容可由教师检查"
+    ],
+    "excludes": [
+      "同一AI输出无条件跨阶段复用"
+    ],
+    "unknowns": [
+      "分组点评是否准确反映讨论质量",
+      "课后数据如何影响下一课设计"
+    ],
+    "method_steps": [
+      "标记当前课堂阶段",
+      "限定AI的支持动作",
+      "教师复核并让学生回应",
+      "按课后数据决定下一步"
+    ],
+    "proposed_followup": "观察分组讨论后是否产生修订、互评或教师让位。",
+    "transfer_note": "可迁移为cMOOC课堂回合的阶段化促进候选。",
+    "id": "CN049-K1",
+    "source_ids": [
+      "CN049"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "用学生身份回放教师设计的完整流程",
+    "source_observation": "培训要求教师从课程创建、AI资源生成、互动设计、图谱建设到学生完成任务和教师批阅反馈完整演练。",
+    "requires": [
+      "课程任务和评价标准明确",
+      "教师能够回放自己的设计"
+    ],
+    "excludes": [
+      "只在教师端查看生成结果而不模拟学生路径"
+    ],
+    "unknowns": [
+      "演练发现的问题是否被修订",
+      "学生真实使用与模拟的差异"
+    ],
+    "method_steps": [
+      "创建最小章节",
+      "生成并审核资源",
+      "设计互动任务和评价",
+      "模拟学生完成后回读教师反馈",
+      "修订课程流程"
+    ],
+    "proposed_followup": "把演练中教师发现的断点和修改记录保存为条件化经验。",
+    "transfer_note": "可迁移为AI促进动作上线前的教师身份回放和写前重读。",
+    "id": "CN050-K1",
+    "source_ids": [
+      "CN050"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把专家磨课和课堂案例适配作为上线前检查",
+    "source_observation": "示范课前专家对教学设计、流程、技术融合和案例适配逐项审核，课堂再按真实问题、分组研讨、方案生成和互评推进。",
+    "requires": [
+      "课程目标、案例和AI功能可逐项对应",
+      "教师能根据评审修订方案"
+    ],
+    "excludes": [
+      "技术展示与课程任务脱节"
+    ],
+    "unknowns": [
+      "专家意见如何被记录和回看",
+      "学生互评的质量和教师介入方式"
+    ],
+    "method_steps": [
+      "提交教学设计",
+      "按目标、流程、技术和案例适配审查",
+      "教师修改后进行示范",
+      "根据学生产出和互评回顾"
+    ],
+    "proposed_followup": "保留教师在磨课阶段接受、修改或拒绝建议的记录。",
+    "transfer_note": "可迁移为教师复核和案例适配的条件化经验。",
+    "id": "CN051-K1",
+    "source_ids": [
+      "CN051"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "先找课程痛点再选择AI模块",
+    "source_observation": "主讲者从学情、互动和反馈痛点出发，按四步建课并用AI助教和BOPPPS组织课堂闭环，明确反对简单堆砌技术。",
+    "requires": [
+      "教师能指出具体课程痛点",
+      "AI模块与痛点有可解释对应"
+    ],
+    "excludes": [
+      "先选工具再寻找教学用途"
+    ],
+    "unknowns": [
+      "不同课程痛点的优先级",
+      "课后分析如何改变下一次设计"
+    ],
+    "method_steps": [
+      "记录当前痛点",
+      "选择知识图谱、互动或评价模块",
+      "在课堂中试用",
+      "根据课后数据和教师判断修订"
+    ],
+    "proposed_followup": "观察教师是否从单纯使用平台转向具体的任务和反馈变化。",
+    "transfer_note": "可迁移为cMOOC中按机会和痛点选择促进动作的候选规则。",
+    "id": "CN052-K1",
+    "source_ids": [
+      "CN052"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "按学科痛点分配不同的AI实操任务",
+    "source_observation": "活动没有用单一模板覆盖所有教师，而是按文科、法学、计算机、医学、数学和中医药课程分别演示目标、图谱、病例模拟、个性化辅导和全流程AI工具。",
+    "requires": [
+      "学科任务与痛点明确",
+      "教师能在现场形成或修订课程骨架"
+    ],
+    "excludes": [
+      "把跨学科通用提示直接照搬"
+    ],
+    "unknowns": [
+      "各学院产物的后续使用",
+      "平台数据如何支持教师判断"
+    ],
+    "method_steps": [
+      "识别学科任务",
+      "选择图谱/助教/模拟等功能",
+      "现场搭建最小课程骨架",
+      "教师回读并按学科要求修订"
+    ],
+    "proposed_followup": "抽取不同学科教师如何接受、调整或拒绝统一平台建议。",
+    "transfer_note": "可迁移为按课程情境分配教师AI实践知识的组织方式。",
+    "id": "CN053-K1",
+    "source_ids": [
+      "CN053"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "无法回答的问题要自动让位给教师",
+    "source_observation": "案例明确把AI无法解答的复杂问题汇总给教师补充讲解，并让教师根据课堂表现和学情报告调整节奏。",
+    "requires": [
+      "问题可以被分类和升级",
+      "教师拥有补充讲解的上下文"
+    ],
+    "excludes": [
+      "AI用猜测填补无法回答的问题"
+    ],
+    "unknowns": [
+      "复杂问题的分类阈值",
+      "教师是否能及时处理升级队列"
+    ],
+    "method_steps": [
+      "AI处理常规问题",
+      "标记不确定或超出范围的问题",
+      "转交教师并保留问题上下文",
+      "教师补充后回看学生理解"
+    ],
+    "proposed_followup": "观察升级问题是否形成后续共同讨论或新的课程资源。",
+    "transfer_note": "可迁移为学伴的明确让位和教师接管条件。",
+    "id": "CN054-K1",
+    "source_ids": [
+      "CN054"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "从完整课例检验提示词和多模态产物",
+    "source_observation": "培训不是单独展示工具，而是围绕一个完整课程案例依次生成教案、课件、图文视频素材和知识库，并要求教师审核信息。",
+    "requires": [
+      "课程目标、内容和学情已明确",
+      "教师能检查多模态资源的准确性和适切性"
+    ],
+    "excludes": [
+      "把生成素材未经审查直接投入课堂"
+    ],
+    "unknowns": [
+      "不同提示层级对教师工作量的影响",
+      "学生如何使用生成资源"
+    ],
+    "method_steps": [
+      "确定课例目标",
+      "分层设计提示",
+      "逐步生成教案与资源",
+      "教师审核、删改并回放课堂使用"
+    ],
+    "proposed_followup": "记录教师在各阶段的修改和停用理由。",
+    "transfer_note": "可迁移为从单一课例沉淀教师AI实践知识的方法。",
+    "id": "CN055-K1",
+    "source_ids": [
+      "CN055"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "用提问、追问和验证控制AI素材进入课堂",
+    "source_observation": "地理课例把AI生成素材和大概念提取组织为提问、追问、验证和应用四步，并引导学生批判性看待AI生成内容。",
+    "requires": [
+      "教师能提出学科关键问题",
+      "学生需要对AI内容进行验证"
+    ],
+    "excludes": [
+      "把AI生成素材视为无需核验的事实"
+    ],
+    "unknowns": [
+      "学生验证使用的证据来源",
+      "不同学科问题链的迁移条件"
+    ],
+    "method_steps": [
+      "生成候选素材",
+      "提出关键问题",
+      "让学生追问和验证",
+      "将验证结果用于应用或修订"
+    ],
+    "proposed_followup": "观察学生是否在同伴回应后改变对AI内容的判断。",
+    "transfer_note": "可迁移为共同体中的问题链和信息核验候选。",
+    "id": "CN056-K1",
+    "source_ids": [
+      "CN056"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "让AI协作服务于小组创作而非替代创作",
+    "source_observation": "跨学科课例让小组通过云端技术协作探究，并在有限时间内完成漫画制作，教师仍负责组织与评价。",
+    "requires": [
+      "小组有共同产出和分工",
+      "创作过程可以被记录"
+    ],
+    "excludes": [
+      "一名学生调用AI后代表全组提交"
+    ],
+    "unknowns": [
+      "小组分工和同伴评价方式",
+      "AI生成部分与学生创作部分的界线"
+    ],
+    "method_steps": [
+      "明确共同产出",
+      "分配小组角色",
+      "限定AI支持的创作环节",
+      "展示并互评创作理由"
+    ],
+    "proposed_followup": "记录小组是否出现互相回应、合并意见或重新分工。",
+    "transfer_note": "可迁移为cMOOC共同创作中的AI角色限制和同伴接续设计。",
+    "id": "CN056-K2",
+    "source_ids": [
+      "CN056"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "让AI互评嵌入真实项目的展示和修订",
+    "source_observation": "课程把AI助教放入课前、课中和课后，并在景观规划项目中让教师、学生和AI共同评价成果。",
+    "requires": [
+      "项目有可展示的阶段产物",
+      "互评标准和教师责任明确"
+    ],
+    "excludes": [
+      "AI评分替代教师和同伴对作品的解释"
+    ],
+    "unknowns": [
+      "不同评价主体意见冲突时如何处理",
+      "学生是否据互评修订作品"
+    ],
+    "method_steps": [
+      "设置阶段产物",
+      "组织分组研讨和展示",
+      "让AI提供结构化反馈",
+      "师生核对反馈并修订方案"
+    ],
+    "proposed_followup": "回看互评后是否出现作品修改和对评价依据的讨论。",
+    "transfer_note": "可迁移为共同体中的多主体反馈和项目修订候选。",
+    "id": "CN057-K1",
+    "source_ids": [
+      "CN057"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "让AI教学支持形成准备—实施—评估—反思闭环",
+    "source_observation": "论文把AI支持分成四个连续环节，并明确教师依据学生数据和评估报告调整策略，而不是只在课前生成材料。",
+    "requires": [
+      "每个环节有可观察证据",
+      "教师能够解释数据和调整之间的关系"
+    ],
+    "excludes": [
+      "只记录AI生成内容而不记录教师后续决定"
+    ],
+    "unknowns": [
+      "数据质量和形成性评价的误差",
+      "不同课程如何设定闭环节奏"
+    ],
+    "method_steps": [
+      "准备阶段明确目标与学情",
+      "实施阶段组织协作和互动",
+      "评估阶段收集过程反馈",
+      "反思阶段记录教师调整"
+    ],
+    "proposed_followup": "把每个阶段的输入、教师判断和下一阶段变化分开记录。",
+    "transfer_note": "可迁移为cMOOC经验闭环的结构参照；论文模式不等于本项目的实际效果。",
+    "id": "CN058-K1",
+    "source_ids": [
+      "CN058"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把AI使用边界写成可修订的场景行动手册",
+    "source_observation": "平台与指引组合将AI使用分解到课堂、评价、自主学习等场景，并把伦理警示、工具建议、分层研修和动态修订放在同一体系中。",
+    "requires": [
+      "场景目标和责任主体明确",
+      "课程团队能根据实践反馈修订指引"
+    ],
+    "excludes": [
+      "用一条通用规则覆盖所有课程和评价任务"
+    ],
+    "unknowns": [
+      "一线教师案例如何进入指引修订",
+      "监测评估的具体指标和证据"
+    ],
+    "method_steps": [
+      "按场景列出允许和限制",
+      "记录教师实际使用与异常",
+      "在教研共同体中讨论修订",
+      "发布新版本并保留版本差异"
+    ],
+    "proposed_followup": "进一步追踪平台中具体教师案例，补充从实践到规则的反馈路径。",
+    "transfer_note": "可迁移为cMOOC课程级AI策略的版本化治理线索，不是现成发布授权。",
+    "id": "CN059-K1",
+    "source_ids": [
+      "CN059"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "安静阶段先核对任务进展",
+    "source_observation": "公开了促进者对可见参与、讨论结构和日程变化的反思。",
+    "requires": [
+      "论坛安静，课程正在分组完成任务"
+    ],
+    "excludes": [
+      "只有回复量，没有阶段或产出证据"
+    ],
+    "unknowns": [
+      "是否已有小组成果、参与困难"
+    ],
+    "method_steps": [
+      "核对阶段和成果；缺证据则保留未知"
+    ],
+    "proposed_followup": "是否出现小组产出或主动求助",
+    "transfer_note": "由第一批来源与知识卡迁移，来源事实与适用条件推断分开；未入运行库。",
+    "id": "R1S02-K1",
+    "source_ids": [
+      "R1S02"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "用课程目标和材料约束AI讨论",
+    "source_observation": "以学习目标与阅读材料约束讨论，提出核查回答并收集反馈。",
+    "requires": [
+      "有明确目标和可合法使用的参考材料"
+    ],
+    "excludes": [
+      "需要独立测量学习者原有能力"
+    ],
+    "unknowns": [
+      "材料能否支持当前问题"
+    ],
+    "method_steps": [
+      "先对齐目标与材料，再核查回答并回到师生讨论"
+    ],
+    "proposed_followup": "学习者能否用材料解释自己的判断",
+    "transfer_note": "由第一批来源与知识卡迁移，来源事实与适用条件推断分开；未入运行库。",
+    "id": "R1S03-K1",
+    "source_ids": [
+      "R1S03"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "AI用途有分歧时回到目标能力",
+    "source_observation": "师生共同探索AI用法；不同教师对AI生成想法与学习目标的关系存在分歧。",
+    "requires": [
+      "师生对AI可用范围有实质分歧"
+    ],
+    "excludes": [
+      "已存在清晰适用规则且无冲突"
+    ],
+    "unknowns": [
+      "创意生成本身是否为考查目标"
+    ],
+    "method_steps": [
+      "列明分歧与目标，请教师明确本任务的使用边界"
+    ],
+    "proposed_followup": "能否形成可解释且共同理解的任务规则",
+    "transfer_note": "由第一批来源与知识卡迁移，来源事实与适用条件推断分开；未入运行库。",
+    "id": "R1S04-K1",
+    "source_ids": [
+      "R1S04"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把AI回答变成待讨论观点",
+    "source_observation": "参与者从把聊天工具当知识权威，转向质疑其输出；本轮不提取效果量。",
+    "requires": [
+      "学习者正用聊天工具准备观点"
+    ],
+    "excludes": [
+      "工具被要求提供未经复核的最终判定"
+    ],
+    "unknowns": [
+      "学习者是否掌握必要背景"
+    ],
+    "method_steps": [
+      "要求指出一处可质疑主张，带着依据与问题进入同伴讨论"
+    ],
+    "proposed_followup": "是否表达自己的论证和仍未解决的问题",
+    "transfer_note": "由第一批来源与知识卡迁移，来源事实与适用条件推断分开；未入运行库。",
+    "id": "R1S05-K1",
+    "source_ids": [
+      "R1S05"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "先核对参与门槛再引入AI活动",
+    "source_observation": "讨论共同制定规则、可及性和以课程内容支持探究。",
+    "requires": [
+      "计划让所有参与者使用AI工具"
+    ],
+    "excludes": [
+      "访问条件不明且任务必须使用指定付费工具"
+    ],
+    "unknowns": [
+      "设备、语言与可及性需求"
+    ],
+    "method_steps": [
+      "核对参与条件，提供可比较的替代参与路径"
+    ],
+    "proposed_followup": "能否在不同条件下完成同一学习目标",
+    "transfer_note": "由第一批来源与知识卡迁移，来源事实与适用条件推断分开；未入运行库。",
+    "id": "R1S07-K1",
+    "source_ids": [
+      "R1S07"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "让教师确认观察到反馈的转换",
+    "source_observation": "模板把观察证据、改进建议、教师反思与跟进安排关联。",
+    "requires": [
+      "已有获准使用的观察摘要与明确发展目标"
+    ],
+    "excludes": [
+      "材料只有评价标签而无观察证据"
+    ],
+    "unknowns": [
+      "AI建议是否符合教师当前目标"
+    ],
+    "method_steps": [
+      "将建议对应到观察依据，由教师修订后形成下一步"
+    ],
+    "proposed_followup": "教师能否确认依据并选择可执行的改进",
+    "transfer_note": "由第一批来源与知识卡迁移，来源事实与适用条件推断分开；未入运行库。",
+    "id": "R1S10-K1",
+    "source_ids": [
+      "R1S10"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "用共同讨论制定任务级AI约定",
+    "source_observation": "示例供本地规则制定与讨论，不能照抄成当前课程政策。",
+    "requires": [
+      "需要明确AI在任务中的角色"
+    ],
+    "excludes": [
+      "通用建议与机构现行规则冲突"
+    ],
+    "unknowns": [
+      "课程责任与学习目标是否已经明确"
+    ],
+    "method_steps": [
+      "以具体任务讨论允许用途并记录理由"
+    ],
+    "proposed_followup": "参与者能否说明使用方式与责任",
+    "transfer_note": "由第一批来源与知识卡迁移，来源事实与适用条件推断分开；未入运行库。",
+    "id": "R1S11-K1",
+    "source_ids": [
+      "R1S11"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "先保留个人尝试再比较AI示例",
+    "source_observation": "语文课把学生写作、AI批改、示范作文比较和再创作串联；英语课保留教师示范、多轮对话与小组展示。",
+    "requires": [
+      "活动要求比较自己的作品与其他方案"
+    ],
+    "excludes": [
+      "目标要求全程独立作答"
+    ],
+    "unknowns": [
+      "AI示例是否与任务目标一致"
+    ],
+    "method_steps": [
+      "保留初稿，比较不同方案，再由学习者提出修改"
+    ],
+    "proposed_followup": "能否看见个人判断和修订轨迹",
+    "transfer_note": "由第一批来源与知识卡迁移，来源事实与适用条件推断分开；未入运行库。",
+    "id": "R1S14-K1",
+    "source_ids": [
+      "R1S14"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把AI反馈变成同伴可追问的修改理由",
+    "source_observation": "教师筛选和转译模型反馈；学生选取反馈、思维口述、同伴追问后再次修改。",
+    "requires": [
+      "已有初稿、具体反馈与修改任务"
+    ],
+    "excludes": [
+      "只提交最终答案；没有学习者原稿可比较"
+    ],
+    "unknowns": [
+      "反馈是否适合学生理解水平"
+    ],
+    "method_steps": [
+      "教师筛选分类反馈；学生说明为何修改，同伴追问后再改"
+    ],
+    "proposed_followup": "是否能解释采纳或拒绝一条建议的理由",
+    "transfer_note": "由第一批来源与知识卡迁移，来源事实与适用条件推断分开；未入运行库。",
+    "id": "R1S15-K1",
+    "source_ids": [
+      "R1S15"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "AI制作活动保留原理和合作解释",
+    "source_observation": "从体验和原理理解转向功能拆解、分组制作、优化与展示。",
+    "requires": [
+      "任务包含作品设计与原理理解"
+    ],
+    "excludes": [
+      "只有工具演示，没有制作任务"
+    ],
+    "unknowns": [
+      "当前工具是否仍可用且适合参与者"
+    ],
+    "method_steps": [
+      "先体验与解释原理，再分工制作、展示并迭代"
+    ],
+    "proposed_followup": "是否能解释设计选择和修改原因",
+    "transfer_note": "由第一批来源与知识卡迁移，来源事实与适用条件推断分开；未入运行库。",
+    "id": "R1S16-K1",
+    "source_ids": [
+      "R1S16"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "学科问答先连接可核查课程资源",
+    "source_observation": "以主题知识库与RAG构建领域限定平台，并报告课堂实践；本批仅能使用摘要层信息。",
+    "requires": [
+      "存在可使用的课程资料与明确学科问题"
+    ],
+    "excludes": [
+      "知识库覆盖未知却要求给出确定答案"
+    ],
+    "unknowns": [
+      "检索材料是否相关且足以回答"
+    ],
+    "method_steps": [
+      "先连接可核对材料；无材料则标明缺口并请求教师判断"
+    ],
+    "proposed_followup": "回答依据是否可回查并经使用者纠正",
+    "transfer_note": "由第一批来源与知识卡迁移，来源事实与适用条件推断分开；未入运行库。",
+    "id": "R1S17-K1",
+    "source_ids": [
+      "R1S17"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把促进理解为连接与支架",
+    "source_observation": "促进者通过倾听、连接观点、提出问题和提供复杂情境来支持学习者形成有意义的互动。",
+    "requires": [
+      "存在可观察的学习活动和参与者贡献"
+    ],
+    "excludes": [
+      "只有单向信息发布而没有共同任务"
+    ],
+    "unknowns": [
+      "当前活动是否需要连接观点而不是补充信息"
+    ],
+    "method_steps": [
+      "识别正在进行的共同任务",
+      "提取需要连接的不同贡献",
+      "以问题或摘要帮助参与者继续推进"
+    ],
+    "proposed_followup": "观察后续是否出现跨贡献回应、解释推进或共同任务完成。",
+    "transfer_note": "迁移到cMOOC只能作为机会识别候选；需要课程活动阶段和真实互动证据，不能把未回应直接当成促进需要。",
+    "id": "OP001-K1",
+    "source_ids": [
+      "OP001"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "随共同体成熟调整促进强度",
+    "source_observation": "FLO facilitators begin with welcome, reminders, clarification, troubleshooting, and connection building, then step back and use questions, summaries, and coaching as participants gain familiarity.",
+    "requires": [
+      "能够观察课程阶段和参与者熟悉度"
+    ],
+    "excludes": [
+      "活动目标、参与结构和时间顺序均不可见"
+    ],
+    "unknowns": [
+      "何种参与变化足以支持降低促进强度"
+    ],
+    "method_steps": [
+      "早期提供方向和进入支持",
+      "中期用摘要和问题连接贡献",
+      "出现自然互助时检查是否应让位"
+    ],
+    "proposed_followup": "比较不同活动阶段的促进动作、自然接续和让位迹象。",
+    "transfer_note": "这是从公开促进实践到cMOOC策略的条件化设计推断，不是该项目的真实运行效果。",
+    "id": "OP002-K1",
+    "source_ids": [
+      "OP002"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "用周期性节奏维持在线参与",
+    "source_observation": "课程把欢迎、同步活动、学习日志、缺席联系、讨论总结和周末复盘安排在重复的时间节奏中。",
+    "requires": [
+      "课程存在可分段的周或回合节奏"
+    ],
+    "excludes": [
+      "只有单一终结任务，没有中间回流窗口"
+    ],
+    "unknowns": [
+      "提醒、摘要和个人联系各自对参与的作用"
+    ],
+    "method_steps": [
+      "为回合建立开始、进行中和结束节点",
+      "在节点记录公开贡献与缺失的证据类型",
+      "以摘要或低负担提醒促成下一步"
+    ],
+    "proposed_followup": "检查回合级事件是否能支持等待、提醒、连接和复盘的条件判断。",
+    "transfer_note": "cMOOC系统可借鉴节奏化观察，但不能把自动提醒本身写成学习效果。",
+    "id": "OP003-K1",
+    "source_ids": [
+      "OP003"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把促进工作拆成可核对的回合任务",
+    "source_observation": "Facilitator work is distributed across preparation, early-course arrival, ongoing monitoring, weekly handoffs, and post-course review rather than treated as one undifferentiated intervention.",
+    "requires": [
+      "有明确的回合、角色和时间节点"
+    ],
+    "excludes": [
+      "无法确认课程边界或责任归属"
+    ],
+    "unknowns": [
+      "哪些清单项应由教师、同伴或系统承担"
+    ],
+    "method_steps": [
+      "为每轮建立待观察事项",
+      "记录已完成、待核对和需要人工判断的事项",
+      "结束后把反馈写入下一轮计划"
+    ],
+    "proposed_followup": "为cMOOC回合建立不含正文的促进检查清单并核验重复唤醒的幂等性。",
+    "transfer_note": "清单结构是工程化迁移推断，不能替代真实教师责任判断。",
+    "id": "OP004-K1",
+    "source_ids": [
+      "OP004"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "用观察、互动和反思共同评价促进",
+    "source_observation": "Rubric levels move from minimal contact and generic comments to scaffolding, peer-to-peer interaction, timely support, attention to outcomes, and reflection on future practice.",
+    "requires": [
+      "可以看到促进者动作和参与者互动痕迹"
+    ],
+    "excludes": [
+      "只凭回复数量评价促进质量"
+    ],
+    "unknowns": [
+      "不同课程活动对各维度的权重"
+    ],
+    "method_steps": [
+      "分别记录支持、连接、提问和复盘证据",
+      "区分观察到的行为与对学习的解释",
+      "由教师或共同体复核解释"
+    ],
+    "proposed_followup": "把rubric维度转化为教师判断提示，不直接作为自动评分器。",
+    "transfer_note": "适用于形成判断变量和复核问题；不能据此声称cMOOC学习效果。",
+    "id": "OP005-K1",
+    "source_ids": [
+      "OP005"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "让未完成设计进入可反馈的工作室",
+    "source_observation": "Participants share emerging designs, ask questions, receive constructive feedback, link choices to learning theory, and refine a prototype before the final showcase.",
+    "requires": [
+      "参与者有正在形成的设计对象"
+    ],
+    "excludes": [
+      "只展示完成品而没有可修订中间物"
+    ],
+    "unknowns": [
+      "反馈应由同伴、教师还是系统先发起"
+    ],
+    "method_steps": [
+      "要求公开设计目的和当前困难",
+      "邀请具体问题与替代方案",
+      "汇总反馈并让作者说明取舍"
+    ],
+    "proposed_followup": "观察cMOOC中讨论草稿、问题和回应是否形成可追踪的共同设计过程。",
+    "transfer_note": "迁移重点是促进未完成工作的相互反馈，不是自动替作者设计活动。",
+    "id": "OP006-K1",
+    "source_ids": [
+      "OP006"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "在工作室中用摘要和问题保持推进",
+    "source_observation": "Facilitators post midpoint and end-of-week summaries, ask reflective questions, encourage sharing of emerging work, and use detailed feedback primarily as questions.",
+    "requires": [
+      "讨论中存在持续形成的设计或任务对象"
+    ],
+    "excludes": [
+      "只有一次性问答，无法形成迭代"
+    ],
+    "unknowns": [
+      "何时摘要会打断正在形成的同伴讨论"
+    ],
+    "method_steps": [
+      "识别本周关键任务和缺口",
+      "发布低负担摘要与一个推进问题",
+      "在回应出现后收集高价值分歧"
+    ],
+    "proposed_followup": "比较摘要、提问、同伴接续和让位之间的时序关系。",
+    "transfer_note": "这是对cMOOC促进回合的候选操作序列，须受课程节奏和责任门约束。",
+    "id": "OP007-K1",
+    "source_ids": [
+      "OP007"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把反馈质量落到具体作品和问题",
+    "source_observation": "High-level feedback is specific to design elements, considers learner perspectives, links to theory or quality guidance, and invites deeper dialogue rather than merely stating an opinion.",
+    "requires": [
+      "反馈对象和设计依据可见"
+    ],
+    "excludes": [
+      "脱离作品的泛化表扬或批评"
+    ],
+    "unknowns": [
+      "哪些cMOOC关系证据足以支撑具体反馈"
+    ],
+    "method_steps": [
+      "定位具体贡献或设计片段",
+      "说明观察与疑问",
+      "邀请作者或同伴解释和修订"
+    ],
+    "proposed_followup": "为教师复核记录增加反馈对象、依据、问题和后续回应字段。",
+    "transfer_note": "把rubric迁移为记录结构，不把公开评分等级当成自动教学评价。",
+    "id": "OP008-K1",
+    "source_ids": [
+      "OP008"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把同步活动拆成准备、主持和回流",
+    "source_observation": "The course dedicates separate phases to preparing for synchronous sessions, facilitating them, and following up through feedback and reflection.",
+    "requires": [
+      "有同步或准同步共同活动"
+    ],
+    "excludes": [
+      "只有异步文本且不存在会话回合"
+    ],
+    "unknowns": [
+      "cMOOC中同步证据是否能完整观察"
+    ],
+    "method_steps": [
+      "准备阶段确认目标、角色和工具",
+      "活动中记录参与、问题和主持动作",
+      "活动后收集反馈与改进建议"
+    ],
+    "proposed_followup": "将同步或直播回合纳入Course Event World的准备—行动—回流链。",
+    "transfer_note": "只支持同步促进流程的候选设计，不证明自动主持可以替代教师。",
+    "id": "OP009-K1",
+    "source_ids": [
+      "OP009"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "同步前后都保留可回读的促进证据",
+    "source_observation": "The facilitator prepares roles and technology before the event, posts reminders and follow-up reports, and uses participant feedback to revise future sessions.",
+    "requires": [
+      "能够记录会话安排、提醒和回顾"
+    ],
+    "excludes": [
+      "只有即时聊天，没有会后反馈或版本化记录"
+    ],
+    "unknowns": [
+      "何种信息可在不保存正文的前提下支持复盘"
+    ],
+    "method_steps": [
+      "建立会话目标和责任记录",
+      "活动后记录摘要、反馈和未解决问题",
+      "把修订建议绑定到下一轮"
+    ],
+    "proposed_followup": "为cMOOC同步回合设计去正文的回顾和修订字段。",
+    "transfer_note": "工程迁移需要满足隐私和授权边界，不把同步回执写成学习结果。",
+    "id": "OP010-K1",
+    "source_ids": [
+      "OP010"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "让同行反馈进入下一轮主持",
+    "source_observation": "Effective feedback and explicit reflection on what should improve are treated as completion criteria for synchronous facilitation practice.",
+    "requires": [
+      "有同行或参与者可提供反馈"
+    ],
+    "excludes": [
+      "只有系统日志而没有解释性反馈"
+    ],
+    "unknowns": [
+      "反馈分歧来自主持技能还是课程目标"
+    ],
+    "method_steps": [
+      "请求具体观察与一个改进点",
+      "让主持者说明哪些反馈可采纳",
+      "记录下一轮要试验的变化"
+    ],
+    "proposed_followup": "将教师和同伴的解释性反馈与后续行动绑定，而不是只保存评分。",
+    "transfer_note": "支持共同体经验回流的设计假设，不能替代真实教师审核。",
+    "id": "OP011-K1",
+    "source_ids": [
+      "OP011"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "短回合原型—互评—修订",
+    "source_observation": "The five-step packet moves from research to draft, sharing, peer review, and reciprocal feedback, leaving participants with a practical prototype.",
+    "requires": [
+      "参与者有可在短周期内形成的草稿或原型"
+    ],
+    "excludes": [
+      "任务需要长周期数据或不可拆分的最终成果"
+    ],
+    "unknowns": [
+      "谁需要被邀请进入反馈，谁应暂时等待"
+    ],
+    "method_steps": [
+      "明确本回合问题和产出",
+      "鼓励公开未完成工作",
+      "在回复稀少时轻触并把空间交还给同伴",
+      "收集修订后的原型"
+    ],
+    "proposed_followup": "在cMOOC中识别可用五步回合的活动，并记录同伴互评与系统让位条件。",
+    "transfer_note": "公开指南说明的是促进实践模式，cMOOC迁移仍需课程目标、参与意愿和边界证据。",
+    "id": "OP012-K1",
+    "source_ids": [
+      "OP012"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "以具体观察和追问促进互评",
+    "source_observation": "High-quality peer feedback names observed project elements, explains critique, asks questions, and respects the feasible scope of the learner’s work.",
+    "requires": [
+      "被评对象和反馈内容可定位"
+    ],
+    "excludes": [
+      "只有喜欢或不喜欢的判断"
+    ],
+    "unknowns": [
+      "cMOOC中哪些回复可归为真实互评"
+    ],
+    "method_steps": [
+      "定位被回应的贡献",
+      "说明观察和理由",
+      "提出一个可回答的问题或可行修订方向",
+      "观察作者是否接续"
+    ],
+    "proposed_followup": "把互评质量维度加入教师复核与关系图谱的解释层。",
+    "transfer_note": "可用于形成反馈候选标签，但不能自动判定学习者已接受建议。",
+    "id": "OP013-K1",
+    "source_ids": [
+      "OP013"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "先试用再讨论工具边界",
+    "source_observation": "The module has educators interact with a chatbot, probe its answers, reflect on accuracy, limitations, bias, and alignment with their understanding, then discuss what-if scenarios.",
+    "requires": [
+      "教师或共同体能安全进行低风险试用"
+    ],
+    "excludes": [
+      "把模型输出当作已核验事实或课程结论"
+    ],
+    "unknowns": [
+      "不同工具、版本和学科情境的差异"
+    ],
+    "method_steps": [
+      "提出同一基础问题并追问",
+      "记录可取之处、缺失和偏见",
+      "将观察带回小组场景讨论"
+    ],
+    "proposed_followup": "在cMOOC中把公开AI试用经验转为教师复核候选，不将试用结果写成学习者状态。",
+    "transfer_note": "事实来自模块活动；cMOOC迁移是受课程与隐私约束的设计推断。",
+    "id": "OP014-K1",
+    "source_ids": [
+      "OP014"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "用安全沙盒组织教师共同试验",
+    "source_observation": "The module uses short tool trials, shared reflection questions, a BINGO worksheet, and a GenAI sandbox or community of practice for collaborative experimentation.",
+    "requires": [
+      "试验环境与数据边界明确",
+      "有同伴或教师可共同复盘"
+    ],
+    "excludes": [
+      "直接在真实敏感课程数据上试验"
+    ],
+    "unknowns": [
+      "工具版本、可及性、隐私和成本差异"
+    ],
+    "method_steps": [
+      "为每项试验设定同一观察问题",
+      "比较功能、失误和教育用途",
+      "把结果带入共同体讨论和工具评价"
+    ],
+    "proposed_followup": "为教师实践知识建立工具试验记录，保留来源和条件，不自动导入生产策略。",
+    "transfer_note": "公开模块支持共同试验方法；本地工具可用性和真实效果仍未知。",
+    "id": "OP015-K1",
+    "source_ids": [
+      "OP015"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把伦理问题转成共同讨论和行动计划",
+    "source_observation": "The module asks educators to select an ethical issue, connect it to their teaching context, define an actionable step, and share the plan in a small group for constructive feedback.",
+    "requires": [
+      "课程或教师共同体愿意公开讨论价值冲突"
+    ],
+    "excludes": [
+      "只发布不可解释的统一禁令"
+    ],
+    "unknowns": [
+      "组织规则、机构政策和参与者经验"
+    ],
+    "method_steps": [
+      "选择一个伦理议题",
+      "说明与课程的关系和挑战",
+      "提出行动步骤并让同伴反馈"
+    ],
+    "proposed_followup": "将教师伦理行动计划作为教师判断和责任路径的候选输入。",
+    "transfer_note": "这是促进责任和价值澄清的知识卡，不代表任何本地政策已改变。",
+    "id": "OP016-K1",
+    "source_ids": [
+      "OP016"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "先共同澄清价值再写AI约定",
+    "source_observation": "The module asks groups to sort important classroom values, translate them into observable behavior, and connect them to permitted, prohibited, and disclosed GenAI use.",
+    "requires": [
+      "任务目标和机构规则可被教师解释",
+      "参与者有机会表达理由"
+    ],
+    "excludes": [
+      "只用检测分数或惩罚替代规则讨论"
+    ],
+    "unknowns": [
+      "不同课程对AI的目标和责任差异"
+    ],
+    "method_steps": [
+      "排序共同价值",
+      "将价值转为行为和使用边界",
+      "记录允许用途、披露方式和责任归属"
+    ],
+    "proposed_followup": "在cMOOC中把教师和学习者共同制定的课程级约定纳入教师复核，不作为自动发布许可。",
+    "transfer_note": "卡片来自公开教学活动；真实共同体规则需课程负责人确认。",
+    "id": "OP017-K1",
+    "source_ids": [
+      "OP017"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把评价从成品转为过程和共同体活动",
+    "source_observation": "The module recommends documenting drafts, prompts, annotations, peer review, reflection, and human evaluation of AI outputs rather than relying only on a final product.",
+    "requires": [
+      "课程允许过程性记录和同伴活动"
+    ],
+    "excludes": [
+      "无法解释数据来源或责任边界的自动评分"
+    ],
+    "unknowns": [
+      "何种过程证据最能说明学习与协作"
+    ],
+    "method_steps": [
+      "明确任务目的、步骤和成功标准",
+      "收集草稿、评价和修订轨迹",
+      "让学习者解释AI输出与自己的选择"
+    ],
+    "proposed_followup": "为cMOOC近端回流设计过程证据字段，区分互动过程和学习效果。",
+    "transfer_note": "公开模块提供设计建议，不构成项目中真实学习效果证据。",
+    "id": "OP018-K1",
+    "source_ids": [
+      "OP018"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "用风险—回应表保留未知和预防动作",
+    "source_observation": "The activity maps each identified risk to a proactive response and can be completed by groups, making concerns and mitigation ideas visible before an incident.",
+    "requires": [
+      "教师共同体能区分观察到的风险与假设风险"
+    ],
+    "excludes": [
+      "把风险列表直接当成发生事实"
+    ],
+    "unknowns": [
+      "风险发生概率、受影响者和回应有效性"
+    ],
+    "method_steps": [
+      "记录具体挑战",
+      "提出预防或缓解动作",
+      "由同伴检查是否忽略人际后果和数据边界"
+    ],
+    "proposed_followup": "把风险—回应记录接入促进候选的排除条件和人工复核队列。",
+    "transfer_note": "风险地图是规划知识，不是在线干预结果。",
+    "id": "OP019-K1",
+    "source_ids": [
+      "OP019"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "先界定课程目标再配置教师助手",
+    "source_observation": "The module emphasizes that assistants lack the local course context and asks educators to choose a teaching context, configure instructions and knowledge, and reflect on ethical implications.",
+    "requires": [
+      "有明确课程目标、资料边界和人工复核者"
+    ],
+    "excludes": [
+      "把未审查的助手直接接入真实学习者或发布链"
+    ],
+    "unknowns": [
+      "助手输出稳定性、数据处理和责任归属"
+    ],
+    "method_steps": [
+      "选择单一教学场景",
+      "限定资料和行为规则",
+      "用低风险样例反复试用",
+      "由教师检查输出和共享方式"
+    ],
+    "proposed_followup": "把配置过程保存为教师实践知识候选，保持生产接入和发布权限关闭。",
+    "transfer_note": "公开模块支持配置方法；本项目没有把任何自定义助手写入生产。",
+    "id": "OP020-K1",
+    "source_ids": [
+      "OP020"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把技术使用放回关系和教师福祉",
+    "source_observation": "The module asks educators to map emotional responses, analyze classroom interaction patterns, protect human relationships, align use with values, and keep a growth portfolio.",
+    "requires": [
+      "教师愿意反思技术使用与关系变化"
+    ],
+    "excludes": [
+      "只记录工具调用次数而没有体验和关系证据"
+    ],
+    "unknowns": [
+      "情绪、关系与课程推进之间的因果关系"
+    ],
+    "method_steps": [
+      "记录一次具体AI使用体验",
+      "检查对师生和同伴关系的影响",
+      "制定一个可行的边界或连接动作",
+      "在后续回合复盘"
+    ],
+    "proposed_followup": "为教师判断加入关系维护、情绪负担和意义澄清的复核问题。",
+    "transfer_note": "这是教师反思知识，不是学习者心理状态检测器。",
+    "id": "OP021-K1",
+    "source_ids": [
+      "OP021"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "先小范围试用并记录活动演化",
+    "source_observation": "The chapter recommends testing a teacher-facing activity, questioning its pedagogical basis and tool limits, adapting it to the classroom, and keeping a journal to discuss observations with colleagues.",
+    "requires": [
+      "教师有低风险试用场景和明确学习目标"
+    ],
+    "excludes": [
+      "把一次工具体验当成跨课程结论"
+    ],
+    "unknowns": [
+      "长期效果、学科差异和学生实际反应"
+    ],
+    "method_steps": [
+      "明确活动目标和适用对象",
+      "试用并记录输出与修订",
+      "与同伴讨论短期观察和未解决问题"
+    ],
+    "proposed_followup": "将教师AI试用日志作为实践性知识来源，关联课程阶段和后续教师判断。",
+    "transfer_note": "公开教材提供试用与反思方法，不提供本项目真实课程效果。",
+    "id": "OP022-K1",
+    "source_ids": [
+      "OP022"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把AI草稿当作教师修订起点",
+    "source_observation": "The chapter gives examples where teachers generate a unit, quiz, or rubric, then revise outputs for curriculum fit, learner needs, accuracy, accessibility, and clearer criteria.",
+    "requires": [
+      "教师掌握课程目标、学习者需求和领域知识"
+    ],
+    "excludes": [
+      "未经核查的模型材料直接进入课堂"
+    ],
+    "unknowns": [
+      "输出中的错误、偏见和学习负担"
+    ],
+    "method_steps": [
+      "先给出课程和学习目标",
+      "生成小范围草稿",
+      "逐项核验和修订",
+      "记录教师新增的判断依据"
+    ],
+    "proposed_followup": "在教师知识卡中分开保存模型建议、教师修订理由和后续观察。",
+    "transfer_note": "卡片承接的是教师实践判断，不把模型草稿等同于可复用教学方案。",
+    "id": "OP023-K1",
+    "source_ids": [
+      "OP023"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "在熟悉主题中把错误变成讨论对象",
+    "source_observation": "The chapter suggests using familiar topics for classroom demonstrations so students and teachers can notice errors and discuss that AI is not always right.",
+    "requires": [
+      "学习者已有足够背景知识进行核查"
+    ],
+    "excludes": [
+      "复杂陌生主题或教师无法即时解释的输出"
+    ],
+    "unknowns": [
+      "错误是否被发现、理解并转化为学习"
+    ],
+    "method_steps": [
+      "选择熟悉主题",
+      "让参与者预测或检查输出",
+      "讨论错误和验证路径",
+      "回到学科目标而非工具炫技"
+    ],
+    "proposed_followup": "探索cMOOC中由教师发起的可核查AI示例，并保留教师让位和责任条件。",
+    "transfer_note": "公开章节的观点是谨慎教学建议，不是对任何模型可靠性的保证。",
+    "id": "OP024-K1",
+    "source_ids": [
+      "OP024"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把AI使用中的犹豫和转折显性化",
+    "source_observation": "The activity uses a concrete moment, an emotional map, paired sharing, and a personal rule to turn a difficult experience into a future decision cue.",
+    "requires": [
+      "参与者能安全分享真实或听闻的使用片段"
+    ],
+    "excludes": [
+      "把情绪图解释成稳定人格或能力标签"
+    ],
+    "unknowns": [
+      "分享是否改变后续使用和同伴理解"
+    ],
+    "method_steps": [
+      "选定具体时刻",
+      "画出过程和关键转折",
+      "小组分享可帮助的支持",
+      "写一个情境—行动规则"
+    ],
+    "proposed_followup": "可用于教师实践反思和共同体伦理对话，不用于推断学习者心理状态。",
+    "transfer_note": "公开活动支持反思与互助；cMOOC迁移需要自愿、隐私和教师审阅。",
+    "id": "OP025-K1",
+    "source_ids": [
+      "OP025"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "让任务级AI边界由讨论形成",
+    "source_observation": "The activity moves from judgment-free brainstorming to individual mapping, pair and whole-class comparison, a documented shared norm, and explicit teacher explanation when decisions are changed.",
+    "requires": [
+      "具体作业或活动已定义",
+      "教师允许讨论规则形成过程"
+    ],
+    "excludes": [
+      "把一次全班决定推广为所有课程的永久规则"
+    ],
+    "unknowns": [
+      "分歧是价值、目标还是资源差异造成"
+    ],
+    "method_steps": [
+      "列出具体用途",
+      "分别标记舒适度和疑虑",
+      "讨论分歧及学习目标",
+      "记录最终边界和理由"
+    ],
+    "proposed_followup": "将任务级约定作为教师判断的上下文证据，并在版本变化时重新核对。",
+    "transfer_note": "活动是规范形成方法，不构成cMOOC自动授权或真实效果证据。",
+    "id": "OP026-K1",
+    "source_ids": [
+      "OP026"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "先理解使用压力再讨论责任",
+    "source_observation": "The activity surfaces hidden pressures, time constraints, fear of judgment, and isolation so educators can discuss responsible use without treating every disclosure as misconduct.",
+    "requires": [
+      "有安全、非羞辱性的讨论空间"
+    ],
+    "excludes": [
+      "把未披露或未回应当作使用事实"
+    ],
+    "unknowns": [
+      "压力来源、支持需求和制度规则之间的关系"
+    ],
+    "method_steps": [
+      "匿名或自愿分享压力情境",
+      "共同识别重复模式",
+      "讨论可以提供的支持和边界",
+      "记录仍需教师判断的问题"
+    ],
+    "proposed_followup": "把压力识别作为教师接管或关怀候选条件，保持身份和正文最小化。",
+    "transfer_note": "这是对公开对话活动的设计转译，不是对本地学习者动机的观察结论。",
+    "id": "OP027-K1",
+    "source_ids": [
+      "OP027"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把价值选择连接到AI使用问题",
+    "source_observation": "The activity makes values and ethical lenses visible, then asks participants to compare which questions they ask in ordinary decisions and when using AI.",
+    "requires": [
+      "参与者愿意说明当前情境中的价值优先级"
+    ],
+    "excludes": [
+      "把价值排序解释为固定人格或统一规范"
+    ],
+    "unknowns": [
+      "不同课程、文化和身份对价值的影响"
+    ],
+    "method_steps": [
+      "排序当前最重要的价值",
+      "连接对应伦理问题",
+      "比较日常与AI情境",
+      "讨论个人和社会层面的差异"
+    ],
+    "proposed_followup": "用于教师伦理复核和共同体责任解释，不直接作为自动功能选择器。",
+    "transfer_note": "公开活动支持价值澄清；迁移到课程需要尊重多元价值和人工解释。",
+    "id": "OP028-K1",
+    "source_ids": [
+      "OP028"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把模型摘要降格为待核验草稿",
+    "source_observation": "The activity explicitly treats AI summaries as preliminary, requires source checking and substantial human rewriting, and ends with reflection on what AI missed or invented.",
+    "requires": [
+      "有可访问的原始来源和阅读时间"
+    ],
+    "excludes": [
+      "直接提交模型生成的摘要"
+    ],
+    "unknowns": [
+      "哪些关键细节被遗漏，哪些错误来自工具"
+    ],
+    "method_steps": [
+      "先独立阅读和做观察",
+      "生成初步摘要",
+      "逐项检查准确性、相关性和深度",
+      "用自己的分析重写并说明AI作用"
+    ],
+    "proposed_followup": "迁移为公开来源和课程经验的核验工作流，保留人工复核状态。",
+    "transfer_note": "活动提供了知识核验方法；本项目不能把外部来源摘要当成课程历史证据。",
+    "id": "OP029-K1",
+    "source_ids": [
+      "OP029"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "用往返追问而不是一次提示推进思考",
+    "source_observation": "The activity begins with AI-free work, asks students to probe assumptions through several follow-ups, compare AI and human criteria, and revise independently.",
+    "requires": [
+      "学习者掌握讨论主题并能进行基本核验"
+    ],
+    "excludes": [
+      "把模型文本当作最终答案或唯一评价标准"
+    ],
+    "unknowns": [
+      "追问是否深化理解还是增加表面文字"
+    ],
+    "method_steps": [
+      "先完成短的人工版本",
+      "让模型提出或改写一个版本",
+      "连续追问为什么、如何、如果",
+      "同伴和自己分别评价",
+      "独立修订并解释取舍"
+    ],
+    "proposed_followup": "把追问层数、人工回合和同伴接续作为解释性过程证据候选。",
+    "transfer_note": "公开活动支撑批判性对话设计，不证明cMOOC学习成效。",
+    "id": "OP030-K1",
+    "source_ids": [
+      "OP030"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "用角色对话训练倾听和核查",
+    "source_observation": "The activity combines broad context-aware questions, a rubric for active listening, transcript sharing, and comparison of AI responses with the source text.",
+    "requires": [
+      "有稳定的文本或历史材料可供比较"
+    ],
+    "excludes": [
+      "把角色扮演输出当作史实或作者意图"
+    ],
+    "unknowns": [
+      "模型对角色细节的偏差和学习者的解释"
+    ],
+    "method_steps": [
+      "基于材料提出开放问题",
+      "进行并记录对话",
+      "标注回应中的准确与缺失",
+      "与原文比较并写出解释"
+    ],
+    "proposed_followup": "用于cMOOC资源连接或认知冲突候选，要求教师确认材料和目标。",
+    "transfer_note": "公开活动是对话与核查设计，不能把模型角色输出当真实人物知识。",
+    "id": "OP031-K1",
+    "source_ids": [
+      "OP031"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把AI检索转成可核验的共同规划",
+    "source_observation": "The activity asks learners to test prompts, inspect provided sources, assess reliability and values, record new questions, and discuss connections, extensions, and challenges.",
+    "requires": [
+      "有适合的公开检索资源和教师预先试 prompt"
+    ],
+    "excludes": [
+      "直接相信搜索模型的职业预测"
+    ],
+    "unknowns": [
+      "来源质量、未来不确定性和个人情境"
+    ],
+    "method_steps": [
+      "先进行同伴思考",
+      "让模型生成带来源的分析",
+      "打开并核验来源",
+      "形成追问和行动计划",
+      "小组做连接—延伸—挑战复盘"
+    ],
+    "proposed_followup": "可迁移为课程资源连接和后续行动规划的候选流程，保留来源核验要求。",
+    "transfer_note": "公开活动面向职业探索，不等于cMOOC课程目标或学习者需求。",
+    "id": "OP032-K1",
+    "source_ids": [
+      "OP032"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "让多模态生成进入分阶段共同创作",
+    "source_observation": "The lesson sequence introduces AI and ethics, creates an initial concept, shares progress, validates scientific details, adds an interactive element, and integrates a documented final product.",
+    "requires": [
+      "课程允许跨回合创作和同伴展示"
+    ],
+    "excludes": [
+      "一次模型输出直接成为最终作品"
+    ],
+    "unknowns": [
+      "生成内容的准确性、版权、偏见和协作贡献"
+    ],
+    "method_steps": [
+      "分解为概念、研究、细化和整合阶段",
+      "每阶段分享与核查",
+      "记录人和AI各自贡献",
+      "最后说明修订理由"
+    ],
+    "proposed_followup": "可迁移为cMOOC共同产出与资源连接的多阶段活动模式，需教师控制工具和素材范围。",
+    "transfer_note": "公开活动提供设计案例，不提供本地课程效果。",
+    "id": "OP033-K1",
+    "source_ids": [
+      "OP033"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把生成叙事放在来源核验和同伴分享中",
+    "source_observation": "The activity combines a chosen historical lens, AI-assisted narrative, open follow-up questions, three source checks, and optional reenactment or class publication.",
+    "requires": [
+      "有可核验的历史来源和明确的叙事范围"
+    ],
+    "excludes": [
+      "把模型叙事当作历史事实或个人经验"
+    ],
+    "unknowns": [
+      "叙事沉浸感是否掩盖来源偏差"
+    ],
+    "method_steps": [
+      "选择事件和视角",
+      "生成叙事草稿",
+      "提出追问并查找来源",
+      "在同伴或班级中比较并修订"
+    ],
+    "proposed_followup": "可用于cMOOC中的资源连接、观点桥接和共同解释候选，不自动生成历史事实。",
+    "transfer_note": "公开活动重在信息素养和分享；迁移需控制历史主题和身份表达。",
+    "id": "OP034-K1",
+    "source_ids": [
+      "OP034"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "先让AI改写，再由教师校准课程语境",
+    "source_observation": "The page offers prompts for student-friendly descriptions, measurable outcomes, and welcoming policies, then states that instructors must tailor the draft to students and goals.",
+    "requires": [
+      "教师掌握机构术语、学习目标和学生群体信息"
+    ],
+    "excludes": [
+      "把草稿直接当作正式课程政策"
+    ],
+    "unknowns": [
+      "生成措辞是否误解课程责任或学习目标"
+    ],
+    "method_steps": [
+      "提供真实课程约束",
+      "生成多个草稿",
+      "教师检查目标、语气和可执行性",
+      "记录采用或拒绝的理由"
+    ],
+    "proposed_followup": "可把教师对课程文案的修订理由加入实践知识库，作为后续课程沟通候选。",
+    "transfer_note": "公开页面支持教师草稿工作流，不证明AI生成文本更有效。",
+    "id": "OP035-K1",
+    "source_ids": [
+      "OP035"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "用课程约束塑造案例而不是接受通用情境",
+    "source_observation": "The subchapter is specifically devoted to designing course-tailored cases or scenarios, making alignment with the local course the central teacher task.",
+    "requires": [
+      "有明确概念、学习目标和案例边界"
+    ],
+    "excludes": [
+      "通用情境无需学科或课程适配"
+    ],
+    "unknowns": [
+      "案例的真实性、偏见和讨论难度"
+    ],
+    "method_steps": [
+      "说明课程目标和学习者",
+      "要求生成多个情境",
+      "教师检查事实、伦理和难度",
+      "让同伴试读并修订"
+    ],
+    "proposed_followup": "作为教师案例设计的候选方法，后续需以教师审阅和课堂讨论记录核验。",
+    "transfer_note": "来源提供实践入口，cMOOC迁移只保留条件和检查步骤。",
+    "id": "OP036-K1",
+    "source_ids": [
+      "OP036"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把AI反馈当作待审阅的中间材料",
+    "source_observation": "The subchapter itself pairs formative feedback with caveats, which supports a workflow where teacher judgment checks relevance, tone, accuracy, and the learner’s actual task.",
+    "requires": [
+      "反馈对象和学习目标明确",
+      "教师可以审阅模型建议"
+    ],
+    "excludes": [
+      "将模型意见直接作为成绩或惩罚依据"
+    ],
+    "unknowns": [
+      "反馈是否被学习者理解和采用"
+    ],
+    "method_steps": [
+      "限定反馈任务和证据",
+      "生成候选建议",
+      "教师核对依据和语气",
+      "由学习者回应或修订后再回看"
+    ],
+    "proposed_followup": "将反馈候选、教师修改、学习者回应分别记录，避免把建议当成结果。",
+    "transfer_note": "来源支持人机协作反馈的条件化方法，不提供本地反馈效果。",
+    "id": "OP037-K1",
+    "source_ids": [
+      "OP037"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "用问题支架帮助进入探究而不是代写",
+    "source_observation": "The page proposes sentence starters and research questions to reduce blank-page difficulty, narrow broad topics, and support discussion or peer-review setup.",
+    "requires": [
+      "任务需要形成问题或初步表达",
+      "教师能判断支架是否透露答案"
+    ],
+    "excludes": [
+      "让AI写完整论证或替代学习者判断"
+    ],
+    "unknowns": [
+      "不同学习者需要的支架强度"
+    ],
+    "method_steps": [
+      "给出目标和学生水平",
+      "生成多个问题或句式",
+      "教师筛选并让学习者选择",
+      "根据后续问题推进"
+    ],
+    "proposed_followup": "可作为cMOOC问题发起和资源连接的低风险支持候选，需保留学习者自主表达。",
+    "transfer_note": "公开页面提供教师支架方法，不证明学习者会因此更深入参与。",
+    "id": "OP038-K1",
+    "source_ids": [
+      "OP038"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "从教育问题出发共同形成AI方案",
+    "source_observation": "The guide begins with existing educational challenges, asks educators to draft scenarios and identify limitations and opportunities, then assess readiness before implementation.",
+    "requires": [
+      "教师共同体能说明具体教育问题",
+      "有机构和课程边界可供评估"
+    ],
+    "excludes": [
+      "从工具功能出发直接部署"
+    ],
+    "unknowns": [
+      "准备度、资源和责任是否足够"
+    ],
+    "method_steps": [
+      "描述一个教育挑战",
+      "形成多个情境",
+      "比较机会、限制和应用",
+      "评估准备度",
+      "制定实施和复盘计划"
+    ],
+    "proposed_followup": "把教师共同体的挑战—方案—复盘链作为开放经验卡的主索引。",
+    "transfer_note": "来源是国际共同创作指南；本项目仍需本地教师和课程证据。",
+    "id": "OP040-K1",
+    "source_ids": [
+      "OP040"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "用四向度检查教师AI活动缺口",
+    "source_observation": "The framework treats an activity that prompts and evaluates AI output as also requiring awareness of limitations, accountability for attribution, and agency over cognitive offloading.",
+    "requires": [
+      "教师能描述活动的目标和责任"
+    ],
+    "excludes": [
+      "把AI素养缩减为提示技巧或工具熟练度"
+    ],
+    "unknowns": [
+      "四向度在不同学科中的具体权重"
+    ],
+    "method_steps": [
+      "标记活动涉及的认知、操作、责任和主体性",
+      "检查是否有支架",
+      "记录未覆盖的维度",
+      "由教师补充或缩小活动"
+    ],
+    "proposed_followup": "把四向度用作教师AI实践知识的覆盖检查，不作为学习者能力评分。",
+    "transfer_note": "框架是设计工具，尚未提供本地课程验证。",
+    "id": "OP041-K1",
+    "source_ids": [
+      "OP041"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "教师先形成适用边界再指导学生",
+    "source_observation": "The guide links teacher learning, clear assignment-level AI use, verification, privacy, documentation, and supportive correction rather than treating AI use as a binary ban-or-allow question.",
+    "requires": [
+      "课程能够明确任务级AI边界",
+      "教师能提供验证和反馈"
+    ],
+    "excludes": [
+      "只依靠工具检测或惩罚"
+    ],
+    "unknowns": [
+      "学生的工具可及性和真实使用方式"
+    ],
+    "method_steps": [
+      "先由教师试用",
+      "定义任务级使用尺度",
+      "说明核验、隐私和披露要求",
+      "对偏离情形进行指导性纠正"
+    ],
+    "proposed_followup": "把教师试用—规则—纠正路径加入课程教师复核知识。",
+    "transfer_note": "指南是一般性实践建议，不代表本项目采用其全部政策。",
+    "id": "OP042-K1",
+    "source_ids": [
+      "OP042"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "用连续追问和多次生成训练核验",
+    "source_observation": "The book asks students to read an initial answer carefully, ask at least two follow-up questions, compare regenerated responses, and evaluate which answer or source is more reliable.",
+    "requires": [
+      "教师能提供适合连续追问的学科问题",
+      "学习者能比较多个输出并说明理由"
+    ],
+    "excludes": [
+      "把一次模型输出当作稳定答案"
+    ],
+    "unknowns": [
+      "不同模型和版本对再生成结果的差异"
+    ],
+    "method_steps": [
+      "给出一个明确的初始问题",
+      "要求至少两次针对性追问",
+      "再生成或比较多个回答",
+      "核对来源、准确性和人类新增价值"
+    ],
+    "proposed_followup": "把追问、再生成、核验和人类修订写入教师活动设计卡，并观察其是否促进同伴解释。",
+    "transfer_note": "公开教材给出的是课程活动方法；本项目不承诺模型版本迁移或本地学习效果。",
+    "id": "OP043-K1",
+    "source_ids": [
+      "OP043"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "用兴趣—问题—核验串起AI课堂活动",
+    "source_observation": "The resource structures an inquiry around interests and questions, guided prompting, source validation, and ethical reflection instead of treating AI output as an answer.",
+    "requires": [
+      "教师能提供可核验的任务材料",
+      "使用授权的工具和资料"
+    ],
+    "excludes": [
+      "把Copilot输出直接交作业或作为事实"
+    ],
+    "unknowns": [
+      "不同学科的问题和核验标准"
+    ],
+    "method_steps": [
+      "激活兴趣和问题",
+      "设计提示与追问",
+      "核对来源和幻觉",
+      "写反思和责任说明"
+    ],
+    "proposed_followup": "把I-Q、提示、来源核验和反思作为教师活动设计卡。",
+    "transfer_note": "只记录公开资源的做法；未在本地课程运行中验证效果。",
+    "id": "OP044-K1",
+    "source_ids": [
+      "OP044"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "用共同研讨把教师试验转成共享判断",
+    "source_observation": "The guide combines discussion, hands-on prompt iteration, comparison across tools, task-acceleration reflection, and shared policy conversations for faculty and staff.",
+    "requires": [
+      "教师共同体有连续研讨时间",
+      "试验任务不含敏感数据"
+    ],
+    "excludes": [
+      "个人试用后直接推广为制度"
+    ],
+    "unknowns": [
+      "工具差异、节省时间和剩余人工工作"
+    ],
+    "method_steps": [
+      "共同选择一个低风险任务",
+      "迭代提示并比较结果",
+      "记录仍需人工完成的部分",
+      "下次研讨讨论政策和教学含义"
+    ],
+    "proposed_followup": "把教师共同研讨、工具差异和剩余人工工作写入实践知识卡。",
+    "transfer_note": "开放材料来自Berry College研讨设计，不证明本地教师采用情况。",
+    "id": "OP045-K1",
+    "source_ids": [
+      "OP045"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "把AI期待写在课程中并共同迭代",
+    "source_observation": "The guideline advises lecturers to make when-and-how expectations explicit, engage colleagues and students in debate, and build activities that examine AI limits and value.",
+    "requires": [
+      "教师熟悉机构评估、隐私和可及性规则"
+    ],
+    "excludes": [
+      "以完全禁止或检测替代教学设计"
+    ],
+    "unknowns": [
+      "当地制度、工具可用性和学生资源差异"
+    ],
+    "method_steps": [
+      "说明允许和不允许的用途",
+      "与同伴和学生讨论理由",
+      "设计核验和批判性活动",
+      "按反馈更新课程说明"
+    ],
+    "proposed_followup": "把课程级AI约定、同伴共享和核验活动作为教师实践知识候选。",
+    "transfer_note": "这是机构指南的迁移线索；本项目不继承Wits或UCT政策。",
+    "id": "OP046-K1",
+    "source_ids": [
+      "OP046"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  },
+  {
+    "title": "用反馈诗和情境化AI对话促进回应",
+    "source_observation": "Idea 01 asks whether AI poetry created from carefully written human feedback can increase engagement with feedback and peer-to-peer feedback; Idea 02 compares the same critical question with different amounts of context to expose variation in completeness, moral reasoning, and output quality.",
+    "requires": [
+      "教师已有具体反馈或可核验的访谈/文本材料",
+      "活动允许学习者比较、讨论和修订AI输出"
+    ],
+    "excludes": [
+      "把诗化反馈或无上下文对话当作正式评价或事实答案"
+    ],
+    "unknowns": [
+      "不同学习者对诗化反馈的接受度和可及性"
+    ],
+    "method_steps": [
+      "选定一个具体反馈或文本问题",
+      "限定输入和上下文",
+      "比较不同提示或上下文下的输出",
+      "由教师和同伴核验、解释和修订"
+    ],
+    "proposed_followup": "从PDF中的独立活动继续挑选有原文步骤的条目，记录教师如何把反馈、上下文和伦理核验接入cMOOC共同体。",
+    "transfer_note": "这是完整PDF中的两个实质活动观察；本项目不把101项拆成101个独立来源，也不把其示例结果写成本地效果。",
+    "id": "OP047-K1",
+    "source_ids": [
+      "OP047"
+    ],
+    "status": "external_candidate_not_locally_validated",
+    "actual_run_refs": []
+  }
+]

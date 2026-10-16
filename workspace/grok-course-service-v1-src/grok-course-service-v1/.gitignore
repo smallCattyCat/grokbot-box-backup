@@ -1,0 +1,15 @@
+node_modules/
+.cmooc-service-data/
+.next/
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+.env
+.env.*
+!.env.example
+logs/
+screenshots/
+artifacts/
+coverage/
+test-results/

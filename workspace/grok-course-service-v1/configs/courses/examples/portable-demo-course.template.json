@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "platform.course-manifest-template.v2",
+  "alias": "portable-demo",
+  "platformId": "learning-community.example",
+  "adapterId": "learning-community.readonly.v1",
+  "courseIdHash": "f0a93a629f73fd09885297cb89bb85f7e0e71082139263033b0c2cfc4cf01091",
+  "canonicalUrlHash": "f0daa649af52e3eca3af6af964d4f92a22605001aa1e8750f4d214cbe0fffed2",
+  "allowedOrigins": [
+    "https://learning-community.example.test"
+  ],
+  "timeZone": "Asia/Shanghai",
+  "defaultMode": "SHADOW",
+  "policyVersion": "portable-demo.shadow.v1",
+  "realPublishEnabled": false
+}

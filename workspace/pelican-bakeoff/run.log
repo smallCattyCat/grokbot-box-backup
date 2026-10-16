@@ -1,0 +1,24 @@
+=== Testing opencode/space-bunny-free (free) ===
+OK (31791 ms) bytes=12849 svg=True html=True notes=has_circle,has_ellipse,has_path,has_rect,has_line,has_g,bike_named,bird_named,wheel_like_attrs,circle_count=16,path_count=81,ellipse_count=10,line_count=6
+=== Testing opencode/mimo-v2.6-flash-free (free) ===
+OK (220169 ms) bytes=12694 svg=True html=True notes=has_circle,has_ellipse,has_path,has_rect,has_line,has_g,bike_named,bird_named,wheel_like_attrs,circle_count=24,path_count=35,ellipse_count=9,line_count=53
+=== Testing opencode/big-pickle (free) ===
+OK (70864 ms) bytes=4132 svg=True html=True notes=has_circle,has_ellipse,has_path,has_line,has_g,bike_named,bird_named,wheel_like_attrs,circle_count=7,path_count=11,ellipse_count=4,line_count=16
+=== Testing opencode/nemotron-3.5-lightning-free (free) ===
+OK (33946 ms) bytes=1726 svg=True html=True notes=has_circle,has_ellipse,has_polygon,has_rect,has_line,bike_named,bird_named,wheel_like_attrs,circle_count=4,path_count=0,ellipse_count=1,line_count=6
+=== Testing opencode/muse-spark-1.3-contributor-free (free) ===
+FAIL (383 ms): generate HTTP 503: {'_tag': 'ServiceUnavailableError', 'message': 'This model is not available in your country', 'service': 'session generation'}
+=== Testing opencode/nemotron-3-ultra-free (free) ===
+FAIL (1543 ms): generate HTTP 503: {'_tag': 'ServiceUnavailableError', 'message': 'Streaming response failed: [503] Upstream error from Nvidia: Service temporarily overloaded', 'service': 'session generation'}
+=== Testing opencode/longcat-2.5-preview-free (free) ===
+FAIL (300076 ms): generate HTTP 0: timed out
+=== Testing opencode/step-5-preview-free (free) ===
+OK (159118 ms) bytes=11107 svg=True html=True notes=has_circle,has_ellipse,has_path,has_rect,has_line,has_g,bike_named,bird_named,wheel_like_attrs,circle_count=19,path_count=56,ellipse_count=9,line_count=12
+=== Testing opencode-go/longcat-2.5-preview-free (free) ===
+OK (189263 ms) bytes=7468 svg=True html=True notes=has_circle,has_ellipse,has_path,has_rect,has_line,has_g,bike_named,bird_named,wheel_like_attrs,circle_count=13,path_count=17,ellipse_count=5,line_count=31
+=== Testing opencode-go/step-5-preview-free (free) ===
+FAIL (300120 ms): generate HTTP 0: timed out
+=== Testing opencode-go/claude-haiku-5-5 (paid) ===
+OK (13188 ms) bytes=5474 svg=True html=True notes=has_circle,has_ellipse,has_path,has_rect,has_line,has_g,bike_named,bird_named,wheel_like_attrs,circle_count=11,path_count=21,ellipse_count=3,line_count=16
+DONE
+{"ok": 7, "fail": 4, "total": 11}

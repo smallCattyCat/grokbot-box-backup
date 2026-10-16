@@ -1,0 +1,2024 @@
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "darwin-arm64", "windows"]
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Course {
+  id                    String                       @id @default(cuid())
+  platformCourseId      String                       @unique
+  name                  String
+  sourceUrl             String?
+  status                String                       @default("active")
+  metadataJson          String
+  lastSyncedAt          DateTime?
+  createdAt             DateTime                     @default(now())
+  updatedAt             DateTime                     @updatedAt
+  memberships           CourseMembership[]
+  posts                 ForumPost[]
+  replies               ForumReply[]
+  ingestionRuns         ForumIngestionRun[]
+  postSnapshots         ForumPostSnapshot[]
+  userSnapshots         ForumUserSnapshot[]
+  userCourseProfiles    ForumUserCourseProfile[]
+  utteranceAnalyses     ForumUserUtteranceAnalysis[]
+  autoRuns              AutoInterventionRun[]
+  autoCandidates        AutoInterventionCandidate[]
+  interactionAnalyses   InteractionAnalysis[]
+  tasks                 InterventionTask[]
+  agentRuns             AgentRun[]
+  agentContextSnapshots AgentContextSnapshot[]
+
+  @@index([status])
+  @@index([lastSyncedAt])
+}
+
+model ForumUser {
+  id                     String                       @id @default(cuid())
+  forumUserId            String                       @unique
+  name                   String
+  role                   String
+  tagsJson               String
+  activityLevel          Int
+  emotionalState         String
+  centralityScore        Float
+  lastActiveAt           DateTime
+  createdAt              DateTime                     @default(now())
+  updatedAt              DateTime                     @updatedAt
+  posts                  ForumPost[]
+  replies                ForumReply[]
+  tasks                  InterventionTask[]
+  userSnapshots          ForumUserSnapshot[]
+  profile                ForumUserProfile?
+  utteranceAnalyses      ForumUserUtteranceAnalysis[]
+  courseMemberships      CourseMembership[]
+  courseProfiles         ForumUserCourseProfile[]
+  targetContextSnapshots AgentContextSnapshot[]
+}
+
+model CourseMembership {
+  id                  String    @id @default(cuid())
+  courseId            String
+  userId              String
+  forumUserId         String
+  displayName         String
+  roleInCourse        String
+  firstSeenAt         DateTime?
+  lastSeenAt          DateTime?
+  postCount           Int       @default(0)
+  replyCount          Int       @default(0)
+  companionReplyCount Int       @default(0)
+  activityLevel       Int       @default(0)
+  emotionalState      String    @default("unknown")
+  centralityScore     Float     @default(0)
+  personaType         String    @default("participant")
+  tagsJson            String
+  evidenceJson        String
+  createdAt           DateTime  @default(now())
+  updatedAt           DateTime  @updatedAt
+  course              Course    @relation(fields: [courseId], references: [id])
+  user                ForumUser @relation(fields: [userId], references: [id])
+
+  @@unique([courseId, userId])
+  @@index([courseId])
+  @@index([userId])
+  @@index([forumUserId])
+  @@index([personaType])
+}
+
+model AutoInterventionRun {
+  id                String                      @id @default(cuid())
+  courseId          String?
+  forumListUrl      String
+  mode              String
+  status            String
+  maxScanPosts      Int
+  maxPublishCount   Int
+  minScoreToPublish Float
+  startedAt         DateTime                    @default(now())
+  finishedAt        DateTime?
+  reportJson        String?
+  createdAt         DateTime                    @default(now())
+  updatedAt         DateTime                    @updatedAt
+  course            Course?                     @relation(fields: [courseId], references: [id])
+  candidates        AutoInterventionCandidate[]
+
+  @@index([courseId])
+}
+
+model AutoInterventionCandidate {
+  id                 String              @id @default(cuid())
+  courseId           String?
+  runId              String
+  postId             String
+  postUrl            String
+  postTitle          String
+  rawExtractJson     String
+  valueAnalysisJson  String?
+  interventionScore  Float
+  cieLevel           Int
+  emotionLabel       String
+  topicType          String
+  interventionType   String
+  targetMode         String
+  targetCommentIndex Int?
+  targetReason       String
+  replyStrategy      String
+  riskLevel          String
+  reason             String
+  draftReply         String?
+  finalReply         String?
+  safetyRisk         Int?
+  status             String
+  publishedUrl       String?
+  screenshotPath     String?
+  errorMessage       String?
+  createdAt          DateTime            @default(now())
+  updatedAt          DateTime            @updatedAt
+  course             Course?             @relation(fields: [courseId], references: [id])
+  run                AutoInterventionRun @relation(fields: [runId], references: [id])
+  post               ForumPost           @relation(fields: [postId], references: [id])
+  task               InterventionTask?
+
+  @@index([courseId])
+  @@index([runId])
+  @@index([postId])
+  @@index([postUrl])
+  @@index([status])
+}
+
+model ForumPost {
+  id                    String                       @id @default(cuid())
+  courseId              String?
+  sourceKind            String                       @default("unknown")
+  forumPostId           String                       @unique
+  authorId              String
+  title                 String
+  content               String
+  url                   String
+  replyCount            Int                          @default(0)
+  likeCount             Int                          @default(0)
+  viewCount             Int                          @default(0)
+  createdAt             DateTime
+  updatedAt             DateTime                     @updatedAt
+  lastReplyAt           DateTime?
+  course                Course?                      @relation(fields: [courseId], references: [id])
+  author                ForumUser                    @relation(fields: [authorId], references: [id])
+  replies               ForumReply[]
+  analysis              InteractionAnalysis?
+  tasks                 InterventionTask[]
+  autoCandidates        AutoInterventionCandidate[]
+  agentRuns             AgentRun[]
+  postSnapshots         ForumPostSnapshot[]
+  utteranceAnalyses     ForumUserUtteranceAnalysis[]
+  agentContextSnapshots AgentContextSnapshot[]
+
+  @@index([courseId])
+  @@index([sourceKind])
+  @@index([authorId])
+}
+
+model ForumIngestionRun {
+  id            String              @id @default(cuid())
+  courseId      String?
+  sourceUrl     String
+  sourceType    String
+  status        String
+  postCount     Int                 @default(0)
+  replyCount    Int                 @default(0)
+  userCount     Int                 @default(0)
+  startedAt     DateTime            @default(now())
+  finishedAt    DateTime?
+  metadataJson  String?
+  errorMessage  String?
+  createdAt     DateTime            @default(now())
+  updatedAt     DateTime            @updatedAt
+  course        Course?             @relation(fields: [courseId], references: [id])
+  postSnapshots ForumPostSnapshot[]
+  userSnapshots ForumUserSnapshot[]
+
+  @@index([courseId])
+  @@index([sourceUrl])
+  @@index([status])
+  @@index([createdAt])
+}
+
+model ForumPostSnapshot {
+  id            String            @id @default(cuid())
+  courseId      String?
+  runId         String
+  postId        String
+  forumPostId   String
+  columnId      String?
+  columnName    String?
+  title         String
+  url           String
+  replyCount    Int
+  likeCount     Int
+  viewCount     Int
+  contentLength Int
+  lastReplyAt   DateTime?
+  rawJson       String
+  createdAt     DateTime          @default(now())
+  course        Course?           @relation(fields: [courseId], references: [id])
+  run           ForumIngestionRun @relation(fields: [runId], references: [id])
+  post          ForumPost         @relation(fields: [postId], references: [id])
+
+  @@index([courseId])
+  @@index([runId])
+  @@index([postId])
+  @@index([forumPostId])
+  @@index([columnId])
+  @@index([createdAt])
+}
+
+model ForumUserSnapshot {
+  id                  String            @id @default(cuid())
+  courseId            String?
+  runId               String
+  userId              String
+  forumUserId         String
+  displayName         String
+  role                String
+  postCount           Int
+  replyCount          Int
+  companionReplyCount Int
+  activityLevel       Int
+  emotionalState      String
+  centralityScore     Float
+  firstSeenAt         DateTime?
+  lastSeenAt          DateTime?
+  tagsJson            String
+  evidenceJson        String
+  createdAt           DateTime          @default(now())
+  course              Course?           @relation(fields: [courseId], references: [id])
+  run                 ForumIngestionRun @relation(fields: [runId], references: [id])
+  user                ForumUser         @relation(fields: [userId], references: [id])
+
+  @@index([courseId])
+  @@index([runId])
+  @@index([userId])
+  @@index([forumUserId])
+  @@index([createdAt])
+}
+
+model ForumUserProfile {
+  id                       String    @id @default(cuid())
+  userId                   String    @unique
+  forumUserId              String
+  displayName              String
+  role                     String
+  sourceRunId              String?
+  utteranceCount           Int       @default(0)
+  postCount                Int       @default(0)
+  replyCount               Int       @default(0)
+  nestedReplyCount         Int       @default(0)
+  outgoingInteractionCount Int       @default(0)
+  incomingInteractionCount Int       @default(0)
+  avgCieLevel              Float     @default(0)
+  avgCieConfidence         Float     @default(0)
+  dominantIamPhase         Int       @default(1)
+  dominantKnowledgePhase   String    @default("unknown")
+  dominantEmotion          String    @default("unknown")
+  avgConfusionScore        Float     @default(0)
+  avgUrgencyScore          Float     @default(0)
+  questionRatio            Float     @default(0)
+  resourceNeedRatio        Float     @default(0)
+  highCieRatio             Float     @default(0)
+  shallowReplyRatio        Float     @default(0)
+  centralityScore          Float     @default(0)
+  personaType              String    @default("participant")
+  riskFlagsJson            String
+  interestTermsJson        String
+  evidenceJson             String
+  profileSummary           String
+  generatedAt              DateTime  @default(now())
+  updatedAt                DateTime  @updatedAt
+  user                     ForumUser @relation(fields: [userId], references: [id])
+
+  @@index([forumUserId])
+  @@index([sourceRunId])
+  @@index([personaType])
+  @@index([generatedAt])
+}
+
+model ForumUserCourseProfile {
+  id                       String    @id @default(cuid())
+  courseId                 String
+  userId                   String
+  forumUserId              String
+  displayName              String
+  role                     String
+  sourceRunId              String?
+  utteranceCount           Int       @default(0)
+  postCount                Int       @default(0)
+  replyCount               Int       @default(0)
+  nestedReplyCount         Int       @default(0)
+  outgoingInteractionCount Int       @default(0)
+  incomingInteractionCount Int       @default(0)
+  avgCieLevel              Float     @default(0)
+  avgCieConfidence         Float     @default(0)
+  dominantIamPhase         Int       @default(1)
+  dominantKnowledgePhase   String    @default("unknown")
+  dominantEmotion          String    @default("unknown")
+  avgConfusionScore        Float     @default(0)
+  avgUrgencyScore          Float     @default(0)
+  questionRatio            Float     @default(0)
+  resourceNeedRatio        Float     @default(0)
+  highCieRatio             Float     @default(0)
+  shallowReplyRatio        Float     @default(0)
+  centralityScore          Float     @default(0)
+  personaType              String    @default("participant")
+  riskFlagsJson            String
+  interestTermsJson        String
+  evidenceJson             String
+  profileSummary           String
+  generatedAt              DateTime  @default(now())
+  updatedAt                DateTime  @updatedAt
+  course                   Course    @relation(fields: [courseId], references: [id])
+  user                     ForumUser @relation(fields: [userId], references: [id])
+
+  @@unique([courseId, userId])
+  @@index([courseId])
+  @@index([userId])
+  @@index([forumUserId])
+  @@index([sourceRunId])
+  @@index([personaType])
+  @@index([generatedAt])
+}
+
+model ForumUserUtteranceAnalysis {
+  id               String      @id @default(cuid())
+  courseId         String?
+  utteranceKey     String      @unique
+  userId           String
+  forumUserId      String
+  postId           String?
+  replyId          String?
+  sourceRunId      String?
+  sourceKind       String      @default("unknown")
+  utteranceType    String
+  columnName       String?
+  title            String?
+  contentPreview   String
+  contentLength    Int
+  depth            Int         @default(0)
+  targetUserId     String?
+  cieLevel         Int
+  cieLabel         String
+  cieConfidence    Float
+  iamPhase         Int
+  knowledgePhase   String
+  emotionLabel     String
+  confusionScore   Int
+  urgencyScore     Int
+  isQuestion       Boolean
+  resourceNeed     Boolean
+  shallowReply     Boolean
+  needsHumanReview Boolean
+  matchedWordsJson String
+  topicTermsJson   String
+  sourceCreatedAt  DateTime?
+  createdAt        DateTime    @default(now())
+  analyzedAt       DateTime    @default(now())
+  course           Course?     @relation(fields: [courseId], references: [id])
+  user             ForumUser   @relation(fields: [userId], references: [id])
+  post             ForumPost?  @relation(fields: [postId], references: [id])
+  reply            ForumReply? @relation(fields: [replyId], references: [id])
+
+  @@index([courseId])
+  @@index([userId])
+  @@index([forumUserId])
+  @@index([postId])
+  @@index([replyId])
+  @@index([sourceRunId])
+  @@index([sourceKind])
+  @@index([utteranceType])
+  @@index([cieLevel])
+  @@index([iamPhase])
+  @@index([sourceCreatedAt])
+}
+
+model ForumReply {
+  id                    String                       @id @default(cuid())
+  courseId              String?
+  sourceKind            String                       @default("unknown")
+  forumReplyId          String                       @unique
+  platformReplyId       String?
+  parentPlatformReplyId String?
+  postId                String
+  authorId              String
+  targetUserId          String?
+  depth                 Int                          @default(0)
+  content               String
+  isCompanionReply      Boolean                      @default(false)
+  companionType         String?
+  createdAt             DateTime                     @default(now())
+  course                Course?                      @relation(fields: [courseId], references: [id])
+  post                  ForumPost                    @relation(fields: [postId], references: [id])
+  author                ForumUser                    @relation(fields: [authorId], references: [id])
+  utteranceAnalyses     ForumUserUtteranceAnalysis[]
+
+  @@index([courseId])
+  @@index([sourceKind])
+  @@index([postId])
+  @@index([authorId])
+  @@index([targetUserId])
+  @@index([platformReplyId])
+  @@index([parentPlatformReplyId])
+  @@index([depth])
+}
+
+model InteractionAnalysis {
+  id                   String    @id @default(cuid())
+  courseId             String?
+  postId               String    @unique
+  cieLevel             Int
+  cieLabel             String
+  emotionLabel         String
+  topicRelevance       Float
+  cognitiveDepth       Float
+  discussionPotential  Float
+  unansweredHours      Float
+  isolatedLearnerScore Float
+  duplicateScore       Float
+  analyzedAt           DateTime  @default(now())
+  course               Course?   @relation(fields: [courseId], references: [id])
+  post                 ForumPost @relation(fields: [postId], references: [id])
+
+  @@index([courseId])
+}
+
+model InterventionTask {
+  id                       String                     @id @default(cuid())
+  courseId                 String?
+  postId                   String
+  targetUserId             String
+  interventionType         String
+  publishTarget            String                     @default("post_comment")
+  targetCommentStrategy    String?
+  targetCommentIndex       Int?
+  targetPlatformReplyId    String?
+  targetCommentContentHash String?
+  targetCommentPreview     String?
+  priorityScore            Float
+  status                   String
+  draftContent             String?
+  finalContent             String?
+  safetyRisk               Int?
+  safetyResult             String?
+  publishedUrl             String?
+  screenshotPath           String?
+  errorMessage             String?
+  retryCount               Int                        @default(0)
+  sourceCandidateId        String?                    @unique
+  contentHash              String?
+  targetHash               String?
+  policyDecisionJson       String?
+  policyVersion            String?
+  safetyCheckedAt          DateTime?
+  createdAt                DateTime                   @default(now())
+  updatedAt                DateTime                   @updatedAt
+  publishedAt              DateTime?
+  course                   Course?                    @relation(fields: [courseId], references: [id])
+  post                     ForumPost                  @relation(fields: [postId], references: [id])
+  targetUser               ForumUser                  @relation(fields: [targetUserId], references: [id])
+  sourceCandidate          AutoInterventionCandidate? @relation(fields: [sourceCandidateId], references: [id], onDelete: SetNull)
+  agentRuns                AgentRun[]
+  publishAttempts          PublishAttempt[]
+  publishAuthorizations    PublishAuthorization[]
+  contextSnapshots         AgentContextSnapshot[]
+
+  @@index([courseId])
+  @@index([postId])
+  @@index([targetUserId])
+  @@index([status])
+  @@index([contentHash])
+  @@index([targetPlatformReplyId])
+}
+
+model AgentRun {
+  id         String            @id @default(cuid())
+  courseId   String?
+  taskId     String?
+  postId     String?
+  agentName  String
+  inputJson  String
+  outputJson String
+  status     String
+  startedAt  DateTime          @default(now())
+  finishedAt DateTime?
+  course     Course?           @relation(fields: [courseId], references: [id])
+  task       InterventionTask? @relation(fields: [taskId], references: [id])
+  post       ForumPost?        @relation(fields: [postId], references: [id])
+
+  @@index([courseId])
+  @@index([taskId])
+  @@index([postId])
+}
+
+model AgentContextSnapshot {
+  id                       String           @id @default(cuid())
+  courseId                 String?
+  taskId                   String
+  postId                   String
+  targetUserId             String
+  sourceRunId              String?
+  companionType            String
+  revision                 Int
+  asOfAt                   DateTime
+  observationSchemaVersion String
+  inferenceModelVersion    String
+  expressionPolicyVersion  String
+  observationJson          String
+  inferenceJson            String
+  expressionJson           String
+  futureInformationUsed    Boolean          @default(false)
+  createdAt                DateTime         @default(now())
+  course                   Course?          @relation(fields: [courseId], references: [id])
+  task                     InterventionTask @relation(fields: [taskId], references: [id])
+  post                     ForumPost        @relation(fields: [postId], references: [id])
+  targetUser               ForumUser        @relation(fields: [targetUserId], references: [id])
+
+  @@unique([taskId, revision])
+  @@index([courseId])
+  @@index([taskId])
+  @@index([postId])
+  @@index([targetUserId])
+  @@index([sourceRunId])
+  @@index([asOfAt])
+  @@index([companionType])
+}
+
+model CompanionProfile {
+  id                     String   @id @default(cuid())
+  name                   String
+  type                   String   @unique
+  persona                String
+  tone                   String
+  roleBoundary           String
+  currentMentalStateJson String
+  active                 Boolean  @default(true)
+  createdAt              DateTime @default(now())
+  updatedAt              DateTime @updatedAt
+}
+
+model PublishAuthorization {
+  id           String           @id @default(cuid())
+  taskId       String
+  kind         String           @default("single")
+  status       String           @default("active")
+  contentHash  String
+  targetHash   String
+  expiresAt    DateTime
+  maxUses      Int              @default(1)
+  usedCount    Int              @default(0)
+  metadataJson String           @default("{}")
+  authorizedAt DateTime         @default(now())
+  consumedAt   DateTime?
+  revokedAt    DateTime?
+  createdAt    DateTime         @default(now())
+  updatedAt    DateTime         @updatedAt
+  task         InterventionTask @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  attempts     PublishAttempt[]
+
+  @@index([taskId, status])
+  @@index([expiresAt])
+}
+
+model PublishAttempt {
+  id              String                @id @default(cuid())
+  taskId          String
+  authorizationId String?
+  action          String                @default("publish")
+  status          String
+  message         String
+  contentHash     String?
+  targetHash      String?
+  idempotencyKey  String?               @unique
+  transport       String?
+  remoteUrl       String?
+  screenshotPath  String?
+  evidenceJson    String?
+  errorCode       String?
+  startedAt       DateTime?
+  finishedAt      DateTime?
+  createdAt       DateTime              @default(now())
+  // Publish attempts are durable execution evidence. A task with attempts
+  // must not be deleted and silently erase that history.
+  task            InterventionTask      @relation(fields: [taskId], references: [id], onDelete: Restrict)
+  authorization   PublishAuthorization? @relation(fields: [authorizationId], references: [id], onDelete: SetNull)
+
+  @@index([taskId])
+  @@index([authorizationId])
+  @@index([status])
+  @@map("PublishLog")
+}
+
+model ForumSetting {
+  id                   String   @id @default("default")
+  forumBaseUrl         String
+  loginUrl             String
+  postUrlPattern       String
+  replyEditorSelector  String
+  replySubmitSelector  String
+  replySuccessSelector String
+  realPublishEnabled   Boolean  @default(false)
+  createdAt            DateTime @default(now())
+  updatedAt            DateTime @updatedAt
+}
+
+model AutonomyCourseManifest {
+  alias                  String                @id
+  manifestHash           String                @unique
+  platformId             String
+  adapterId              String?
+  platformCourseRefHash  String
+  canonicalLocatorHash   String
+  identityKeyFingerprint String
+  allowedOrigin          String
+  timeZone               String
+  defaultMode            String
+  policyVersion          String
+  enabled                Boolean               @default(true)
+  realPublishEnabled     Boolean               @default(false)
+  createdAt              DateTime              @default(now())
+  updatedAt              DateTime              @updatedAt
+  schedules              OperationSchedule[]
+  policies               AutonomyPolicy[]
+  invocations            ScheduledInvocation[]
+
+  @@index([enabled])
+  @@index([platformId, adapterId])
+}
+
+model OperationSchedule {
+  id              String                 @id @default(cuid())
+  courseAlias     String
+  scheduleKey     String                 @unique
+  mode            String
+  intervalMinutes Int
+  timeZone        String
+  enabled         Boolean                @default(true)
+  nextRunAt       DateTime?
+  budgetJson      String
+  createdAt       DateTime               @default(now())
+  updatedAt       DateTime               @updatedAt
+  course          AutonomyCourseManifest @relation(fields: [courseAlias], references: [alias], onDelete: Restrict)
+  invocations     ScheduledInvocation[]
+
+  @@index([courseAlias, enabled])
+  @@index([nextRunAt])
+}
+
+model AutonomyPolicy {
+  id                 String                 @id @default(cuid())
+  courseAlias        String
+  version            String
+  status             String
+  mode               String
+  allowedActionsJson String
+  budgetJson         String
+  policyHash         String                 @unique
+  validFrom          DateTime
+  validUntil         DateTime
+  revokedAt          DateTime?
+  emergencyHalt      Boolean                @default(false)
+  realPublishEnabled Boolean                @default(false)
+  createdAt          DateTime               @default(now())
+  updatedAt          DateTime               @updatedAt
+  course             AutonomyCourseManifest @relation(fields: [courseAlias], references: [alias], onDelete: Restrict)
+
+  @@unique([courseAlias, version])
+  @@index([courseAlias, status])
+  @@index([validUntil])
+}
+
+/// Course-level operational governance is an upper-bound scheduler/tick
+/// policy. It is intentionally separate from AutonomyPolicy (the execution
+/// authority used by ExecutionPermit) and never contains actions or publish
+/// capabilities. Rows are immutable append-only policy events: status changes
+/// require a new version rather than an in-place update.
+model CourseOperationGovernancePolicy {
+  id                  String                               @id @default(cuid())
+  courseAlias         String
+  version             String
+  baseManifestHash    String
+  status              String
+  mode                String
+  dailySlotLimit      Int
+  perTickActionLimit  Int
+  authorTouchLimit30d Int
+  minIntervalMinutes  Int
+  validFrom           DateTime
+  validUntil          DateTime
+  emergencyHalt       Boolean                              @default(false)
+  governanceHash      String                               @unique
+  containsForumText   Boolean                              @default(false)
+  createdAt           DateTime                             @default(now())
+  updatedAt           DateTime                             @updatedAt
+  outgoingTransition  CourseOperationGovernanceTransition? @relation("GovernanceTransitionFrom")
+  incomingTransition  CourseOperationGovernanceTransition? @relation("GovernanceTransitionTo")
+
+  @@unique([courseAlias, version])
+  @@index([courseAlias, status, validUntil])
+  @@index([courseAlias, baseManifestHash])
+}
+
+/// Immutable lineage between two full governance policy snapshots. The
+/// transition is a local course-operation control event only; it never grants
+/// STAGE, AUTO, editor, notification, or publish authority.
+model CourseOperationGovernanceTransition {
+  id                   String                          @id @default(cuid())
+  schemaVersion        String
+  courseAlias          String
+  transitionKey        String
+  action               String
+  fromGovernanceHash   String                          @unique
+  toGovernanceHash     String                          @unique
+  expectedManifestHash String
+  effectiveAt          DateTime
+  reasonCode           String
+  eventHash            String                          @unique
+  containsForumText    Boolean                         @default(false)
+  createdAt            DateTime                        @default(now())
+  fromPolicy           CourseOperationGovernancePolicy @relation("GovernanceTransitionFrom", fields: [fromGovernanceHash], references: [governanceHash], onDelete: Restrict, onUpdate: Restrict)
+  toPolicy             CourseOperationGovernancePolicy @relation("GovernanceTransitionTo", fields: [toGovernanceHash], references: [governanceHash], onDelete: Restrict, onUpdate: Restrict)
+
+  @@unique([courseAlias, transitionKey])
+  @@index([courseAlias, createdAt])
+  @@index([courseAlias, effectiveAt])
+}
+
+model ScheduledInvocation {
+  id                     String                  @id @default(cuid())
+  invocationKey          String                  @unique
+  courseAlias            String
+  scheduleId             String?
+  manifestHash           String
+  governancePolicyId     String?
+  governanceVersion      String?
+  governanceHash         String?
+  governanceLimitsJson   String?
+  scheduledFor           DateTime
+  mode                   String
+  status                 String
+  phase                  String
+  leaseOwner             String?
+  leaseExpiresAt         DateTime?
+  heartbeatAt            DateTime?
+  attempt                Int                     @default(0)
+  recoveredFromId        String?
+  startedAt              DateTime?
+  finishedAt             DateTime?
+  summaryJson            String?
+  createdAt              DateTime                @default(now())
+  updatedAt              DateTime                @updatedAt
+  course                 AutonomyCourseManifest  @relation(fields: [courseAlias], references: [alias], onDelete: Restrict)
+  schedule               OperationSchedule?      @relation(fields: [scheduleId], references: [id], onDelete: Restrict)
+  scanRun                CourseScanRun?
+  observations           AutonomyObservation[]
+  worldSnapshot          CourseWorldSnapshot?
+  candidateSet           CandidateSet?
+  schedulingLedger       SchedulingLedger?
+  budgetReservations     BudgetReservation[]
+  decisions              AutonomyDecision[]
+  executionAccountLeases ExecutionAccountLease[]
+  decisionTape           DecisionTapeEntry[]
+  reviewEvents           ReviewEvent[]
+  incidents              AutonomyIncident[]
+
+  @@unique([courseAlias, scheduledFor, mode])
+  // scheduleId remains nullable for historical invocations whose scheduler
+  // evidence predates durable schedule binding. SQLite permits multiple NULLs
+  // in this unique index; no unverifiable backfill is performed.
+  @@unique([scheduleId, scheduledFor])
+  @@index([courseAlias, status])
+  @@index([governanceHash])
+  @@index([leaseExpiresAt])
+  @@index([scheduledFor])
+}
+
+model AutonomyWorkerWakeReceipt {
+  id                  String    @id @default(cuid())
+  source              String
+  runtimeVersion      String
+  startedAt           DateTime
+  finishedAt          DateTime?
+  status              String
+  reasonCode          String
+  exitCode            Int?
+  countsJson          String
+  sourceTruncated     Boolean   @default(false)
+  taskSetHash         String
+  summaryHash         String
+  editorWriteCount    Int       @default(0)
+  publishAttemptCount Int       @default(0)
+  realPublishEnabled  Boolean   @default(false)
+  containsForumText   Boolean   @default(false)
+  createdAt           DateTime  @default(now())
+  updatedAt           DateTime  @updatedAt
+
+  @@index([source, startedAt])
+  @@index([status, startedAt])
+}
+
+model CourseScanRun {
+  id                        String                           @id @default(cuid())
+  invocationId              String                           @unique
+  courseAlias               String
+  scanKey                   String                           @unique
+  status                    String
+  sourceKind                String
+  cursorJson                String
+  coverageJson              String
+  coverageHash              String?
+  sourceReceiptHash         String?
+  observedEventCount        Int                              @default(0)
+  newEventCount             Int                              @default(0)
+  failedTargetCount         Int                              @default(0)
+  startedAt                 DateTime                         @default(now())
+  finishedAt                DateTime?
+  createdAt                 DateTime                         @default(now())
+  updatedAt                 DateTime                         @updatedAt
+  invocation                ScheduledInvocation              @relation(fields: [invocationId], references: [id], onDelete: Restrict)
+  events                    CourseEvent[]
+  eventObservations         CourseEventObservation[]
+  structureFactObservations CourseStructureFactObservation[]
+
+  @@index([courseAlias, status])
+  @@index([startedAt])
+}
+
+model CourseEvent {
+  id                String                   @id @default(cuid())
+  courseAlias       String
+  scanRunId         String
+  eventKey          String                   @unique
+  threadKey         String
+  actorKey          String?
+  parentEventKey    String?
+  kind              String
+  actorRelation     String
+  relationBasis     String
+  depth             Int                      @default(0)
+  occurredAt        DateTime
+  observedAt        DateTime
+  sourceKind        String
+  sourceVersionHash String
+  targetVersionHash String
+  legalityStatus    String
+  createdAt         DateTime                 @default(now())
+  scanRun           CourseScanRun            @relation(fields: [scanRunId], references: [id], onDelete: Restrict)
+  observations      CourseEventObservation[]
+
+  @@index([courseAlias, occurredAt])
+  @@index([threadKey, occurredAt])
+  @@index([actorKey, occurredAt])
+  @@index([parentEventKey])
+  @@index([scanRunId])
+}
+
+model CourseEventObservation {
+  id                String        @id @default(cuid())
+  scanRunId         String
+  eventKey          String
+  observedAt        DateTime
+  sourceKind        String
+  sourceVersionHash String
+  targetVersionHash String?
+  revisionKind      String        @default("legacy_observation")
+  createdAt         DateTime      @default(now())
+  scanRun           CourseScanRun @relation(fields: [scanRunId], references: [id], onDelete: Restrict)
+  event             CourseEvent   @relation(fields: [eventKey], references: [eventKey], onDelete: Restrict)
+
+  @@unique([scanRunId, eventKey])
+  @@index([eventKey, observedAt])
+  @@index([scanRunId])
+}
+
+model AutonomyObservation {
+  id                  String              @id @default(cuid())
+  invocationId        String
+  threadKey           String
+  receiptHash         String              @unique
+  semanticReceiptHash String?             @unique
+  observedAt          DateTime
+  receiptJson         String
+  semanticReceiptJson String?
+  containsForumText   Boolean             @default(false)
+  createdAt           DateTime            @default(now())
+  invocation          ScheduledInvocation @relation(fields: [invocationId], references: [id], onDelete: Restrict)
+
+  @@index([invocationId, threadKey, observedAt])
+}
+
+model CourseWorldSnapshot {
+  id                    String                       @id @default(cuid())
+  invocationId          String                       @unique
+  courseAlias           String
+  asOfAt                DateTime
+  eventSetHash          String
+  worldHash             String
+  graphHash             String
+  coverageHash          String
+  eventCount            Int
+  threadCount           Int
+  actorCount            Int
+  edgeCount             Int
+  openGapCount          Int
+  stateJson             String
+  createdAt             DateTime                     @default(now())
+  invocation            ScheduledInvocation          @relation(fields: [invocationId], references: [id], onDelete: Restrict)
+  threads               ThreadStateAtCutoff[]
+  actors                ActorCourseStateAtCutoff[]
+  edges                 InteractionEdgeProjection[]
+  candidateSets         CandidateSet[]
+  contentGraphSnapshots CourseContentGraphSnapshot[]
+
+  @@index([courseAlias, asOfAt])
+  @@index([worldHash])
+}
+
+model ThreadStateAtCutoff {
+  id                         String              @id @default(cuid())
+  snapshotId                 String
+  threadKey                  String
+  rootEventKey               String
+  authorKey                  String?
+  firstEventAt               DateTime
+  latestEventAt              DateTime
+  eventCount                 Int
+  externalHumanCount         Int
+  distinctActorResponseCount Int                 @default(0)
+  authorReturnCount          Int
+  systemResponseCount        Int
+  maxDepth                   Int
+  completeness               String
+  supportGapHours            Float
+  stateHash                  String
+  createdAt                  DateTime            @default(now())
+  snapshot                   CourseWorldSnapshot @relation(fields: [snapshotId], references: [id], onDelete: Restrict)
+
+  @@unique([snapshotId, threadKey])
+  @@index([threadKey, latestEventAt])
+  @@index([authorKey])
+}
+
+model ActorCourseStateAtCutoff {
+  id                  String              @id @default(cuid())
+  snapshotId          String
+  actorKey            String
+  firstSeenAt         DateTime
+  lastSeenAt          DateTime
+  eventCount          Int
+  authoredThreadCount Int
+  replyCount          Int
+  distinctPeerCount   Int
+  systemTouchCount30d Int
+  lastSystemTouchAt   DateTime?
+  stateHash           String
+  createdAt           DateTime            @default(now())
+  snapshot            CourseWorldSnapshot @relation(fields: [snapshotId], references: [id], onDelete: Restrict)
+
+  @@unique([snapshotId, actorKey])
+  @@index([actorKey, lastSeenAt])
+}
+
+model InteractionEdgeProjection {
+  id             String              @id @default(cuid())
+  snapshotId     String
+  edgeKey        String
+  sourceActorKey String?
+  targetActorKey String?
+  threadKey      String
+  kind           String
+  weight         Int
+  firstEventAt   DateTime
+  latestEventAt  DateTime
+  stateHash      String
+  createdAt      DateTime            @default(now())
+  snapshot       CourseWorldSnapshot @relation(fields: [snapshotId], references: [id], onDelete: Restrict)
+
+  @@unique([snapshotId, edgeKey])
+  @@index([sourceActorKey])
+  @@index([targetActorKey])
+  @@index([threadKey])
+}
+
+model CourseStructureFact {
+  id                String                           @id @default(cuid())
+  courseAlias       String
+  courseKey         String
+  factKey           String                           @unique
+  factIdentityKey   String
+  factKind          String
+  subjectKey        String
+  subjectKind       String
+  predicate         String?
+  objectKey         String?
+  objectKind        String?
+  revisionHash      String
+  occurredAt        DateTime?
+  ordinal           Int?
+  attributesJson    String
+  legalityStatus    String
+  containsForumText Boolean                          @default(false)
+  createdAt         DateTime                         @default(now())
+  observations      CourseStructureFactObservation[]
+
+  @@index([courseAlias, courseKey, factIdentityKey, occurredAt])
+  @@index([subjectKey, occurredAt])
+  @@index([objectKey, occurredAt])
+  @@index([factKind, subjectKind, predicate])
+}
+
+model CourseStructureFactObservation {
+  id                String              @id @default(cuid())
+  scanRunId         String
+  factKey           String
+  observedAt        DateTime
+  sourceKind        String
+  sourceVersionHash String
+  createdAt         DateTime            @default(now())
+  scanRun           CourseScanRun       @relation(fields: [scanRunId], references: [id], onDelete: Restrict)
+  fact              CourseStructureFact @relation(fields: [factKey], references: [factKey], onDelete: Restrict)
+
+  @@unique([scanRunId, factKey])
+  @@index([factKey, observedAt])
+  @@index([scanRunId])
+}
+
+model CourseContentGraphSnapshot {
+  id                   String                           @id @default(cuid())
+  worldSnapshotId      String
+  courseAlias          String
+  asOfAt               DateTime
+  schemaVersion        String
+  structureFactSetHash String
+  nodeSetHash          String
+  edgeSetHash          String
+  contentGraphHash     String
+  coverageHash         String
+  coverageStatus       String
+  roleRegistryStatus   String
+  nodeCount            Int
+  edgeCount            Int
+  learnerNodeCount     Int
+  stateJson            String
+  createdAt            DateTime                         @default(now())
+  worldSnapshot        CourseWorldSnapshot              @relation(fields: [worldSnapshotId], references: [id], onDelete: Restrict)
+  nodes                CourseGraphNodeProjection[]
+  edges                CourseGraphEdgeProjection[]
+  learnerPositions     LearnerNetworkPositionAtCutoff[]
+
+  @@unique([worldSnapshotId, schemaVersion])
+  @@index([courseAlias, asOfAt])
+  @@index([contentGraphHash])
+  @@index([coverageStatus])
+}
+
+model CourseGraphNodeProjection {
+  id              String                     @id @default(cuid())
+  graphSnapshotId String
+  nodeKey         String
+  kind            String
+  role            String?
+  ordinal         Int?
+  firstSeenAt     DateTime?
+  lastSeenAt      DateTime?
+  completeness    String
+  metricsJson     String
+  stateHash       String
+  createdAt       DateTime                   @default(now())
+  graphSnapshot   CourseContentGraphSnapshot @relation(fields: [graphSnapshotId], references: [id], onDelete: Restrict)
+
+  @@unique([graphSnapshotId, nodeKey])
+  @@index([graphSnapshotId, kind, nodeKey])
+  @@index([nodeKey, lastSeenAt])
+  @@index([role])
+}
+
+model CourseGraphEdgeProjection {
+  id              String                     @id @default(cuid())
+  graphSnapshotId String
+  edgeKey         String
+  sourceNodeKey   String
+  targetNodeKey   String
+  kind            String
+  scopeNodeKey    String?
+  weight          Float
+  evidenceCount   Int
+  firstEventAt    DateTime?
+  latestEventAt   DateTime?
+  completeness    String
+  stateHash       String
+  createdAt       DateTime                   @default(now())
+  graphSnapshot   CourseContentGraphSnapshot @relation(fields: [graphSnapshotId], references: [id], onDelete: Restrict)
+
+  @@unique([graphSnapshotId, edgeKey])
+  @@index([graphSnapshotId, kind, weight])
+  @@index([sourceNodeKey])
+  @@index([targetNodeKey])
+  @@index([scopeNodeKey])
+}
+
+model LearnerNetworkPositionAtCutoff {
+  id                      String                     @id @default(cuid())
+  graphSnapshotId         String
+  actorKey                String
+  windowKind              String
+  coverageStatus          String
+  eventCount              Int
+  authoredThreadCount     Int
+  replyCount              Int
+  inboundReplyCount       Int
+  outboundReplyCount      Int
+  uniqueInboundPeerCount  Int
+  uniqueOutboundPeerCount Int
+  reciprocalPeerCount     Int
+  componentSize           Int
+  kCore                   Int?
+  pageRank                Float?
+  stateHash               String
+  createdAt               DateTime                   @default(now())
+  graphSnapshot           CourseContentGraphSnapshot @relation(fields: [graphSnapshotId], references: [id], onDelete: Restrict)
+
+  @@unique([graphSnapshotId, actorKey, windowKind])
+  @@index([graphSnapshotId, windowKind, coverageStatus])
+  @@index([actorKey, windowKind])
+}
+
+model CandidateSet {
+  id               String              @id @default(cuid())
+  invocationId     String              @unique
+  snapshotId       String
+  candidateSetHash String
+  asOfAt           DateTime
+  candidateCount   Int
+  candidatesJson   String
+  createdAt        DateTime            @default(now())
+  invocation       ScheduledInvocation @relation(fields: [invocationId], references: [id], onDelete: Restrict)
+  snapshot         CourseWorldSnapshot @relation(fields: [snapshotId], references: [id], onDelete: Restrict)
+
+  @@index([candidateSetHash])
+}
+
+model SchedulingLedger {
+  id                    String              @id @default(cuid())
+  invocationId          String              @unique
+  courseAlias           String
+  snapshotHash          String
+  candidateSetHash      String
+  budgetDate            String
+  availableSlots        Int
+  reservedSlots         Int                 @default(0)
+  consumedSlots         Int                 @default(0)
+  authorTouchWindowDays Int                 @default(30)
+  authorTouchLimit      Int
+  reason                String
+  ledgerHash            String
+  createdAt             DateTime            @default(now())
+  invocation            ScheduledInvocation @relation(fields: [invocationId], references: [id], onDelete: Restrict)
+
+  @@index([courseAlias, budgetDate])
+  @@index([ledgerHash])
+}
+
+model BudgetReservation {
+  id             String              @id @default(cuid())
+  invocationId   String
+  decisionId     String?
+  courseAlias    String
+  reservationKey String              @unique
+  authorKey      String?
+  workloadCost   Int
+  status         String
+  expiresAt      DateTime
+  consumedAt     DateTime?
+  releasedAt     DateTime?
+  createdAt      DateTime            @default(now())
+  updatedAt      DateTime            @updatedAt
+  invocation     ScheduledInvocation @relation(fields: [invocationId], references: [id], onDelete: Restrict)
+  decision       AutonomyDecision?   @relation(fields: [decisionId], references: [id], onDelete: Restrict)
+
+  @@index([courseAlias, status])
+  @@index([authorKey, createdAt])
+  @@index([expiresAt])
+}
+
+model AutonomyDecision {
+  id                     String                 @id @default(cuid())
+  invocationId           String
+  courseAlias            String
+  decisionKey            String                 @unique
+  threadKey              String
+  authorKey              String?
+  decision               String
+  decisionMode           String
+  reasonCode             String
+  observationReceiptHash String
+  opportunityReceiptHash String
+  evidenceBundleHash     String
+  intentHash             String?
+  moveSpecHash           String?
+  draftContentHash       String?
+  policyVersion          String
+  governanceVersion      String?
+  governanceHash         String?
+  worldHash              String
+  candidateSetHash       String
+  evidenceAsOf           DateTime
+  decisionJson           String
+  bodyPersisted          Boolean                @default(false)
+  publishAttempted       Boolean                @default(false)
+  editorWriteAttempted   Boolean                @default(false)
+  createdAt              DateTime               @default(now())
+  invocation             ScheduledInvocation    @relation(fields: [invocationId], references: [id], onDelete: Restrict)
+  budgetReservations     BudgetReservation[]
+  semanticRealization    SemanticRealization?
+  authorizedActionPlan   AuthorizedActionPlan?
+  executionStageReceipt  ExecutionStageReceipt?
+  executionAccountLease  ExecutionAccountLease?
+  executionPermits       ExecutionPermit[]
+  executionAttempts      ExecutionAttempt[]
+  proximalOutcomes       ProximalOutcome[]
+  reviewEvents           ReviewEvent[]
+
+  @@unique([invocationId, threadKey])
+  @@index([courseAlias, evidenceAsOf])
+  @@index([courseAlias, threadKey, evidenceAsOf])
+  @@index([decision])
+  @@index([authorKey])
+  @@index([courseAlias, governanceHash])
+}
+
+/// Immutable, body-free handoff from a persistent execution policy to one
+/// exact decision. Continuous AUTO uses this record instead of relying on an
+/// in-process one-shot handoff or allowing a worker to name any policy version.
+model AuthorizedActionPlan {
+  id                   String           @id @default(cuid())
+  decisionId           String           @unique
+  invocationId         String
+  courseAlias          String
+  manifestHash         String
+  governanceHash       String
+  policyVersion        String
+  policyHash           String
+  connectorBindingHash String
+  actionType           String
+  executionProofKind   String
+  planHash             String           @unique
+  status               String
+  validUntil           DateTime
+  permitIssuedAt       DateTime?
+  revokedAt            DateTime?
+  createdAt            DateTime         @default(now())
+  updatedAt            DateTime         @updatedAt
+  decision             AutonomyDecision @relation(fields: [decisionId], references: [id], onDelete: Restrict)
+
+  @@index([courseAlias, status, validUntil])
+  @@index([invocationId])
+  @@index([policyHash])
+  @@index([governanceHash])
+}
+
+model SemanticRealization {
+  id              String           @id @default(cuid())
+  decisionId      String           @unique
+  rendererKind    String
+  rendererVersion String
+  modelProvider   String?
+  modelName       String?
+  contractVersion String
+  contentHash     String
+  validationJson  String
+  bodyPersisted   Boolean          @default(false)
+  createdAt       DateTime         @default(now())
+  decision        AutonomyDecision @relation(fields: [decisionId], references: [id], onDelete: Restrict)
+
+  @@index([contentHash])
+}
+
+model DecisionTapeEntry {
+  id                String              @id @default(cuid())
+  invocationId      String
+  sequence          Int
+  kind              String
+  payloadHash       String
+  previousEntryHash String?
+  entryHash         String              @unique
+  payloadJson       String
+  containsForumText Boolean             @default(false)
+  createdAt         DateTime            @default(now())
+  invocation        ScheduledInvocation @relation(fields: [invocationId], references: [id], onDelete: Restrict)
+
+  @@unique([invocationId, sequence])
+  @@index([invocationId, kind])
+}
+
+model ExecutionPermit {
+  id                      String             @id @default(cuid())
+  decisionId              String
+  courseAlias             String
+  permitKey               String             @unique
+  policyVersion           String
+  targetHash              String
+  targetVersionHash       String
+  contentHash             String
+  idempotencyKey          String             @unique
+  status                  String
+  expiresAt               DateTime
+  usedAt                  DateTime?
+  revokedAt               DateTime?
+  realPublishEnabled      Boolean            @default(false)
+  executionProofKind      String             @default("trusted_stage")
+  actionPlanHash          String?
+  executionAccountLeaseId String?            @unique
+  executionAccountRefHash String?
+  credentialRefHash       String?
+  createdAt               DateTime           @default(now())
+  updatedAt               DateTime           @updatedAt
+  decision                AutonomyDecision   @relation(fields: [decisionId], references: [id], onDelete: Restrict)
+  attempts                ExecutionAttempt[]
+
+  @@index([courseAlias, status])
+  @@index([expiresAt])
+  @@index([actionPlanHash])
+}
+
+/// Short-lived opaque account identity lease. Only hashes and enum/status
+/// fields are persisted; credential material, platform identity and message
+/// content never enter this table.
+model ExecutionAccountLease {
+  id                String              @id
+  leaseKey          String              @unique
+  accountRefHash    String
+  credentialRefHash String
+  roleKey           String
+  courseAlias       String
+  invocationId      String
+  decisionId        String              @unique
+  status            String
+  expiresAt         DateTime
+  consumedAt        DateTime?
+  releasedAt        DateTime?
+  createdAt         DateTime            @default(now())
+  updatedAt         DateTime            @updatedAt
+  invocation        ScheduledInvocation @relation(fields: [invocationId], references: [id], onDelete: Restrict)
+  decision          AutonomyDecision    @relation(fields: [decisionId], references: [id], onDelete: Restrict)
+
+  @@index([courseAlias, status])
+  @@index([accountRefHash, status])
+  @@index([expiresAt])
+}
+
+model ExecutionStageReceipt {
+  id                String           @id @default(cuid())
+  decisionId        String           @unique
+  courseAlias       String
+  policyVersion     String
+  receiptHash       String           @unique
+  targetVersionHash String
+  contentHash       String
+  status            String
+  observedAt        DateTime
+  expiresAt         DateTime
+  usedAt            DateTime?
+  editorWriteCount  Int              @default(1)
+  editorClearCount  Int              @default(1)
+  sentMutationCount Int              @default(0)
+  publishAttempted  Boolean          @default(false)
+  bodyPersisted     Boolean          @default(false)
+  containsForumText Boolean          @default(false)
+  createdAt         DateTime         @default(now())
+  updatedAt         DateTime         @updatedAt
+  decision          AutonomyDecision @relation(fields: [decisionId], references: [id], onDelete: Restrict)
+
+  @@index([courseAlias, policyVersion, status])
+  @@index([expiresAt])
+}
+
+model ExecutionAttempt {
+  id                      String           @id @default(cuid())
+  decisionId              String
+  permitId                String?
+  mode                    String
+  status                  String
+  transport               String
+  idempotencyKey          String           @unique
+  receiptJson             String
+  remoteOutcomeHash       String?
+  requestedMutationCount  Int              @default(0)
+  sentMutationCount       Int              @default(0)
+  publishAttempted        Boolean          @default(false)
+  executionAccountRefHash String?
+  startedAt               DateTime         @default(now())
+  finishedAt              DateTime?
+  createdAt               DateTime         @default(now())
+  decision                AutonomyDecision @relation(fields: [decisionId], references: [id], onDelete: Restrict)
+  permit                  ExecutionPermit? @relation(fields: [permitId], references: [id], onDelete: Restrict)
+
+  @@index([decisionId, status])
+  @@index([permitId])
+  @@index([executionAccountRefHash])
+}
+
+model ProximalOutcome {
+  id                   String           @id @default(cuid())
+  decisionId           String
+  observationWindow    String
+  dueAt                DateTime
+  status               String
+  observedAt           DateTime?
+  eventPrefixHash      String?
+  firstExternalReplyAt DateTime?
+  authorReturned       Boolean?
+  replyDepthDelta      Int?
+  newAuthorCount       Int?
+  functionUptakeJson   String
+  censored             Boolean          @default(false)
+  missingReason        String?
+  createdAt            DateTime         @default(now())
+  updatedAt            DateTime         @updatedAt
+  decision             AutonomyDecision @relation(fields: [decisionId], references: [id], onDelete: Restrict)
+
+  @@unique([decisionId, observationWindow])
+  @@index([status, dueAt])
+}
+
+model ReviewEvent {
+  id                String               @id @default(cuid())
+  decisionId        String?
+  invocationId      String?
+  kind              String
+  outcome           String
+  durationMs        Int?
+  reasonCode        String?
+  evidenceHash      String
+  containsForumText Boolean              @default(false)
+  createdAt         DateTime             @default(now())
+  decision          AutonomyDecision?    @relation(fields: [decisionId], references: [id], onDelete: Restrict)
+  invocation        ScheduledInvocation? @relation(fields: [invocationId], references: [id], onDelete: Restrict)
+
+  @@index([decisionId])
+  @@index([invocationId])
+  @@index([kind, createdAt])
+}
+
+model AutonomyIncident {
+  id           String               @id @default(cuid())
+  courseAlias  String
+  invocationId String?
+  targetKey    String?
+  severity     String
+  code         String
+  status       String
+  evidenceHash String
+  summaryJson  String
+  openedAt     DateTime             @default(now())
+  resolvedAt   DateTime?
+  createdAt    DateTime             @default(now())
+  updatedAt    DateTime             @updatedAt
+  invocation   ScheduledInvocation? @relation(fields: [invocationId], references: [id], onDelete: Restrict)
+
+  @@index([courseAlias, status])
+  @@index([invocationId])
+  @@index([severity, openedAt])
+}
+
+model StageRunNonceClaim {
+  runNonceHash String   @id
+  expiresAt    DateTime
+  claimedAt    DateTime
+  createdAt    DateTime @default(now())
+
+  @@index([expiresAt])
+  @@index([claimedAt])
+}
+
+/// Durable, redacted context attached to a local Codex task. This table never
+/// stores forum bodies, platform identities, credentials, cookies or tokens.
+model WorkbenchContextSnapshot {
+  id                String          @id @default(cuid())
+  schemaVersion     String
+  contextRef        String
+  kind              String
+  courseAlias       String?
+  invocationId      String?
+  evidenceHash      String?
+  contextJson       String
+  containsForumText Boolean         @default(false)
+  createdAt         DateTime        @default(now())
+  tasks             WorkbenchTask[]
+
+  @@index([courseAlias, createdAt])
+  @@index([invocationId])
+}
+
+model WorkbenchTask {
+  id                 String                             @id
+  title              String
+  status             String
+  contextSnapshotId  String?
+  createdAt          DateTime
+  updatedAt          DateTime                           @updatedAt
+  completedAt        DateTime?
+  contextSnapshot    WorkbenchContextSnapshot?          @relation(fields: [contextSnapshotId], references: [id], onDelete: SetNull)
+  runs               WorkbenchRunRecord[]
+  safeObjective      WorkbenchSafeTaskObjective?
+  planRevisions      WorkbenchPlanRevisionRecord[]
+  toolCalls          WorkbenchToolCallRecord[]
+  artifactVersions   WorkbenchArtifactVersionRecord[]
+  artifactSelections WorkbenchArtifactSelectionRecord[]
+  verifications      WorkbenchVerificationRecord[]
+  executionLeases    WorkbenchExecutionLease[]
+  courseToolActions  WorkbenchCourseToolActionRecord[]
+  stageTransactions  WorkbenchStageTransactionRecord[]
+
+  @@index([status, updatedAt])
+  @@index([contextSnapshotId])
+}
+
+model WorkbenchRunRecord {
+  id                String                            @id
+  taskId            String
+  schemaVersion     String
+  source            String
+  status            String
+  projectLabel      String
+  snapshotJson      String
+  errorCode         String?
+  recoveryState     String?
+  createdAt         DateTime
+  updatedAt         DateTime
+  finishedAt        DateTime?
+  task              WorkbenchTask                     @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  events            WorkbenchEventRecord[]
+  artifacts         WorkbenchArtifactRecord[]
+  planRevisions     WorkbenchPlanRevisionRecord[]
+  toolCalls         WorkbenchToolCallRecord[]
+  artifactVersions  WorkbenchArtifactVersionRecord[]
+  verifications     WorkbenchVerificationRecord[]
+  executionLeases   WorkbenchExecutionLease[]
+  courseToolActions WorkbenchCourseToolActionRecord[]
+  stageTransactions WorkbenchStageTransactionRecord[]
+
+  @@index([status, updatedAt])
+  @@index([taskId])
+}
+
+model WorkbenchEventRecord {
+  id         String             @id @default(cuid())
+  runId      String
+  sequence   Int
+  kind       String
+  status     String
+  title      String
+  summary    String?
+  agentLabel String?
+  agentRole  String?
+  createdAt  DateTime
+  run        WorkbenchRunRecord @relation(fields: [runId], references: [id], onDelete: Cascade)
+
+  @@unique([runId, sequence])
+  @@index([runId, createdAt])
+}
+
+model WorkbenchArtifactRecord {
+  id           String             @id @default(cuid())
+  runId        String
+  artifactId   String
+  label        String
+  relativePath String
+  kind         String
+  status       String
+  observedAt   DateTime
+  run          WorkbenchRunRecord @relation(fields: [runId], references: [id], onDelete: Cascade)
+
+  @@unique([runId, artifactId])
+}
+
+/// Classified task intent only. Raw prompts and user-authored objective text
+/// remain transient and must never be copied into this table.
+model WorkbenchSafeTaskObjective {
+  id                 String        @id
+  taskId             String        @unique
+  schemaVersion      String
+  objectiveHash      String
+  safeSummary        String
+  structuredGoalJson String
+  source             String
+  expiresAt          DateTime?
+  createdAt          DateTime      @default(now())
+  task               WorkbenchTask @relation(fields: [taskId], references: [id], onDelete: Cascade)
+
+  @@index([objectiveHash])
+  @@index([expiresAt])
+}
+
+/// A model plan is only a proposal. Rows here are immutable canonical plans
+/// emitted by the server-side compiler and validator.
+model WorkbenchPlanRevisionRecord {
+  id                String                            @id
+  taskId            String
+  runId             String
+  revision          Int
+  objectiveHash     String
+  source            String
+  compilerVersion   String
+  proposalHash      String?
+  safeSummary       String
+  createdAt         DateTime                          @default(now())
+  task              WorkbenchTask                     @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  run               WorkbenchRunRecord                @relation(fields: [runId], references: [id], onDelete: Cascade)
+  steps             WorkbenchPlanStepRecord[]
+  courseToolActions WorkbenchCourseToolActionRecord[]
+  stageTransactions WorkbenchStageTransactionRecord[]
+
+  @@unique([taskId, revision])
+  @@index([runId, createdAt])
+  @@index([objectiveHash])
+}
+
+model WorkbenchPlanStepRecord {
+  id                 String                            @id
+  planRevisionId     String
+  ordinal            Int
+  status             String
+  toolName           String
+  toolVersion        String
+  dependencyIdsJson  String
+  inputRefsJson      String
+  preconditionsJson  String
+  postconditionsJson String
+  effectClass        String
+  requiredCapability String
+  acceptanceJson     String
+  replanPolicyJson   String
+  safeSummary        String
+  startedAt          DateTime?
+  completedAt        DateTime?
+  createdAt          DateTime                          @default(now())
+  planRevision       WorkbenchPlanRevisionRecord       @relation(fields: [planRevisionId], references: [id], onDelete: Cascade)
+  toolCalls          WorkbenchToolCallRecord[]
+  executionLeases    WorkbenchExecutionLease[]
+  courseToolActions  WorkbenchCourseToolActionRecord[]
+  stageTransactions  WorkbenchStageTransactionRecord[]
+
+  @@unique([planRevisionId, ordinal])
+  @@index([planRevisionId, status])
+  @@index([toolName, toolVersion])
+}
+
+model WorkbenchExecutionLease {
+  id               String                    @id
+  taskId           String
+  runId            String
+  stepId           String?
+  scopeKey         String
+  ownerInstanceId  String
+  generation       Int
+  fencingTokenHash String
+  status           String
+  acquiredAt       DateTime
+  heartbeatAt      DateTime
+  expiresAt        DateTime
+  releasedAt       DateTime?
+  createdAt        DateTime                  @default(now())
+  updatedAt        DateTime                  @updatedAt
+  task             WorkbenchTask             @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  run              WorkbenchRunRecord        @relation(fields: [runId], references: [id], onDelete: Cascade)
+  step             WorkbenchPlanStepRecord?  @relation(fields: [stepId], references: [id], onDelete: Cascade)
+  toolCalls        WorkbenchToolCallRecord[]
+
+  @@unique([runId, scopeKey])
+  @@index([status, expiresAt])
+  @@index([taskId, runId])
+  @@index([stepId])
+}
+
+model WorkbenchToolCallRecord {
+  id                String                            @id
+  taskId            String
+  runId             String
+  stepId            String
+  executionLeaseId  String
+  parentCallId      String?
+  toolName          String
+  toolVersion       String
+  capability        String
+  effectClass       String
+  safeInputSummary  String
+  inputHash         String
+  idempotencyKey    String
+  attempt           Int
+  grantRef          String?
+  leaseGeneration   Int
+  fencingTokenHash  String
+  status            String
+  causationId       String?
+  createdAt         DateTime                          @default(now())
+  completedAt       DateTime?
+  task              WorkbenchTask                     @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  run               WorkbenchRunRecord                @relation(fields: [runId], references: [id], onDelete: Cascade)
+  step              WorkbenchPlanStepRecord           @relation(fields: [stepId], references: [id], onDelete: Cascade)
+  executionLease    WorkbenchExecutionLease           @relation(fields: [executionLeaseId], references: [id], onDelete: Restrict)
+  parentCall        WorkbenchToolCallRecord?          @relation("WorkbenchToolCallParent", fields: [parentCallId], references: [id], onDelete: SetNull)
+  childCalls        WorkbenchToolCallRecord[]         @relation("WorkbenchToolCallParent")
+  receipt           WorkbenchToolReceiptRecord?
+  artifactVersions  WorkbenchArtifactVersionRecord[]
+  stageTransactions WorkbenchStageTransactionRecord[]
+
+  @@unique([toolName, idempotencyKey, attempt])
+  @@index([taskId, runId, createdAt])
+  @@index([stepId, status])
+  @@index([executionLeaseId, leaseGeneration])
+  @@index([parentCallId])
+}
+
+model WorkbenchToolReceiptRecord {
+  id                String                  @id
+  callId            String                  @unique
+  status            String
+  safeOutputSummary String
+  outputHash        String
+  evidenceRefsJson  String
+  beforeRefJson     String?
+  afterRefJson      String?
+  verificationId    String?
+  compensationRef   String?
+  containsForumText Boolean                 @default(false)
+  containsIdentity  Boolean                 @default(false)
+  observedAt        DateTime
+  createdAt         DateTime                @default(now())
+  call              WorkbenchToolCallRecord @relation(fields: [callId], references: [id], onDelete: Cascade)
+
+  @@index([status, observedAt])
+  @@index([verificationId])
+}
+
+model WorkbenchArtifactVersionRecord {
+  id                     String                   @id
+  taskId                 String
+  runId                  String
+  artifactId             String
+  version                Int
+  schemaVersion          String
+  artifactKind           String
+  contentClass           String
+  contentHash            String
+  draftBodyHash          String?
+  contentRef             String?
+  safeSummary            String
+  metadataJson           String
+  sourceRefsJson         String
+  regenerationRecipeJson String?
+  createdByCallId        String?
+  expiresAt              DateTime?
+  createdAt              DateTime                 @default(now())
+  task                   WorkbenchTask            @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  run                    WorkbenchRunRecord       @relation(fields: [runId], references: [id], onDelete: Cascade)
+  createdByCall          WorkbenchToolCallRecord? @relation(fields: [createdByCallId], references: [id], onDelete: SetNull)
+
+  @@unique([artifactId, version])
+  @@index([taskId, artifactId, createdAt])
+  @@index([runId, createdAt])
+  @@index([createdByCallId])
+  @@index([contentHash])
+}
+
+/// Current task-scoped pointer to one immutable logical artifact version.
+/// The pointer advances only through generation + selectionHash CAS; artifact
+/// bodies remain outside this table.
+model WorkbenchArtifactSelectionRecord {
+  id             String        @id
+  taskId         String
+  runId          String
+  artifactId     String
+  versionId      String
+  versionRef     String
+  version        Int
+  contentHash    String
+  draftBodyHash  String?
+  verificationId String
+  generation     Int
+  selectionHash  String
+  selectedAt     DateTime
+  updatedAt      DateTime
+  task           WorkbenchTask @relation(fields: [taskId], references: [id], onDelete: Cascade)
+
+  @@unique([taskId, artifactId])
+  @@index([versionId])
+  @@index([verificationId])
+  @@index([runId, selectedAt])
+  @@index([selectionHash])
+}
+
+model WorkbenchVerificationRecord {
+  id                String             @id
+  taskId            String
+  runId             String
+  subjectType       String
+  subjectId         String
+  verifier          String
+  verifierVersion   String
+  status            String
+  safeSummary       String
+  checksJson        String
+  evidenceRefsJson  String
+  observedAt        DateTime
+  expiresAt         DateTime?
+  containsForumText Boolean            @default(false)
+  containsIdentity  Boolean            @default(false)
+  createdAt         DateTime           @default(now())
+  task              WorkbenchTask      @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  run               WorkbenchRunRecord @relation(fields: [runId], references: [id], onDelete: Cascade)
+
+  @@index([taskId, subjectType, subjectId])
+  @@index([runId, status, observedAt])
+  @@index([expiresAt])
+}
+
+/// Server-prepared L3 STAGE action. The durable projection contains only
+/// hashes, safe business parameters and exact execution binding fields; forum
+/// bodies, identities, credentials, paths and raw platform identifiers are
+/// forbidden by the application store and database boundary.
+model WorkbenchCourseToolActionRecord {
+  id                  String                            @id
+  schemaVersion       String
+  taskId              String
+  runId               String
+  planRevisionId      String
+  stepId              String
+  callId              String                            @unique
+  toolName            String
+  toolVersion         String
+  capability          String
+  effectClass         String
+  courseScopeHash     String
+  inputHash           String
+  idempotencyKeyHash  String
+  policyVersion       String
+  attempt             Int
+  businessInputJson   String
+  safeSummary         String
+  bindingHash         String                            @unique
+  approvalHash        String                            @unique
+  grantRef            String                            @unique
+  validFrom           DateTime
+  expiresAt           DateTime
+  oneShot             Boolean                           @default(true)
+  realPublishEnabled  Boolean                           @default(false)
+  status              String
+  statusReasonCode    String
+  terminalReceiptHash String?
+  reconciliationHash  String?
+  /// Safe, non-replayable recovery reference returned by an ambiguous trusted
+  /// STAGE attempt. It contains no draft body, identity, credential or token.
+  compensationRef     String?
+  /// Immediate action lineage. Recovery actions point to the ambiguous STAGE
+  /// action; ordinary STAGE actions keep this null.
+  parentActionId      String?
+  /// Exact action whose unknown outcome this action reconciles. Kept separate
+  /// from parentActionId so recovery semantics remain explicit and auditable.
+  recoveryOfActionId  String?
+  containsForumText   Boolean                           @default(false)
+  containsIdentity    Boolean                           @default(false)
+  containsSecrets     Boolean                           @default(false)
+  preparedAt          DateTime
+  approvalRequestedAt DateTime?
+  approvedAt          DateTime?
+  executionStartedAt  DateTime?
+  completedAt         DateTime?
+  createdAt           DateTime                          @default(now())
+  updatedAt           DateTime                          @updatedAt
+  task                WorkbenchTask                     @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  run                 WorkbenchRunRecord                @relation(fields: [runId], references: [id], onDelete: Cascade)
+  planRevision        WorkbenchPlanRevisionRecord       @relation(fields: [planRevisionId], references: [id], onDelete: Cascade)
+  step                WorkbenchPlanStepRecord           @relation(fields: [stepId], references: [id], onDelete: Cascade)
+  grant               WorkbenchCourseToolGrantRecord?
+  parentAction        WorkbenchCourseToolActionRecord?  @relation("WorkbenchCourseToolActionParent", fields: [parentActionId], references: [id], onDelete: SetNull)
+  childActions        WorkbenchCourseToolActionRecord[] @relation("WorkbenchCourseToolActionParent")
+  recoveryOfAction    WorkbenchCourseToolActionRecord?  @relation("WorkbenchCourseToolActionRecovery", fields: [recoveryOfActionId], references: [id], onDelete: SetNull)
+  recoveryActions     WorkbenchCourseToolActionRecord[] @relation("WorkbenchCourseToolActionRecovery")
+
+  @@index([taskId, runId, status])
+  @@index([planRevisionId, stepId])
+  @@index([status, expiresAt])
+  @@index([toolName, toolVersion])
+  @@index([parentActionId])
+  @@index([recoveryOfActionId, status])
+}
+
+/// Exact-once capability grant for one server-prepared L3 STAGE action. The
+/// binding is deliberately duplicated so a single UPDATE ... WHERE CAS can
+/// consume the authority without trusting a mutable join projection.
+model WorkbenchCourseToolGrantRecord {
+  id                 String                          @id
+  schemaVersion      String
+  actionId           String                          @unique
+  capability         String
+  effectClass        String
+  toolName           String
+  toolVersion        String
+  callId             String                          @unique
+  taskId             String
+  runId              String
+  planRevisionId     String
+  stepId             String
+  courseScopeHash    String
+  inputHash          String
+  idempotencyKeyHash String
+  policyVersion      String
+  attempt            Int
+  bindingHash        String                          @unique
+  approvalHash       String                          @unique
+  validFrom          DateTime
+  expiresAt          DateTime
+  oneShot            Boolean                         @default(true)
+  realPublishEnabled Boolean                         @default(false)
+  status             String
+  consumedAt         DateTime?
+  expiredAt          DateTime?
+  revokedAt          DateTime?
+  createdAt          DateTime                        @default(now())
+  updatedAt          DateTime                        @updatedAt
+  action             WorkbenchCourseToolActionRecord @relation(fields: [actionId], references: [id], onDelete: Cascade)
+
+  @@index([status, expiresAt])
+  @@index([taskId, runId])
+  @@index([planRevisionId, stepId])
+  @@index([toolName, toolVersion])
+}
+
+/// Body-free, restart-safe ledger for one trusted STAGE attempt. Only opaque
+/// references, hashes, privacy-closed receipts and lifecycle state may enter
+/// this table; draft bodies, URLs, identities and authentication material are
+/// deliberately absent from the schema.
+model WorkbenchStageTransactionRecord {
+  stageTransactionRef         String                      @id
+  schemaVersion               String
+  taskId                      String
+  runId                       String
+  planRevisionId              String
+  stepId                      String
+  callId                      String                      @unique
+  courseAlias                 String
+  courseScopeHash             String
+  manifestHash                String
+  policyVersion               String
+  integrityVerificationRef    String
+  targetRef                   String
+  opportunityId               String
+  candidateKey                String
+  decisionId                  String
+  threadKey                   String
+  targetVersionHash           String
+  opportunityReceiptHash      String
+  revalidationReceiptHash     String
+  afterObservationReceiptHash String
+  targetEvidenceRefsJson      String
+  artifactVersionRef          String
+  draftBodyHash               String
+  runNonceHash                String
+  baselineRef                 String
+  baselineHash                String
+  pageBindingRef              String
+  pageBindingHash             String
+  /// v3 only. Nullable solely so immutable v2 terminal history remains readable.
+  preflightRef                String?
+  preflightHash               String?
+  resolvedTargetReceiptRef    String?
+  resolvedTargetReceiptHash   String?
+  freshObservationRef         String?
+  freshObservationHash        String?
+  eventSetHash                String?
+  targetLocatorHash           String?
+  resolvedAt                  DateTime?
+  status                      String
+  verifiedOutputJson          String?
+  /// Set exactly once at a v3 terminal CAS. Closed, body-free stage/reconcile binding.
+  terminalBindingJson         String?
+  containsForumText           Boolean                     @default(false)
+  containsIdentity            Boolean                     @default(false)
+  containsSecrets             Boolean                     @default(false)
+  createdAt                   DateTime
+  updatedAt                   DateTime
+  terminalAt                  DateTime?
+  task                        WorkbenchTask               @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  run                         WorkbenchRunRecord          @relation(fields: [runId], references: [id], onDelete: Cascade)
+  planRevision                WorkbenchPlanRevisionRecord @relation(fields: [planRevisionId], references: [id], onDelete: Cascade)
+  step                        WorkbenchPlanStepRecord     @relation(fields: [stepId], references: [id], onDelete: Cascade)
+  call                        WorkbenchToolCallRecord     @relation(fields: [callId], references: [id], onDelete: Cascade)
+
+  @@index([taskId, runId, status])
+  @@index([planRevisionId, stepId])
+  @@index([courseAlias, manifestHash])
+  @@index([status, updatedAt])
+  @@index([artifactVersionRef])
+}

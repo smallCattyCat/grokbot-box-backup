@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "cmooc-public-practice-candidates.v1",
+  "sourcePackage": "教师AI公开实践知识_R2_2026-09-20",
+  "cards": 200,
+  "sources": 196,
+  "status": "external_candidate_not_locally_validated",
+  "productionImported": false,
+  "files": {
+    "cards.json": "bd020d87fc1d58db3914ea62867cbf3daa60ae84ee4f57ab3d5804310894c007",
+    "sources.json": "0eb5cbb0c2084afa06cadeeb35b47cf218325682a4fcd16823293f2191e0ffde"
+  }
+}

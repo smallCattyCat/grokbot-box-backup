@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "cmooc.course-manifest-template.v1",
+  "alias": "bnu-test",
+  "platformId": "cmooc.bnu",
+  "courseIdSha256": "cf471c393ce49c14b5808c8653f323f78d66697f5881f1ea9d3b7a2546ec3fb7",
+  "canonicalOrigin": "https://cmooc.bnu.edu.cn",
+  "canonicalPath": "/cMOOC/course",
+  "timeZone": "Asia/Shanghai",
+  "defaultMode": "SHADOW",
+  "policyVersion": "cmooc.autonomy.shadow-policy.v1",
+  "realPublishEnabled": false,
+  "note": "Copy to configs/courses/local/bnu-test-course.json and supply the exact local courseId and canonicalUrl. The local file is ignored by Git."
+}

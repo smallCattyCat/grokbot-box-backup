@@ -1,0 +1,19 @@
+services:
+  cmooc-course-service:
+    build:
+      context: ../..
+      dockerfile: deploy/grok/Dockerfile
+    network_mode: host
+    environment:
+      CMOOC_SERVICE_HOST: 127.0.0.1
+      CMOOC_SERVICE_PORT: "3050"
+      CMOOC_SERVICE_DATA_DIR: /data/cmooc-service-data
+      DATABASE_URL: file:/data/cmooc-service-data/course.db
+      CMOOC_PORTABLE_SERVICE: "1"
+      LLM_MODE: mock
+    volumes:
+      - cmooc-service-data:/data/cmooc-service-data
+    restart: unless-stopped
+
+volumes:
+  cmooc-service-data:

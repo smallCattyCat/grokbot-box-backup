@@ -1,0 +1,16 @@
+node_modules
+.git
+.cmooc-service-data
+.env
+.env.*
+!.env.example
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+logs
+screenshots
+artifacts
+coverage
+test-results
+*.log

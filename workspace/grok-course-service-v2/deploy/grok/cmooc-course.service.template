@@ -1,0 +1,27 @@
+# Generated template only. Replace the two __CMOOC_*__ placeholders, review the
+# data directory, then install through the host's normal systemd workflow.
+# This file does not install or enable a unit by itself.
+[Unit]
+Description=cMOOC Grok course companion service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=__CMOOC_PACKAGE_ROOT__
+Environment="CMOOC_SERVICE_DATA_DIR=__CMOOC_SERVICE_DATA_DIR__"
+Environment="CMOOC_SERVICE_PORT=3050"
+Environment="CMOOC_PORTABLE_SERVICE=1"
+Environment="CMOOC_DISABLE_WINDOWS_ENV_FALLBACK=1"
+Environment="LLM_MODE=mock"
+ExecStart=/usr/bin/env node --import file://__CMOOC_PACKAGE_ROOT__/node_modules/tsx/dist/loader.mjs __CMOOC_PACKAGE_ROOT__/scripts/portable-course-service.ts start
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=30
+KillSignal=SIGTERM
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
