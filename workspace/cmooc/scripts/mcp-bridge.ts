@@ -13,6 +13,8 @@ import path from "node:path";
 import { pathToFileURL } from "node:url";
 import {
   applyMirrorDatabaseEnv,
+  applyWorkbenchDatabaseEnv,
+  ensureSlimAutonomyTables,
   ledgerSyncStatus,
   ledgerUseMirror,
   patrolBegin,
@@ -896,6 +898,7 @@ async function dispatch(op: string, flags: Map<string, string | boolean>) {
     }
 
     case "autonomy_status":
+      await ensureSlimAutonomyTables();
       return withPrisma(async (prisma) => {
         const {
           getAutonomyRuntimeHealth,
@@ -911,16 +914,23 @@ async function dispatch(op: string, flags: Map<string, string | boolean>) {
           health,
           workerWake: health.workerWake,
           due,
+          databaseRouting: "slim+autonomy-stubs",
           externalMutationAttempted: false,
           containsForumText: false
         };
       });
 
     case "soak_readiness":
+      await ensureSlimAutonomyTables();
       return withPrisma(async (prisma) => {
         const { getAutonomyRuntimeHealth } = await import("../lib/autonomy/runtime-health");
         const health = await getAutonomyRuntimeHealth({ prisma, now: new Date() });
-        return { ok: true, soakReadiness: health.soakReadiness, containsForumText: false };
+        return {
+          ok: true,
+          soakReadiness: health.soakReadiness,
+          databaseRouting: "slim+autonomy-stubs",
+          containsForumText: false
+        };
       });
 
     case "governance_get":
@@ -962,6 +972,9 @@ async function dispatch(op: string, flags: Map<string, string | boolean>) {
     }
 
     case "operator_status": {
+      // Operator console tables (AutoInterventionCandidate, AgentRun, …)
+      // live on local prisma/dev.db — not on Nutstore slim. Keep ledger on slim.
+      applyWorkbenchDatabaseEnv();
       const { getOperatorStatusPayload } = await import(
         "../lib/agent-console-operator-status"
       );
@@ -969,6 +982,7 @@ async function dispatch(op: string, flags: Map<string, string | boolean>) {
       const fresh = flagBool(flags, "fresh");
       return {
         ok: true,
+        databaseRouting: "workbench-local",
         ...(await getOperatorStatusPayload({ detail, fresh }))
       };
     }

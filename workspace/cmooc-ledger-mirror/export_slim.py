@@ -10,6 +10,8 @@ WANT = [
     "AutonomyCourseManifest","OperationSchedule","SemanticRealization",
     "CandidateSet","SchedulingLedger","CourseEvent","AutonomyObservation",
     "WorkbenchRunRecord","WorkbenchEventRecord","AgentPatrolLedger",
+    # Autonomy read stubs (also ensured on box by ensure_slim_autonomy_tables.py)
+    "ForumSetting","AutonomyPolicy","AutonomyWorkerWakeReceipt",
 ]
 def main():
     os.makedirs(OUT_DIR, exist_ok=True)

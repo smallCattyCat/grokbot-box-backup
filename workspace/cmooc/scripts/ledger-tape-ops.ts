@@ -83,6 +83,85 @@ export function applyMirrorDatabaseEnv(): {
   return { applied: true, databaseUrl: url, ledgerDb };
 }
 
+/** Local workbench prisma/dev.db — operator console tables live here, not on slim. */
+export function resolveWorkbenchDatabasePath(): string {
+  const explicit =
+    process.env.CMOOC_WORKBENCH_DATABASE_URL?.trim() ||
+    process.env.CMOOC_AUTONOMY_DATABASE_URL?.trim();
+  if (explicit) {
+    if (explicit.startsWith("file:")) return explicit.slice(5);
+    if (!/^(postgres|mysql|sqlserver)/i.test(explicit)) return explicit;
+  }
+  const root = process.env.CMOOC_ROOT?.trim() || process.cwd();
+  return path.resolve(root, "prisma", "dev.db");
+}
+
+/**
+ * Dual-DB: keep CMOOC_LEDGER_DB on slim (DecisionTape/ForumPost authority),
+ * point Prisma DATABASE_URL at local workbench for operator console reads.
+ * Does not flip realPublishEnabled.
+ */
+export function applyWorkbenchDatabaseEnv(): {
+  applied: boolean;
+  databaseUrl: string;
+  ledgerDb: string;
+  workbenchDb: string;
+} {
+  const ledgerDb = resolveLedgerDbPath();
+  if (!process.env.CMOOC_LEDGER_DB) process.env.CMOOC_LEDGER_DB = ledgerDb;
+  const workbenchDb = resolveWorkbenchDatabasePath();
+  const url = `file:${workbenchDb}`;
+  process.env.CMOOC_DATABASE_URL = url;
+  process.env.DATABASE_URL = url;
+  process.env.CMOOC_WORKBENCH_DATABASE_URL = url;
+  return { applied: true, databaseUrl: url, ledgerDb, workbenchDb };
+}
+
+/** Self-heal slim after Nutstore refresh: stub autonomy tables, never tape/posts. */
+export async function ensureSlimAutonomyTables(): Promise<Record<string, unknown>> {
+  const db = resolveLedgerDbPath();
+  const script = path.join(HERE, "ensure_slim_autonomy_tables.py");
+  return new Promise((resolve, reject) => {
+    const child = spawn("python3", [script, "--db", db, "--json"], {
+      env: { ...process.env, CMOOC_LEDGER_DB: db },
+      stdio: ["ignore", "pipe", "pipe"]
+    });
+    let stdout = "";
+    let stderr = "";
+    child.stdout.setEncoding("utf8");
+    child.stderr.setEncoding("utf8");
+    child.stdout.on("data", (c) => {
+      stdout += c;
+    });
+    child.stderr.on("data", (c) => {
+      stderr += c;
+    });
+    child.on("error", reject);
+    child.on("close", (code) => {
+      const trimmed = stdout.trim();
+      if (!trimmed) {
+        reject(
+          new Error(
+            `ensure_slim_autonomy_tables.py no stdout (exit ${code}): ${stderr.trim() || "(no stderr)"}`
+          )
+        );
+        return;
+      }
+      try {
+        resolve(JSON.parse(trimmed.split(/\r?\n/).filter(Boolean).pop()!) as Record<string, unknown>);
+      } catch (err) {
+        reject(
+          new Error(
+            `ensure_slim_autonomy_tables.py bad JSON: ${
+              err instanceof Error ? err.message : String(err)
+            }`
+          )
+        );
+      }
+    });
+  });
+}
+
 function runPythonOp(
   op: string,
   flagArgs: string[] = []
